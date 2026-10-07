@@ -9,9 +9,8 @@ Newsletter HTML email for covered.ro (Shopify, Romanian phone-skin brand): annou
 | Research (brand, offer + voice, top iPhone, top Samsung, new arrivals) | done | `research/bundle.json` |
 | 3 design variants | done | `drafts/variant-{a,b,c}.html` + `-640.png` / `-375.png` renders, `drafts/design-summaries.json` |
 | Judge panel (brand / engineering / conversion) | done | `research/judgments.json` |
-| **Final build** | **TODO** | → `covered-email-30-la-2-skinuri.html` + `preview-desktop.png`, `preview-mobile.png` |
-| **Verify** (data vs live site, email engineering + visual, Romanian copy) | **TODO** | |
-| **Polish** (apply verified fixes, re-verify once) | **TODO** | |
+| Final build | done | `covered-email-30-la-2-skinuri.html` (89.4 KB, max line 911 B) from `drafts/build-final.js` · `preview-desktop.png`, `preview-mobile.png` |
+| Verify + polish | done (2026-10-07) | see „Final build notes” below |
 
 Judge scores: brand a 8.5 · c 7.5 · b 7 — engineering c 7.5 · a 6.5 · b 5.5 — conversion b 8.5 · a 8 · c 7.5.
 Totals: **a 23 · c 22.5 · b 21** → build from **variant A** (Skin Lab / spec sheet), graft the judges' picks (each judge's `grafts` + `must_fix` in `research/judgments.json`), e.g. C's tilted yellow USP band and hero phones, B's yellow offer panel / cart-receipt worked example (only with verified math from `bundle.json` → `offer_and_voice.offer`).
@@ -35,3 +34,16 @@ Fonts: Archivo (800 uppercase, tight tracking, wide axis for display) + mono for
 - `bash research/render.sh <file.html|url> <out.png> [width] [height]` — headless Chrome/Chromium screenshot (Windows or Linux; set `CHROME=` if needed). Render at 640 and 375 and inspect.
 - Reference screenshots of the live site: `research/site-home-desktop.png`, `research/site-home-mobile.png`, `research/site-product-desktop.png`.
 - Draft generators: `drafts/build-a.js`, `drafts/build-variant-b.mjs`, `drafts/build-c.js` (node) — the variant HTML was generated from these.
+
+## Final build notes (2026-10-07)
+- Rebuild: `node drafts/build-final.js` → writes `covered-email-30-la-2-skinuri.html`.
+- Previews: `node research/render-preview.mjs covered-email-30-la-2-skinuri.html preview-desktop.png 640 [--offline-images]` (and `375` → `preview-mobile.png`).
+  The cloud sandbox could not reach covered.ro / cdn.shopify.com, so the committed previews were made with `--offline-images`:
+  product cut-outs from the old variant-A render (`research/preview-images/`, made by `research/preview-crop.py`) and a text logo.
+  The email itself uses the real Shopify CDN URLs. Re-render without the flag where the network allows it.
+- Data check: titles, prices, compare-at prices, status (ACTIVE, published), images and review ratings of all 13 products
+  were read from the covered Shopify admin; all match `bundle.json`. Collection/page handles exist. The site shows 199 iPhone skins
+  (admin count 203 includes unpublished/unavailable items) — the email keeps the site's 199.
+- Not checked live from the sandbox: HTTP 200 of each link/image (host blocked). Do one test send and click through before the campaign.
+- Samsung grid skips #2 Personalizat on purpose (no ramburs / no returns for personalised items).
+- „Retur 30 de zile” was dropped from the band/USPs: the refund policy excludes discounted items.

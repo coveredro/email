@@ -17,3 +17,7 @@ drafts/*
 !drafts/build-c.js
 !drafts/build-variant-b.mjs
 chrome-prof*/
+!drafts/build-final.js
+!research/render-preview.mjs
+!research/preview-crop.py
+!research/preview-images/
