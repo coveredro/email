@@ -1,4 +1,5 @@
-// Builds covered-email-30-la-2-skinuri.html (repo root) — final "−30% la 2 skinuri" email.
+// Builds covered-email-30-la-2-skinuri.html (repo root) for Shopify Email's custom-code editor
+// (needs {{ open_tracking_block }} and {{ unsubscribe_url }}; Shopify has no view-in-browser variable, so that link is omitted) — final "−30% la 2 skinuri" email.
 // Base: variant A (Skin Lab / spec sheet) + judge must_fix + grafts from B and C (research/judgments.json).
 // Prices, titles, ratings: verified in the covered Shopify admin on 2026-10-07 (see README.md).
 const fs = require('fs');
@@ -105,7 +106,7 @@ const pad = '&#847;&zwnj;&nbsp;'.repeat(22);
 const topbar = `<tr><td bgcolor="#000000" class="px" style="background-color:#000000;padding:10px 24px;border-bottom:1px solid #181818;${M}font-size:10px;line-height:14px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;">
 <table ${T} width="100%"><tr>
 <td class="hide" style="color:#C2C2BF;white-space:nowrap;"><span style="color:${Y};">&#9670;</span>&nbsp; Plată ramburs la livrare</td>
-<td align="right" class="tc" style="white-space:nowrap;"><a href="{{view_in_browser_url}}" style="color:#C2C2BF;text-decoration:underline;">Vezi emailul în browser</a></td>
+<td align="right" class="tc" style="white-space:nowrap;color:#C2C2BF;"><span style="color:${Y};">&minus;30%</span> la 2 skinuri &middot; automat în coș</td>
 </tr></table></td></tr>`;
 
 const navA = (l, p) => `<a href="${u(p, 'header')}" style="color:${TX};text-decoration:none;">${l}</a>`;
@@ -276,7 +277,7 @@ ${gapDiv(32)}
 ${rule('#1A1A1A')}
 <div style="padding-top:20px;font-size:13px;line-height:22px;color:${MU};">${fl('Termeni și condiții', '/pages/termeni-si-conditii')} &nbsp;·&nbsp; ${fl('Confidențialitate', '/pages/politica-de-confidentialitate')} &nbsp;·&nbsp; ${fl('Retur', '/policies/refund-policy')} &nbsp;·&nbsp; ${fl('Livrare', '/policies/shipping-policy')} &nbsp;·&nbsp; ${fl('ANPC SAL', 'https://anpc.ro/ce-este-sal/')} &nbsp;·&nbsp; ${fl('SOL', 'https://ec.europa.eu/consumers/odr')}</div>
 <div style="padding-top:16px;font-size:13px;line-height:20px;color:${LB};">Primești acest e-mail pentru că ești abonat la newsletterul covered. Prețurile includ TVA; livrarea se calculează la finalizarea comenzii. Husele, foliile de ecran și extraopțiunile nu intră în ofertă.</div>
-<div style="padding-top:16px;${LBL}line-height:18px;text-transform:uppercase;"><a href="{{view_in_browser_url}}" style="color:${TX};text-decoration:underline;">Vezi emailul în browser</a><span style="color:#50504F;"> &nbsp;/&nbsp; </span><a href="{{unsubscribe_url}}" style="color:${TX};text-decoration:underline;">Dezabonare</a></div>
+<div style="padding-top:16px;${LBL}line-height:18px;text-transform:uppercase;"><a href="{{ unsubscribe_url }}" style="color:${TX};text-decoration:underline;">Dezabonare</a></div>
 <div style="padding-top:16px;${LBL}color:#7F7F7D;">&copy; 2026 COVERED.</div>
 </td></tr>
 <tr><td bgcolor="#000000" align="center" aria-hidden="true" style="background-color:#000000;padding:18px 0 0 0;mso-hide:all;"><div class="wm" style="${D}text-transform:none;font-size:118px;line-height:92px;font-stretch:125%;letter-spacing:-.045em;color:#141414;white-space:nowrap;overflow:hidden;">covered</div></td></tr>`;
@@ -373,6 +374,7 @@ ${footer}
 </td></tr>
 </table>
 </div>
+{{ open_tracking_block }}
 </body>
 </html>
 `;

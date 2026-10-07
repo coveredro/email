@@ -67,7 +67,7 @@ u+#body a{color:inherit;text-decoration:none}
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
 <tr>
 <td class="hide" style="color:#C2C2BF;white-space:nowrap;"><span style="color:#F5B100;">&#9670;</span>&nbsp; Plată ramburs la livrare</td>
-<td align="right" class="tc" style="white-space:nowrap;"><a href="{{view_in_browser_url}}" style="color:#C2C2BF;text-decoration:underline;">Vezi emailul în browser</a></td>
+<td align="right" class="tc" style="white-space:nowrap;color:#C2C2BF;"><span style="color:#F5B100;">&minus;30%</span> la 2 skinuri &middot; automat în coș</td>
 </tr>
 </table>
 </td>
@@ -571,7 +571,7 @@ u+#body a{color:inherit;text-decoration:none}
 &nbsp;·&nbsp; <a href="https://anpc.ro/ce-este-sal/" style="color:#B2B2AF;text-decoration:underline;">ANPC SAL</a>
 &nbsp;·&nbsp; <a href="https://ec.europa.eu/consumers/odr" style="color:#B2B2AF;text-decoration:underline;">SOL</a></div>
 <div style="padding-top:16px;font-size:13px;line-height:20px;color:#9A9A98;">Primești acest e-mail pentru că ești abonat la newsletterul covered. Prețurile includ TVA; livrarea se calculează la finalizarea comenzii. Husele, foliile de ecran și extraopțiunile nu intră în ofertă.</div>
-<div style="padding-top:16px;font-family:'Martian Mono',Menlo,Consolas,monospace;font-size:10px;line-height:12px;font-weight:500;letter-spacing:.08em;line-height:18px;text-transform:uppercase;"><a href="{{view_in_browser_url}}" style="color:#F3F3EF;text-decoration:underline;">Vezi emailul în browser</a><span style="color:#50504F;"> &nbsp;/&nbsp; </span><a href="{{unsubscribe_url}}" style="color:#F3F3EF;text-decoration:underline;">Dezabonare</a></div>
+<div style="padding-top:16px;font-family:'Martian Mono',Menlo,Consolas,monospace;font-size:10px;line-height:12px;font-weight:500;letter-spacing:.08em;line-height:18px;text-transform:uppercase;"><a href="{{ unsubscribe_url }}" style="color:#F3F3EF;text-decoration:underline;">Dezabonare</a></div>
 <div style="padding-top:16px;font-family:'Martian Mono',Menlo,Consolas,monospace;font-size:10px;line-height:12px;font-weight:500;letter-spacing:.08em;color:#7F7F7D;">&copy; 2026 COVERED.</div></td>
 </tr>
 <tr><td bgcolor="#000000" align="center" aria-hidden="true" style="background-color:#000000;padding:18px 0 0 0;mso-hide:all;"><div class="wm" style="font-family:Archivo,'Arial Black','Helvetica Neue',Arial,sans-serif;font-weight:800;text-transform:uppercase;text-transform:none;font-size:118px;line-height:92px;font-stretch:125%;letter-spacing:-.045em;color:#141414;white-space:nowrap;overflow:hidden;">covered</div></td>
@@ -583,4 +583,6 @@ u+#body a{color:inherit;text-decoration:none}
 <![endif]--></td>
 </tr>
 </table>
-</div></body></html>
+</div>
+{{ open_tracking_block }}
+</body></html>

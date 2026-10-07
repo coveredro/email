@@ -25,7 +25,7 @@ Fonts: Archivo (800 uppercase, tight tracking, wide axis for display) + mono for
 
 ## Email rules (non-negotiable)
 - Romanian, tutoiere, diacritics ș ț with comma-below; reuse the site's phrasing (voice library in `bundle.json` → `offer_and_voice.voice`). No invented prices, stats, deadlines, codes or reviews.
-- Sections: preheader · header/logo · hero with the offer + mechanics · TOP VÂNZĂRI iPhone (4–6) · TOP VÂNZĂRI Samsung (4–6) · NOUTĂȚI (3–6) · USP strip + social proof (4,69/5 · 1.278 de recenzii, 37.000+ clienți, 60.000+ skinuri) · closing CTA · footer (covered.ro@gmail.com, 0750 422 122, legal, socials, `{{view_in_browser_url}}`, `{{unsubscribe_url}}`).
+- Sections: preheader · header/logo · hero with the offer + mechanics · TOP VÂNZĂRI iPhone (4–6) · TOP VÂNZĂRI Samsung (4–6) · NOUTĂȚI (3–6) · USP strip + social proof (4,69/5 · 1.278 de recenzii, 37.000+ clienți, 60.000+ skinuri) · closing CTA · footer (covered.ro@gmail.com, 0750 422 122, legal, socials, `{{ unsubscribe_url }}` + `{{ open_tracking_block }}` (Shopify Email)).
 - Real product image/title/price (+ struck compare-at) and URL from `bundle.json`; every covered.ro link gets `utm_source=email&utm_medium=newsletter&utm_campaign=30-la-2-skinuri&utm_content=<section>`.
 - 600px table layout, role="presentation", inline styles, bgcolor attrs on dark containers, no flex/grid/position/CSS vars/JS/SVG; `<style>` only for media queries, fonts, outline text (with solid inline fallback); MSO conditionals + bulletproof buttons; images absolute https, width attr, display:block, Romanian alt; responsive at ≤620px; **file < 90 KB** (Gmail clips at 102 KB); contrast ≥ 4.5:1.
 - Must still look right when Gmail strips `<style>` (judges flagged class-only pills/borders in A — inline them).
