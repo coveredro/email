@@ -1,0 +1,19 @@
+# Keep only curated outputs; raw scrape dumps, downloaded images and browser profiles stay local.
+research/*
+!research/bundle.json
+!research/judgments.json
+!research/render.sh
+!research/site-home-desktop.png
+!research/site-home-mobile.png
+!research/site-product-desktop.png
+drafts/*
+!drafts/variant-a.html
+!drafts/variant-b.html
+!drafts/variant-c.html
+!drafts/variant-?-640.png
+!drafts/variant-?-375.png
+!drafts/design-summaries.json
+!drafts/build-a.js
+!drafts/build-c.js
+!drafts/build-variant-b.mjs
+chrome-prof*/

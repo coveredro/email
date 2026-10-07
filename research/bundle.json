@@ -1,0 +1,1206 @@
+{
+ "brand": {
+  "offer_block_visual": "The \"−30% la 2 skinuri\" block (.cv-offer, product page, custom_liquid block) sits just under the price and tax line. The PDP main area is LIGHT (bg #FFFFFF, text #0A0A0B). Close-up: research/shots/p-2.png.\n\nCONTAINER:\n- display grid; columns 28px + 1fr; column-gap 12px; align-items start.\n- padding 11px 14px 12px; border-radius 12px; full column width (600px at 1440); total height about 70px.\n- background #f5b1001f, i.e. rgba(245,177,0,.12), which flattens to #FEF6E0 on white.\n- No real border: box-shadow inset 0 0 0 1px #e0a1005c, i.e. rgba(224,161,0,.36), which flattens to #F3D78F.\n- On the site it is a pale butter-yellow rounded card with a thin golden hairline.\n\nICON (left column):\n- 28x28px circle, bg #F5B100.\n- Contains a 15x15px line \"percent\" glyph in #0A0A0B: a diagonal slash plus two small circles, stroke-width 1.75, round caps.\n- SVG: <svg viewBox=\"0 0 20 20\" fill=\"none\"><path d=\"M15.625 4.375L4.375 15.625\"/><path d=\"M5.9375 7.8125C6.97304 7.8125 7.8125 6.97304 7.8125 5.9375C7.8125 4.90196 6.97304 4.0625 5.9375 4.0625C4.90196 4.0625 4.0625 4.90196 4.0625 5.9375C4.0625 6.97304 4.90196 7.8125 5.9375 7.8125Z\"/><path d=\"M14.0625 15.9375C15.098 15.9375 15.9375 15.098 15.9375 14.0625C15.9375 13.027 15.098 12.1875 14.0625 12.1875C13.027 12.1875 12.1875 13.027 12.1875 14.0625C12.1875 15.098 13.027 15.9375 14.0625 15.9375Z\"/></svg> (all paths stroke=\"currentColor\").\n- Email: a 28px round yellow cell with a bold '%' in #0A0A0B, or this SVG as a PNG.\n\nHEAD ROW (right column):\n- flex, space-between, align baseline, padding-top 3.5px.\n- Left: title \"−30% la 2 skinuri\", rendered \"−30% LA 2 SKINURI\". Uses a true minus sign U+2212. Archivo 700, font-stretch 112%, 15px, line-height 1.3, letter-spacing .02em, uppercase, #0A0A0B.\n- Right-aligned price line, Martian Mono 12px, letter-spacing .02em, tabular, color rgba(10,10,11,.76) ≈ #45433E: \"<strong>RON 48.30</strong> / buc. când iei 2\". The strong part is 13.5px, weight 600, #0A0A0B. The value is 70% of the current variant price; for Negru Mat RON 69.00 it is RON 48.30.\n\nTEXT LINE (under the head, margin-top 4px):\n- Verbatim: \"Combină oricare 2 skinuri, pentru orice telefon. Reducerea se aplică automat în coș.\"\n- Archivo 400, 13px, line-height 1.5, color rgba(10,10,11,.76) ≈ #45433E.\n\nSURROUNDING PDP CONTEXT, top to bottom:\n1. Yellow 4px-radius badge \"ECONOMISEȘTI 42%\" + \"● VINIL PREMIUM · TĂIAT LASER\" mono tag.\n2. H1 \"SKIN IPHONE - NEGRU MAT\" (Archivo 800 116% 44px).\n3. Stars \"★★★★★ 4,81 · 26 de recenzii\".\n4. Price \"RON 69.00\" (#B83A00, 30px) with struck \"RON 120.00\".\n5. \"TVA inclus. Livrarea se calculează la finalizarea comenzii.\"\n6. THE OFFER BLOCK.\n7. Guarantee row: shield icon + \"Potrivire exactă pe modelul tău\" / \"Tăiat laser pentru modelul ales. Dacă aplicarea nu iese, îți trimitem un skin nou.\" with a \"Vezi garanția\" link.\n\nFurther down, a quantity-bundle picker from a third-party app:\n- Centered divider label \"OFERTA\".\n- Option 1: radio card \"1 SKIN — RON 69.00 / buc — RON 69.00\" (selected, 1px #0A0A0B border, 6px radius).\n- Option 2: \"2 SKIN-uri\" with a black pill \"REDUCERE 30%\", \"RON 48.30 / buc\", struck \"RON 138.00\", total \"RON 96.60\". A yellow \"BEST PRICE\" tab (#F5B100 bg, white bold caps) sits on its top-right edge.\n\nEMAIL ECHO ON A DARK (#0A0A0B) LAYOUT:\n- Card bg rgba(245,177,0,.12) ≈ #2B230B on #0A0A0B, with a 1px #F5B100 at ~36–55% border (≈ #6A520F to #8C6806). Radius 12px, padding 12px 14px.\n- 28px #F5B100 circle with '%'.\n- Title in Archivo 700 caps #F3F3EF.\n- Price line in Martian Mono with \"RON 48.30\" in #F5B100 or #F3F3EF bold and \"/ buc. când iei 2\" at 76% white.\n- Sub-line at 72% white.\n- On a white email section, use the exact light values: #FEF6E0 fill, #F3D78F ring, #0A0A0B text, #45433E muted text.",
+  "fonts": {
+   "display": "\"CV Archivo\" is self-hosted Archivo, the Omnibus-Type variable font. Its woff2 name table reads 'Copyright 2020 The Archivo Project Authors', v2.001, with axes wght 100–900 and wdth 62–125. The file is //covered.ro/cdn/shop/t/49/assets/cv-archivo-latin.woff2 (plus a -latin-ext file), declared with @font-face font-weight 100 900 and font-stretch 62% 125%. Theme stacks: --cv-font-display: \"CV Archivo\",\"Archivo\",\"Helvetica Neue\",Arial,sans-serif; --cv-font-body: \"CV Archivo\",\"Archivo\",system-ui,-apple-system,\"Segoe UI\",Roboto,sans-serif. Google's 'Archivo' family is the same font with the same axes. Suggested email stack: 'Archivo','Arial Black','Helvetica Neue',Arial,sans-serif for display and 'Archivo','Helvetica Neue',Arial,sans-serif for body. Body has font-feature-settings \"ss01\" on.",
+   "google_fonts_link": "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap  (verified: returns Archivo with font-weight 100 900 / font-stretch 62% 125%, and Martian Mono with 100 800 / 75% 112.5%). A static alternative also works but is less exact, because static requests return font-stretch 100%: https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Martian+Mono:wght@400;500;600&display=swap",
+   "mono_google_equivalent": "Martian Mono, which is on Google Fonts as the exact same family (variable wght 100–800, wdth 75–112.5). The site always uses it at font-stretch:100%, the Normal width, which is the Google default. Email fallback stack: 'Martian Mono',ui-monospace,Menlo,Consolas,'Courier New',monospace.",
+   "mono_real_family": "\"CV Mono\" = Martian Mono by Evil Martians. Confirmed by parsing the woff2 name table of //covered.ro/cdn/shop/t/49/assets/cv-mono-latin.woff2?v=14186864085213521301790738309: copyright 'Copyright 2020 The Martian Mono Project Authors (https://github.com/evilmartians/mono)', family 'Martian Mono SemiExpanded', PS name MartianMono-SemiExpandedRegular, fvar axes wght 100/400/800 and wdth 75/112.5/112.5. @font-face declares font-weight 100 800 and font-stretch 75% 112.5%. Theme var: --cv-font-mono: \"CV Mono\",ui-monospace,\"SFMono-Regular\",Menlo,Consolas,monospace.",
+   "outline_stroke": "Hero line 2 \"TELEFONUL.\" (.cv-hero--l2-outline .cv-hero__line--2): color: rgb(var(--color-background)) = #0A0A0B, so the fill matches the page bg; -webkit-text-stroke: clamp(2px, .04em, 5px) var(--hero-fg) = #F3F3EF; paint-order: stroke fill. Computed stroke width: 3.605px at 1440 (font 90.13px), 2.747px at 600 (68.67px), 2px at 390 (43.37px). Related outline uses: (a) the tilted yellow marquee alternate words: color #F5B100 (= band bg), -webkit-text-stroke max(2px,.05em) #0A0A0B, which computes to 4.8px at 96px, paint-order stroke fill; (b) the defined but unused .cv-cta__fill--outline: color transparent, -webkit-text-stroke .025em #F5B100.",
+   "styles": "Root html font-size is 62.5% (1rem = 10px). Archivo is used with the width axis via font-stretch; all values below are computed in Chrome.\n\nHERO H1 (.cv-hero__title):\n- Archivo 800, font-stretch 125%, uppercase, letter-spacing -0.02em.\n- line-height calc(1.19em + 1px) ≈ 1.2.\n- Size clamp(3.6rem, 100cqi/8.3, 11rem): 90.13px/108.25px at 1440, 68.67px/82.72px at 600, 43.37px/52.61px at 390.\n- Color #F3F3EF. Line 2 is outlined (see outline_stroke). Source text 'Îmbracă-ți' / 'telefonul.'.\n\nHERO SUB (.cv-hero__text):\n- Archivo 400, 17.32px/26.85px at 1440, 15px/23.25px at 600 and below.\n- rgba(243,243,239,.68) ≈ #A8A8A6, max-width 44ch.\n\nSECTION H2 (bestsellers, tiles, FAQ, stats):\n- Archivo 800, font-stretch 122% (tiles and FAQ 120%), uppercase.\n- letter-spacing -0.015em (stats and tiles -0.01em), line-height calc(1.18em + 1px).\n- Size clamp(2.8rem, 1.6rem + 2.4vw, 5.6rem): 50.56px/60.66px at 1440, 30.4px/36.87px at 600, 28px/34.04px at 390.\n\nBIG SECTION H2 (device picker 'Alege-ți telefonul', compare 'Skin vs. husă'):\n- Archivo 800, 122%, uppercase, -0.015em (compare -0.01em).\n- 64.96px/77.65px at 1440, 36.4px at 600, 32px at 390.\n\nCTA H2 ('60.000+ skinuri realizate. Al tău urmează.'):\n- Archivo 800, 125%, uppercase, -0.02em, line-height calc(1.19em + 1px).\n- 108.56px at 1440, 46.4px at 600, 30.86px at 390.\n\nFOOTER NEWSLETTER H ('Fii primul care vede drop-urile noi.'): Archivo 800, 122%, 59.2px/70.86px at 1440, -0.015em, uppercase.\n\nPDP H1 (light page):\n- Archivo 800, 116%, 44px/52.04px, letter-spacing -0.528px (-0.012em), uppercase.\n- Color #0A0A0B.\n\nCOLLECTION TILE TITLE:\n- Archivo 800, 118%, uppercase, -0.005em, line-height calc(1.16em + 1px).\n- 42.98px on the large tile, 19.87px on normal tiles (clamp 1.9–3.2rem).\n\nMODEL TILE NAME ('18 PRO MAX'): Archivo 800, 116%, uppercase, 21.7px (base 1.8rem), line-height 1.\n\nUSP TITLE ('Vinil premium'): Archivo 700, 108%, 15px/18.75px, sentence case. USP text: Archivo 400, 13px/19.5px, rgba(.64).\n\nPRODUCT CARD TITLE ('Skin iPhone - Negru Mat'):\n- Archivo 600, font-stretch 100%, 14.5px/1.32 (13px/1.3 on mobile).\n- letter-spacing -0.005em, sentence case, #F3F3EF, 2-line clamp.\n\nPRICE, product card on dark:\n- Sale: Martian Mono 500, 12.5px/1.4, tabular-nums, #F5B100. On mobile 11.5px with font-stretch 87.5%.\n- Compare-at: Martian Mono 400, 11px, rgba(243,243,239,.56) ≈ #8C8C8B, <s> line-through 1px, gap 8px.\n- Rating: Martian Mono 11px rgba(.72), yellow 11px star, count rgba(.56).\n\nPRICE, PDP on white:\n- Sale: Archivo 700, 108%, 30px/33px, -0.01em, color #B83A00.\n- Compare-at: Martian Mono 400, 14px, letter-spacing .02em, rgba(10,10,11,.64), struck.\n\nPRICE FORMAT: the site prints 'RON 69.00' and 'RON 120.00' (ISO code first, dot decimals). 'lei' does not appear on the homepage or the PDP. Non-price numbers use Romanian commas ('4,69', '0,2 mm', '1,7').\n\nEYEBROW (.cv-eyebrow):\n- Martian Mono 500, font-stretch 100%, 11px/15.4px (10px at <400px), letter-spacing .1em (1.1px), uppercase.\n- Color rgba(243,243,239,.62) ≈ #9A9A98; hero eyebrow .68 ≈ #A8A8A6.\n- Preceded by .cv-eyebrow__dot: 7px circle #F5B100 with box-shadow 0 0 0 3px rgba(245,177,0,.2) ≈ #392B09 ring, gap 8px.\n\nOTHER MONO LABELS:\n- Hero callouts: Martian Mono 500, 10px, line-height 1, .08em, uppercase.\n- Stat labels: 10.5px, 500, .08em, uppercase.\n- Index numbers ('01'): 10px, 500, .08em, rgba(.5).\n- Ticker: 11px, 500, .1em, uppercase, rgba(.8).\n- Copyright: 10.5px, .08em, rgba(.5).\n- Tile count pill '12 PRODUSE': 10px, 500, .08em.\n- 'VEZI TOATE PRODUSELE' link: 11.5px, .08em, with a 1px #F5B100 underline 4px below.\n\nBODY: Archivo 400, 15px/1.6 (24px), #F3F3EF on #0A0A0B.\n\nBUTTONS (.btn):\n- Archivo 700, font-stretch 112%, 13px, letter-spacing .04em (0.52px), uppercase, line-height 30px.\n- Height 48px, padding 0 40px (hero) or 0 22px with height 44px (section buttons), border-radius 5px, 10px gap to the arrow icon (16–18px, stroke 1.6).\n- Primary: bg #F5B100, text #0A0A0B; hover bg #FFFFFF.\n- Secondary: transparent, 1px border rgba(243,243,239,.28) ≈ #4B4B4B, text #F3F3EF.\n- PDP add-to-cart on white: bg #0A0A0B, text #FFFFFF, height 56px, radius 6px, 14px, letter-spacing 0.84px.\n- Hero CTA arrows: '↓' on ALEGE-ȚI TELEFONUL, '→' elsewhere.",
+   "width_axis_used": "Yes. Archivo's wdth axis is driven by font-stretch everywhere; there is no font-variation-settings, and the theme does not use the separate 'Archivo Expanded' family. Values:\n- h1/h2/h3/.hd*: 118%.\n- h4–h6: 108%.\n- Hero H1, marquee and CTA H2: 125%.\n- Section H2s: 120–122%.\n- PDP H1 and model names: 116%.\n- Buttons and offer title: 112%.\n- PDP price and USP titles: 108%.\n- Body, card titles and all mono text: 100%. Mobile card prices use 87.5% and narrow badges 75% (Martian Mono wdth).\n\nThe font-face allows 62–125%. In email, the wide look only appears where web fonts load, such as Apple Mail and iOS Mail; elsewhere specify font-stretch and accept the fallback. Gmail and Outlook will fall back to Arial or Helvetica, which are narrower, so size display lines with slack."
+  },
+  "palette": [
+   {
+    "hex": "#0A0A0B",
+    "role": "Page background (color-scheme-1 bg) and --cv-ink: text on yellow buttons and badges, the outline-text fill, marquee text"
+   },
+   {
+    "hex": "#F3F3EF",
+    "role": "Foreground and heading text, the outline stroke of hero 'TELEFONUL.', the 'hot' badge bg"
+   },
+   {
+    "hex": "#F5B100",
+    "role": "Signal accent (--cv-signal / --color-primary). Used for: primary button, sale badge, cart bubble, eyebrow and callout dots, sale price on dark, stats '+' affix, NOU chips, marquee band bg, ticker diamonds, focus and selection, footer contact icons"
+   },
+   {
+    "hex": "#000000",
+    "role": "Inverse scheme bg: announcement ticker bar and footer"
+   },
+   {
+    "hex": "#111113",
+    "role": "color-scheme-2 bg (stats and compare sections) and the collection tile card bg"
+   },
+   {
+    "hex": "#131316",
+    "role": "--color-secondary-background (scheme 1)"
+   },
+   {
+    "hex": "#141417",
+    "role": "--color-field and secondary-button bg"
+   },
+   {
+    "hex": "#121213",
+    "role": "Product card and model-chip surface, rgba(243,243,239,.035) over #0A0A0B"
+   },
+   {
+    "hex": "#1F1F20",
+    "role": "Product card 1px border, rgba(.09) flattened"
+   },
+   {
+    "hex": "#262626",
+    "role": "Hairline rgba(243,243,239,.12) on #0A0A0B: dividers, model chip and USP borders"
+   },
+   {
+    "hex": "#26262B",
+    "role": "--color-border, 'new' badge bg (theme root)"
+   },
+   {
+    "hex": "#2B2B2B",
+    "role": "Lines rgba(.14) on #0A0A0B (CTA stat dividers)"
+   },
+   {
+    "hex": "#313132",
+    "role": "Stats grid lines rgba(.14) on #111113"
+   },
+   {
+    "hex": "#2F2F2F",
+    "role": "Hero mono callout-tag border, rgba(.16) flattened"
+   },
+   {
+    "hex": "#3A3A41",
+    "role": "Secondary-button border var and sold-out badge bg"
+   },
+   {
+    "hex": "#4B4B4B",
+    "role": "Outline/secondary button border, rgba(.28) flattened"
+   },
+   {
+    "hex": "#50504F",
+    "role": "Hero corner-bracket frame lines, rgba(.3) flattened"
+   },
+   {
+    "hex": "#181819",
+    "role": "Hero 80px grid line effective color: rgba(.12) at opacity .5"
+   },
+   {
+    "hex": "#181818",
+    "role": "Ticker bottom border and footer dividers, rgba(.1) on #000"
+   },
+   {
+    "hex": "#A8A8A6",
+    "role": "Hero muted text rgba(.68)"
+   },
+   {
+    "hex": "#9A9A98",
+    "role": "Eyebrow labels rgba(.62)"
+   },
+   {
+    "hex": "#969694",
+    "role": "--color-foreground-lighten-60"
+   },
+   {
+    "hex": "#B2B2AF",
+    "role": "Muted rgba(.72): rating, tile subtitles, descriptions"
+   },
+   {
+    "hex": "#9F9F9D",
+    "role": "Muted rgba(.64): tiles intro, USP text"
+   },
+   {
+    "hex": "#8C8C8B",
+    "role": "Struck compare-at price on cards, rgba(.56)"
+   },
+   {
+    "hex": "#7F7F7D",
+    "role": "Faint rgba(.5): proof labels, chip brand and meta, stats index, copyright"
+   },
+   {
+    "hex": "#5E5E5D",
+    "role": "USP index numbers rgba(.36)"
+   },
+   {
+    "hex": "#C2C2BF",
+    "role": "Ticker text rgba(.8) on #000"
+   },
+   {
+    "hex": "#423208",
+    "role": "Hero amber glow center: radial-gradient(closest-side, rgba(245,177,0,.24), rgba(245,177,0,.07) 55%, transparent), 640px circle"
+   },
+   {
+    "hex": "#1A160A",
+    "role": "Hero glow 55% stop (7% amber)"
+   },
+   {
+    "hex": "#392B09",
+    "role": "Eyebrow dot 3px halo ring (20% amber)"
+   },
+   {
+    "hex": "#FFD872",
+    "role": "CTA '60.000+' gold gradient stop: linear-gradient(100deg,#F5B100,#FFD872 22%,#F5B100 38%,#E0A100 58%,#F5B100 74%,#FFE29A 88%,#F5B100)"
+   },
+   {
+    "hex": "#FFE29A",
+    "role": "CTA gold gradient highlight stop"
+   },
+   {
+    "hex": "#E0A100",
+    "role": "Darker amber: gradient stop, primary on light schemes, offer-block ring base"
+   },
+   {
+    "hex": "#FBFBF9",
+    "role": "Product image tile radial gradient start: radial-gradient(120% 85% at 50% 6%, #FBFBF9 0%, #EFEFEB 56%, #E3E3DE 100%)"
+   },
+   {
+    "hex": "#EFEFEB",
+    "role": "Product image tile gradient mid"
+   },
+   {
+    "hex": "#E3E3DE",
+    "role": "Product image tile gradient edge"
+   },
+   {
+    "hex": "#FFFFFF",
+    "role": "Product page bg (scheme 3), card 'NOU' badge bg, primary button hover"
+   },
+   {
+    "hex": "#F4F4F1",
+    "role": "Light secondary bg (PDP gallery panel)"
+   },
+   {
+    "hex": "#E4E4DF",
+    "role": "Border on light schemes"
+   },
+   {
+    "hex": "#D4D4CE",
+    "role": "Secondary button border on light"
+   },
+   {
+    "hex": "#B83A00",
+    "role": "Sale price on light pages (PDP 'RON 69.00')"
+   },
+   {
+    "hex": "#626262",
+    "role": "PDP struck compare-at price (rgba(10,10,11,.64) on white)"
+   },
+   {
+    "hex": "#FEF6E0",
+    "role": "Offer block bg, rgba(245,177,0,.12) on white"
+   },
+   {
+    "hex": "#F3D78F",
+    "role": "Offer block 1px inset ring, rgba(224,161,0,.36) flattened"
+   },
+   {
+    "hex": "#45433E",
+    "role": "Offer block secondary text rgba(10,10,11,.76) on #FEF6E0"
+   },
+   {
+    "hex": "#C18C02",
+    "role": "Yellow marquee band rule lines (22% ink on #F5B100)"
+   },
+   {
+    "hex": "#FFC93D",
+    "role": "Yellow scheme-4 secondary bg"
+   },
+   {
+    "hex": "#D19700",
+    "role": "Yellow scheme-4 border"
+   },
+   {
+    "hex": "#684D07",
+    "role": "Yellow scheme-4 muted text"
+   },
+   {
+    "hex": "#FFD25C",
+    "role": "Hover fill (button-before) on light schemes"
+   },
+   {
+    "hex": "#AA96FF",
+    "role": "Holo tile glow rgb(170,150,255) at .26 alpha"
+   },
+   {
+    "hex": "#78A0E6",
+    "role": "Clear tile glow rgb(120,160,230) at .24; gold tile glow is #F5B100 at .28"
+   },
+   {
+    "hex": "#080809",
+    "role": "Tile bottom scrim: linear-gradient(to top, rgba(8,8,9,.82), rgba(8,8,9,.45) 32%, transparent 60%)"
+   },
+   {
+    "hex": "#060607",
+    "role": "color-scheme-8 bg (deepest dark)"
+   },
+   {
+    "hex": "#18181B",
+    "role": "color-scheme-6 bg"
+   },
+   {
+    "hex": "#19191C",
+    "role": "Scheme-2 secondary bg"
+   },
+   {
+    "hex": "#FFB3E2",
+    "role": "Holo gradient: #FFB3E2,#B6C8FF 18%,#A8FFE0,#FFF1A8,#FFC2B0,#B6C8FF 82%,#FFB3E2"
+   },
+   {
+    "hex": "#F6DD98",
+    "role": "Gold-foil gradient: #8A6420,#D9B25A 16%,#F6DD98 28%,#B3842A,#E8C572,#8A6420 76%,#F6DD98 90%,#B3842A"
+   },
+   {
+    "hex": "#D9DCE1",
+    "role": "Steel gradient: #7C8086,#D9DCE1 18%,#9DA1A8,#EEF0F3,#80848A,#C5C8CD 82%,#7C8086"
+   },
+   {
+    "hex": "#FF5A46",
+    "role": "Error text (also #D9523F, #C9412F)"
+   },
+   {
+    "hex": "#34C77B",
+    "role": "Success (also #2C8C58); warning is #A87800"
+   }
+  ],
+  "logo": {
+   "raster_url": "https://covered.ro/cdn/shop/files/covered_logo_white.png?v=1629830648&width=440 — verified with curl -I: 200, image/png, 7,367 B, 440x75 RGBA with a transparent background and a WHITE wordmark. It is the exact file in the header <img> (rendered at width=110 desktop and width=95 mobile) and the schema.org Organization logo (&width=500). The same file is on cdn.shopify.com: https://cdn.shopify.com/s/files/1/0059/0466/2626/files/covered_logo_white.png?v=1629830648&width=440. Use width=220 (220x38, 3.9 KB) for a 110px 2x header.",
+   "svg_info": "There is no SVG logo. The header uses <img class=\"logo\"> PNG, and /cdn/shop/files/covered_logo.svg returns 404. The wordmark is a custom lowercase geometric/rounded-square letterform 'covered', not Archivo, so it must be used as an image. Original size 4100x700, aspect ratio 5.857:1. On-site sizes: header 110x19 desktop, 95x16 mobile; footer 140x24.",
+   "notes": "Other verified logo rasters:\n- BLACK wordmark: https://covered.ro/cdn/shop/files/covered_logo.png?width=440. 200, PNG RGBA, transparent, 4100x700 original. This URL was found by testing the filename; the theme never references it.\n- og:image https://covered.ro/cdn/shop/files/covered_logo_shopify.png?v=1631369866. 1200x628 transparent PNG, black wordmark with tagline \"it's all about your gadget\". Not suitable on dark backgrounds.\n- Favicon / avatar mark: https://covered.ro/cdn/shop/files/fav_covere.png?v=1630344557&width=128. 820x820 original, black circle with a white rounded 'C', transparent corners.\n\nThe brand name is written lowercase: 'covered'. The footer also has a giant watermark: CSS ::after content 'covered', Archivo 800, stretch 125%, letter-spacing -.045em, line-height .8, color rgba(243,243,239,.05) ≈ #0C0C0C on #000, about 270px wide at desktop."
+  },
+  "images": [
+   {
+    "url": "https://covered.ro/cdn/shop/files/off-black_final.png?v=1777186461&width=600",
+    "what": "HERO center phone: iPhone with OFF-Black skin (also Skin Lab finish 'OFF-Black' and product 'Skin iPhone - OFF-Black'). Hero order is left Samsung Titanium, center this, right Pixel leather. The fan is assembled in CSS from 3 separate images; there is no composite file.",
+    "format": "PNG-24 RGBA, transparent bg (~39% transparent pixels). Serves PNG when Accept has no webp, webp/avif otherwise.",
+    "dims": "600x900 at width=600 (original 1000x1500, 2:3). 111 KB PNG."
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/titan_73b7554c-81af-4043-9e5c-32f9fc5c942a.png?v=1729196487&width=600",
+    "what": "HERO left phone: Samsung S-Ultra with brushed Titanium skin ('Skin Samsung - Titanium', RON 89.00)",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 933x1400); 450 KB PNG, so use width=300–400 in email"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/piele.png?v=1730971401&width=600",
+    "what": "HERO right phone and the 'Orice telefon' tile: Google Pixel with black leather skin ('Skin Google Pixel - Aspect piele neagra (full grain)', RON 99.00)",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 933x1400); 412 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/ppf.png?v=1769533628&width=600",
+    "what": "SKIN LAB base phone (silver iPhone, 'Din fabrică') and the 'Protecție transparentă' tile ('Skin iPhone - Transparent (folie ppf)', RON 99.00 / 150.00)",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 1000x1500); 360 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/burgundy18.png?v=1789278719&width=600",
+    "what": "SKIN LAB finish 'OFF Burgundy' (code BG), product 'Skin iPhone - OFF Burgundy' RON 99.00 / 120.00",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 1000x1500); 193 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/titan_duo_titan_2.png?v=1760373035&width=600",
+    "what": "SKIN LAB finish 'DUO Titanium' (code TI), product 'Skin iPhone - DUO Titanium SKIN - iPhone 17 Style' RON 99.00",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 1000x1500); 268 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/glaciersimple.png?v=1789278794&width=600",
+    "what": "SKIN LAB finish 'Glacier' (code GL, icy blue), 'Skin iPhone - Glacier' RON 99.00",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 1000x1500); 283 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/forest.png?v=1769535561&width=600",
+    "what": "SKIN LAB finish 'Forest' (code FR, misty grey forest print), 'Skin iPhone - Forest' RON 99.00",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 1000x1500); 257 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/holo.png?v=1774087402&width=600",
+    "what": "SKIN LAB finish 'Holographic' (code HL, cyan-pink gradient), 'Skin iPhone - Holographic' RON 89.00",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 1000x1500); 319 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/dark.png?v=1728115103&width=600",
+    "what": "COLLECTION TILE 'Ediții Aur 22K' (12 produse, /collections/gold-skin): black marble iPhone with gold veins, tilted, on a #111113 tile with an amber glow",
+    "format": "PNG 8-bit palette + tRNS, transparent bg",
+    "dims": "600x901 (original 999x1500); 246 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/personalizat.png?v=1738358158&width=600",
+    "what": "COLLECTION TILE 'Skinul tău, designul tău' (7 produse, /collections/skin-uri-personalizate): iPhone with a couple-photo custom skin",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 1000x1500); 653 KB, so use a smaller width"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/IMG_8500.jpg?v=1753002104&width=800",
+    "what": "COLLECTION TILE 'Protecție ecran' (6 produse, /collections/folie-sticla): tempered-glass kit product photo, shown as a rounded white panel on a dark tile",
+    "format": "JPEG, opaque WHITE background (not transparent)",
+    "dims": "800x800 (original 2670x2670); 51 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/fecioaramaria.png?v=1746029887&width=600",
+    "what": "COLLECTION TILE 'Huse iPhone' (105 produse, /collections/huse-iphone): iPhone case with a Madonna & Child print and gold halo",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900 (original 933x1400); 761 KB, so use a smaller width"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/negru_mat.png?v=1728021074&width=600",
+    "what": "Bestseller card 'Skin iPhone - Negru Mat' RON 69.00 / 120.00 (−42%). On site it sits on the light radial tile #FBFBF9→#E3E3DE with padding 7% 9%.",
+    "format": "PNG palette + tRNS, transparent",
+    "dims": "600x901 (original 999x1500); 91 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/ultramatte.png?v=1791104171&width=600",
+    "what": "Bestseller 'Skin iPhone - Negru ULTRA Matte' RON 90.00 / 120.00, card badge 'NOU'",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900; 139 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/titan.png?v=1728021089&width=600",
+    "what": "Bestseller 'Skin iPhone - Titanium 3D' RON 89.00 / 120.00 ('Cel mai vândut', 4,9 (40))",
+    "format": "PNG palette + tRNS, transparent",
+    "dims": "600x901; 277 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/black_titan.png?v=1728021014&width=600",
+    "what": "Bestseller 'Skin iPhone - Black Titanium 3D' RON 89.00 / 120.00",
+    "format": "PNG palette + tRNS, transparent",
+    "dims": "600x901; 234 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/orange.png?v=1758819293&width=600",
+    "what": "Bestseller 'Skin iPhone - Cosmic Orange' RON 89.00 / 120.00",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900; 238 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/burgundy.png?v=1789278579&width=600",
+    "what": "Bestseller 'Skin iPhone - Burgundy' RON 89.00 / 120.00",
+    "format": "PNG RGBA, transparent",
+    "dims": "600x900; 226 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/files/alb_mat.png?v=1728020959&width=600",
+    "what": "Bestseller 'Skin iPhone - Alb Mat' RON 73.00 / 120.00 (white phone; needs a dark or light-grey tile, since a pure-white tile loses the edge)",
+    "format": "PNG palette + tRNS, transparent",
+    "dims": "600x901; 101 KB"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/t/49/assets/cv-anpc-sal.png?v=137105833991505165241790738309",
+    "what": "Footer ANPC 'Soluționarea alternativă a litigiilor' badge, links to https://anpc.ro/ce-este-sal/. On site: 260px wide inside a 1px rgba(.14) border with 18px radius and 4px padding.",
+    "format": "PNG RGBA (white rounded pill artwork)",
+    "dims": "500x124"
+   },
+   {
+    "url": "https://covered.ro/cdn/shop/t/49/assets/cv-anpc-sol.png?v=128576025944701948021790738309",
+    "what": "Footer 'Soluționarea online a litigiilor' badge, links to https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO",
+    "format": "PNG palette + tRNS",
+    "dims": "500x124"
+   },
+   {
+    "url": "(none) model tiles: iPhone Duo / iPhone 18 Pro Max / iPhone 18 Pro (NOU), 17 Pro Max, 17 Pro, 17 Air, 17, 16 Pro Max, 16 Pro, 16 Plus, 16",
+    "what": "The device-picker model tiles have NO images. They are pure CSS text cards: 12px radius, bg rgba(243,243,239,.035) ≈ #121213, 1px #262626 border, padding 13px 14px 12px, min-height 104px. Content: mono brand 'IPHONE' (9.5px .08em, 50%), yellow 'NOU' chip top-right, model name in Archivo 800 116% uppercase ~18–22px, mono 'VEZI SKINURI' with a → arrow. All of them link to /collections/apple-skin. Tab counts: iPhone 199, Samsung 138, Google Pixel 47, Alt telefon 47. Rebuild them as HTML in the email.",
+    "format": "n/a (HTML/CSS)",
+    "dims": "215x116 at 1440 (6 columns)"
+   }
+  ],
+  "footer": {
+   "legal": "Verbatim:\n- 'SC COVERED SRL'\n- 'CUI' 47818139\n- 'NR. REG. COM.' J20/341/2023\n- 'Str. Principală nr. 98, 335309 Strei, Hunedoara, România'\n- '© 2026 COVERED.'\n\nThe returns address in the refund policy reads: 'str. Principala nr. 98, loc. Strei, jud. Hunedoara'.\n\nFooter styling:\n- Company name: Archivo 800, 118%, 18px, uppercase.\n- ID rows: mono dt 11px .1em rgba(.6); mono dd 13px rgba(.9), right-aligned.\n- Rows separated by 1px rgba(243,243,239,.1) lines.\n- Contact icons: #F5B100 line icons.",
+   "contact": "covered.ro@gmail.com (mailto:covered.ro@gmail.com) · 0750 422 122 (tel:0750422122) · contact page https://covered.ro/pages/contact. In the homepage FAQ the labels are 'E-MAIL' and 'TELEFON', with a 'CONTACTEAZĂ-NE' button.",
+   "policies": [
+    "Termeni si conditii — https://covered.ro/pages/termeni-si-conditii",
+    "Termeni de utilizare — https://covered.ro/policies/terms-of-service",
+    "Politica de returnare — https://covered.ro/policies/refund-policy",
+    "Formular returnare — https://covered.ro/apps/eu-shield/returns/new",
+    "Politica cookie-uri — https://covered.ro/pages/politica-cookie-uri",
+    "Politica de confidentialitate — https://covered.ro/pages/politica-de-confidentialitate (Shopify version: https://covered.ro/policies/privacy-policy)",
+    "Politica de livrare — https://covered.ro/policies/shipping-policy (linked as 'Livrarea' on the PDP)",
+    "Garantie pe viata — https://covered.ro/pages/garantie-pe-viata",
+    "Instructiuni — https://covered.ro/pages/instalare",
+    "Înlocuire skin — https://covered.ro/products/inlocuire-skin",
+    "ANPC — http://www.anpc.gov.ro/",
+    "ODR — https://ec.europa.eu/consumers/odr",
+    "SOL — https://webgate.ec.europa.eu/odr/main/?event=main.home.show",
+    "ANPC SAL badge — https://anpc.ro/ce-este-sal/",
+    "SOL badge — https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
+   ],
+   "socials": [
+    "Instagram — https://www.instagram.com/covered.ro",
+    "TikTok — https://www.tiktok.com/@covered.ro",
+    "(No Facebook or YouTube. The schema.org sameAs only lists these two. Footer icons are 44px circles with a 1px rgba(243,243,239,.16) border and icon color rgba(.86).)"
+   ],
+   "other": "Footer copy, verbatim (CSS renders some of it uppercase):\n- Newsletter heading: 'Fii primul care vede drop-urile noi.'\n- Newsletter text: 'Finisaje noi și oferte, direct pe e-mail. Fără spam.'\n- Input placeholder: 'Adresa de e-mail'\n- Consent: 'Prin abonare ești de acord cu Termenii și condițiile și cu Politica de confidențialitate.'\n- Brand blurb: 'Skinuri din vinil premium, tăiate laser pe modelul tău.' with 'Din 2018 · 37.000+ clienți · 60.000+ skinuri'\n- Column heads (mono 11px .12em rgba(.55)): 'MAGAZIN', 'INFORMAȚII', 'FIRMĂ & CONTACT'\n- MAGAZIN links: SKIN-URI (/pages/categorii-produse), HUSE (/pages/huse), FOLIE ECRAN (/collections/folie-sticla), zona B2B (/pages/b2b), Instructiuni (/pages/instalare), GESTIONEAZA COMANDA\n- 'Metode de plată' icons: American Express, Apple Pay, Bancontact, Bizum, BLIK, Google Pay, Maestro, Mastercard, MobilePay, Satispay, iDEAL Wero, Union Pay, Visa\n\nPAYMENT / SHIPPING / RETURN CLAIMS, verbatim:\n- 'Plată ramburs' / 'Plătești când primești coletul. Livrare în 1–2 zile lucrătoare.'\n- 'Pregătim comanda într-o zi lucrătoare, apoi curierul o livrează în 1–2 zile lucrătoare. Costul exact al livrării îl vezi în coș, înainte să plătești.'\n- 'Plătești online cu cardul sau ramburs, la livrare. Rambursul nu e disponibil pentru produsele personalizate.'\n- 'Retur în 30 de zile' / 'Pentru produsele nefolosite, în ambalajul original.'\n- 'Da, în 30 de zile de la primire. Produsul trebuie să fie nefolosit, în starea și ambalajul în care l-ai primit. Scrie-ne la covered.ro@gmail.com ca să pornim returul. Produsele personalizate și cele folosite nu se pot returna. Detalii în politica de retur.'\n- 'Îți trimitem un skin nou, gratuit. Plătești doar transportul.' (wrong application)\n- PDP: 'TVA inclus. Livrarea se calculează la finalizarea comenzii.'\n- PDP guarantee: 'Potrivire exactă pe modelul tău' / 'Tăiat laser pentru modelul ales. Dacă aplicarea nu iese, îți trimitem un skin nou.'\n- PDP trust row: 'PLATĂ RAMBURS LA LIVRARE', 'RETUR ÎN 30 DE ZILE', 'ÎNLOCUIRE GRATUITĂ LA APLICARE GREȘITĂ', 'COMPATIBIL MAGSAFE', 'MERGE ȘI CU HUSĂ'\n\nNo free-shipping threshold is claimed anywhere.\n\nTicker items, verbatim source case: '37.000+ clienți mulțumiți', '60.000+ skinuri realizate', 'Vinil premium', 'Tăiat laser pe modelul tău', 'Plată ramburs la livrare', 'Retur în 30 de zile'.\n\nFooter bg is #000 (inverse scheme). The very bottom has the giant 'covered' watermark at 5% white."
+  },
+  "motifs": [
+   "ANNOUNCEMENT TICKER (top bar):\n- bg #000, 36px tall (padding 10px 0), border-bottom 1px rgba(243,243,239,.1) ≈ #181818.\n- Martian Mono 500, 11px, letter-spacing .1em, uppercase, color rgba(243,243,239,.8) ≈ #C2C2BF, items 56px apart.\n- Each item is preceded by a 5x5px #F5B100 square rotated 45° (a small diamond).\n- Edges fade with mask linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent).\n- Email version: one row of mono caps with a yellow '◆' (or an 8px rotated-square span) between items.",
+   "TILTED YELLOW MARQUEE BAND (section after hero):\n- Full-bleed band bg #F5B100, rotated -2deg, box-shadow 0 16px 40px -16px rgba(0,0,0,.6), padding .26em 0 .24em.\n- Two 1px rule lines at 22% ink (≈ #C18C02), inset .1em from the top and bottom edges.\n- Words: Archivo 800, stretch 125%, uppercase, -0.01em, line-height 1, 96px at desktop (54px at 600, 43px at 390).\n- Solid items are #0A0A0B. Alternate items are outlined: fill #F5B100 with -webkit-text-stroke 0.05em #0A0A0B.\n- Separator glyph: a 4-point sparkle star SVG, 0.4em, #0A0A0B, path 'M12 0c.7 6.4 5.6 11.3 12 12-6.4.7-11.3 5.6-12 12-.7-6.4-5.6-11.3-12-12 6.4-.7 11.3-5.6 12-12Z'.\n- Word sequence: 'Vinil premium' ✦ 'Tăiat laser' (outlined) ✦ 'Aplicare în 60 de secunde' ✦ 'Zero volum' (outlined) ✦ 'Retur 30 de zile'.",
+   "HERO BACKGROUND:\n- Page #0A0A0B with an 80px square grid of 1px lines rgba(243,243,239,.12) at opacity .5 (effective ≈ #181819).\n- The grid is masked to an ellipse: radial-gradient(ellipse 60% 70% at 72% 42%, #000 10%, transparent 72%); on mobile 90% 45% at 50% 62%.\n- Behind the phones sits an amber glow: 640px circle radial-gradient(closest-side, rgba(245,177,0,.24), rgba(245,177,0,.07) 55%, transparent), centered at 72%/44%.\n- Under the phones there is a floor shadow: radial rgba(0,0,0,.7), blurred 6px.\n- Phones have drop-shadow(0 2px 3px rgba(0,0,0,.5)) and drop-shadow(0 26px 28px rgba(0,0,0,.6)); side phones are rotated -9deg / +8deg.\n- In email: a dark cell with a centered radial-gradient background (Apple Mail) and a #0A0A0B fallback.",
+   "CORNER-BRACKET FRAME (around the hero phone fan):\n- Four L-shaped corners with 16px arms, 1px thick, color rgba(243,243,239,.3) ≈ #50504F.\n- Drawn with 8 background linear-gradients (left top / 16px 1px, left top / 1px 16px, …) on a box extending 2% beyond the visual top and bottom.\n- Email: a 4-cell table with border-top+border-left / border-top+border-right / etc. 1px #50504F on 16x16px corner cells.",
+   "DOTTED MONO TAG / CALLOUT ('● VINIL PREMIUM · 0,2 MM', '● TĂIAT LASER PE MODEL'):\n- Inline-flex, padding 6px 9px, 1px border rgba(243,243,239,.16) ≈ #2F2F2F, radius 4px, bg rgba(10,10,11,.7) with backdrop blur 8px.\n- Martian Mono 500, 10px, .08em, uppercase, #F3F3EF.\n- Leading 6px #F5B100 dot with a 3px 22%-amber ring, 8px gap.\n- Placed straddling the top-left corner of the frame (translateY -50%), and the bottom-right corner.\n- The same dot + mono pattern is the section EYEBROW: 7px dot with a 3px rgba(245,177,0,.2) ring, then 11px mono .1em caps at 62% white. Eyebrows used: 'SKIN LAB', 'COVERED ÎN CIFRE', 'COLECȚII', 'COMPARAȚIE ONESTĂ', 'SKINURI IPHONE', 'TĂIAT PE MODELUL TĂU', 'SUPORT', 'DIN 2018'.",
+   "SECTION INDEX NUMBERS:\n- Two-digit mono indices '01'–'04', Martian Mono 10px, 500, .08em, tabular, at 50% white (≈ #7F7F7D).\n- STATS: each index is followed by a 1px horizontal meter line filled solid #F5B100 to the cell's right edge, then a huge number in Archivo 800 118% (~76px, line-height .9, -0.02em) with a half-size yellow '+' superscript, a mono 10.5px .08em caps label, and a 14px muted note.\n- Stat cells are separated by 1px rgba(.14) lines, with tiny 9px '+' crosshair marks at the grid intersections (rgba(.5)).\n- USP row: index sits top-right at 36% (#5E5E5D).\n- Skin Lab steps: '01' 12px mono, muted; the active step index is #F5B100. Steps are separated by 1px #262626 rules.",
+   "PRODUCT CARD (dark sections):\n- Outer: padding 6px, bg rgba(243,243,239,.035) ≈ #121213, 1px border rgba(.09) ≈ #1F1F20, radius 18px.\n- Image well: radius 12px, bg radial-gradient(120% 85% at 50% 6%, #FBFBF9 0%, #EFEFEB 56%, #E3E3DE 100%), image padding 7% 9%, object-fit contain, aspect ~3:4. The cutout phone sits on a light warm-grey tile, a deliberate contrast against the black page.\n- Info: padding 14px 8px 6px. Title is Archivo 600 14.5px. Price row: yellow mono sale price + grey struck compare, with the mono rating '★ 4,8 (26)' at right.\n- Hover: border rgba(.3), lift -4px.",
+   "BADGES:\n- (a) Card sale '-42%': pill radius 100px, bg #F5B100, text #0A0A0B, Martian Mono 600 10px, .06em, uppercase, tabular, padding 5.5px 8px 5px, top-left at 10px/10px. Uses an ASCII hyphen.\n- (b) Card '★ CEL MAI VÂNDUT': same pill, bg #0A0A0B, text #F5B100, with a 0.9em star icon.\n- (c) Card 'NOU': white #FFF pill, #0A0A0B text, inset 1px rgba(10,10,11,.14) ring, leading 0.6em #F5B100 dot.\n- (d) Model-tile 'NOU': square-ish chip, radius 4px, bg #F5B100, #0A0A0B, mono 600 9px .06em, padding 3px 6px.\n- (e) PDP 'ECONOMISEȘTI 42%': radius 4px, #F5B100/#0A0A0B, mono 600 10.5px .08em, padding 6px 8px 5px.\n- Theme root badge colors: sale #F5B100/#0A0A0B, new #26262B/#F3F3EF, sold-out #3A3A41/#F3F3EF, hot #F3F3EF/#0A0A0B.",
+   "PRICE STYLING:\n- Dark card: 'RON 69.00' in Martian Mono 500 12.5px #F5B100, then 8px gap, then 'RON 120.00' in Martian Mono 400 11px rgba(243,243,239,.56) ≈ #8C8C8B with a 1px line-through.\n- PDP (white): 'RON 69.00' in Archivo 700 stretch 108% 30px #B83A00, 12px gap, compare 'RON 120.00' mono 14px rgba(10,10,11,.64) struck.\n- Below it: 'TVA inclus. Livrarea se calculează la finalizarea comenzii.' 12.5px at 64%.\n- Currency is always written 'RON 00.00', never 'lei'.",
+   "COLLECTION TILES (bento grid):\n- Card bg #111113, 1px border rgba(243,243,239,.1), radius 20px, padding 24px.\n- Inside: a 28px grid of 1px rgba(.06) lines masked radially (90% 80% at 75% 35%), a colored radial glow at the top-right (gold rgba(245,177,0,.28) / holo rgba(170,150,255,.26) / clear rgba(120,160,230,.24)), and a bottom scrim linear-gradient(to top, rgba(8,8,9,.82), rgba(8,8,9,.45) 32%, transparent 60%).\n- Top-left count pill ('12 PRODUSE'): mono 10px .08em, height 28px, padding 0 10px, radius 99px, 1px rgba(.16) border, bg rgba(10,10,11,.5).\n- Bottom-left: title in Archivo 800 118% caps plus a 13.5px subtitle at 72%.\n- Bottom-right: 40px circle arrow button (↗) with 1px rgba(.22) border and bg rgba(10,10,11,.4). On hover it turns #F5B100 with an ink arrow.\n- The cutout phone floats top-right, tilted.",
+   "DIVIDERS AND LINES:\n- Everything is a 1px hairline: rgba(243,243,239,.12) ≈ #262626 on #0A0A0B (section header bottom border, hero dock top border, USP column rules, FAQ rows); rgba(.14) on #111113 in stats; rgba(.1) ≈ #181818 on the black footer.\n- Text links use a 1px #F5B100 underline 4px below ('VEZI TOATE PRODUSELE →').",
+   "BUTTON PAIRS:\n- Yellow solid + ghost outline side by side, 12px gap, both 48px tall, radius 5px, Archivo 700 13px uppercase .04em, stretch 112%, with 16–18px line arrows.\n- On mobile they stack full-width.\n- Light-page CTA ('ADAUGĂ ÎN COȘ →') is solid #0A0A0B with white text, 56px tall, radius 6px.",
+   "SKIN LAB:\n- Two columns. Left: eyebrow, title 'Același iPhone. Altă identitate.' (Archivo 800 118% caps), and 4 numbered steps:\n  - 01 'Din fabrică'\n  - 02 'Tăiat laser'\n  - 03 'Aplicat în 60 de secunde'\n  - 04 'Transformare totală'\n  The active step is full opacity with a yellow index; the others are at 60%.\n- Right: a large phone render on a 32px grid (rgba(.07)) with a soft amber glow.\n- Finish chips row: 40px pill, 1px rgba(.12), bg rgba(.03), 28px round swatch thumbnail, Archivo 500 13px name, mono code at 60%. Codes: OFF Burgundy BG, OFF-Black OB, DUO Titanium TI, Glacier GL, Forest FR, Holographic HL.\n- Active chip: 1px #F5B100 border with a 10% amber fill.",
+   "STATS / CTA BIG NUMBERS:\n- The closing CTA has a 48px grid (rgba(.07)) masked radially, eyebrow '● DIN 2018', and a centered giant Archivo 800 125% caps headline. '60.000+' is filled with an animated gold gradient: linear-gradient(100deg, #F5B100, #FFD872 22%, #F5B100 38%, #E0A100 58%, #F5B100 74%, #FFE29A 88%, #F5B100), background-clip text.\n- Below it, a 1px rule and 3 stat columns split by 1px lines:\n  - '★ 4,69/5' over '1.278 DE RECENZII'\n  - '37.000+' over 'CLIENȚI'\n  - '1,7' over 'SKINURI PER CLIENT, ÎN MEDIE'\n  Values are Archivo 800 118% ~38px; labels are mono 10.5px .08em at 66%.\n- The hero proof row uses mono values instead: 22px Martian Mono 600 -0.02em, e.g. '37.000+', '60.000+', '2018', '★ 4,69/5', with labels 'CLIENȚI', 'SKINURI REALIZATE', 'PE PIAȚĂ DIN', '1.278 DE RECENZII'.",
+   "DEVICE PICKER 'see all' BAR:\n- Full-width row, radius 12px, 1px border rgba(245,177,0,.55), bg linear-gradient(100deg, rgba(245,177,0,.12), transparent 70%) over #121213.\n- Left: label 'VEZI TOATE SKINURILE IPHONE' in Archivo 800 112% 15px caps.\n- Right: mono yellow count '199' and a 40px #F5B100 circle with a dark → arrow.\n- Good template for an email 'shop all' row.",
+   "COMPARE TABLE ('Skin vs. husă'):\n- The highlighted 'SKIN COVERED' column has a #F5B100 3px top bar and a slightly lighter column bg.\n- Yellow filled check circles mark the skin's pros ('Zero (0,2 mm)', 'Neglijabilă', 'Păstrată', 'Da'); grey outlined × circles mark the cons.\n- Mono 9.5px caps notes under the headers: 'VINIL PREMIUM · 0,2 MM', 'PLASTIC SAU SILICON'.",
+   "FOOTER WATERMARK: a huge 'covered' in Archivo 800 125%, letter-spacing -.045em, line-height .8, at 5% white on #000, bleeding off the bottom edge.",
+   "GENERAL RHYTHM AND TYPE ROLES:\n- Section padding is 96–112px desktop. Page gutter is 50px at 1440 and 15px mobile. Max width is 1440.\n- Radii: buttons 5px; tags 4px; model, product and image wells 12px; cards 18–20px; pills 99px.\n- Copy voice: short Romanian sentences, display headings end with a period ('TELEFONUL.', 'RECOMANDĂ.').\n- Mono type is reserved for labels, numbers, prices and metadata. Archivo carries the wide uppercase headlines."
+  ],
+  "screenshots": [
+   "C:/Users/Media/AppData/Roaming/Claude/scratch-workspaces/bb5aa2b0-7d7f-48fc-8e93-8f8ef7110fc2/94ed9092-db09-4524-84bc-9d38b2706048/scratch-2026-10-06-420a5a/research/site-home-mobile.png (390x3000. Captured through CDP device emulation, because render.sh at 390 rendered wider than the viewport and clipped the right side)",
+   "C:/Users/Media/AppData/Roaming/Claude/scratch-workspaces/bb5aa2b0-7d7f-48fc-8e93-8f8ef7110fc2/94ed9092-db09-4524-84bc-9d38b2706048/scratch-2026-10-06-420a5a/research/site-product-desktop.png (1440x2400 via render.sh, https://covered.ro/products/skin-iphone-negru-mat)",
+   "C:/Users/Media/AppData/Roaming/Claude/scratch-workspaces/bb5aa2b0-7d7f-48fc-8e93-8f8ef7110fc2/94ed9092-db09-4524-84bc-9d38b2706048/scratch-2026-10-06-420a5a/research/site-home-desktop.png (existing, reviewed)",
+   "C:/Users/Media/AppData/Roaming/Claude/scratch-workspaces/bb5aa2b0-7d7f-48fc-8e93-8f8ef7110fc2/94ed9092-db09-4524-84bc-9d38b2706048/scratch-2026-10-06-420a5a/research/shots/ (per-section 1440 captures: d-1 ticker, d-2 header, d-3 hero, d-4 marquee, d-5 device picker, d-6 bestsellers, d-7 stats, d-8 collection tiles, d-9 compare, d-10 USP, d-11 CTA, d-12 footer, skinlab.png; p-1 PDP info column, p-2 offer block close-up, p-3 PDP price)",
+   "C:/Users/Media/AppData/Roaming/Claude/scratch-workspaces/bb5aa2b0-7d7f-48fc-8e93-8f8ef7110fc2/94ed9092-db09-4524-84bc-9d38b2706048/scratch-2026-10-06-420a5a/research/sheet.png and sheet2.png (contact sheets of all render PNGs on dark, plus logo variants, og image, favicon and ANPC badges)",
+   "Supporting data: research/css/ (raw theme CSS), research/cssp/ (pretty-printed), research/fonts/ (cv-mono-latin.woff2, cv-archivo-latin.woff2), research/img/ (downloaded originals), research/sec/ (homepage HTML split per section), research/cdp.js and research/shots.js (CDP helpers for computed styles and element screenshots)"
+  ]
+ },
+ "offer_and_voice": {
+  "offer": {
+   "headline_verbatim": "−30% la 2 skinuri   (the first character is the real minus sign U+2212, not a hyphen. On the collection tile it is split into \"−30%\" and \"la 2 skinuri\", with the eyebrow \"Ofertă pachet\".)",
+   "subtext_verbatim": "Combină oricare 2 skinuri, pentru orice telefon. Reducerea se aplică automat în coș.   | On product pages the price line next to it says, for example, \"RON 48.30 / buc. când iei 2\" (it changes with the product's price). | The bundle selector under the add-to-cart button reads \"OFERTA\" · \"1 SKIN\" \"RON 69.00 / buc\" \"RON 69.00\" · badge \"BEST PRICE\" · \"2 SKIN-uri\" + pill \"REDUCERE 30%\" \"RON 48.30 / buc\" with \"RON 138.00\" struck through and \"RON 96.60\".",
+   "mechanics": "This is an automatic Shopify discount with no code. It is a 30% line-item discount (value_type percentage, value 30.0, allocation_method each, target_type line_item, target_selection entitled). It applies once the cart holds 2 or more units of eligible phone skins, and the units can be different products, brands or phone models, or 2 of the same skin. Once that minimum is met, every eligible skin line gets 30% off, so a third or fourth skin is also 30% off. It is not a buy-2-get-1 deal. The 30% is taken from the current sale price, not from the struck-through compare-at price. Huse, folie (sticlă/hydrogel) and the EXTRAOPTIUNI/ACCESORII add-on products are neither discounted nor counted toward the 2. Eligible: iPhone, Samsung, Google Pixel, SKIN ORICE TELEFON, GOLD/Rafinat cu Aur 22K, Personalizat and Transparent (PPF) skins. The cart shows it as an English label on each line, \"Bundle: SKINuri (2+ items)\". cart_level_discount_applications is empty and discount_codes is empty. The bundle selector is the Advanced Product Options app (oa-vbundle widget, apo-dashboard.emergent.host). The product-page offer card and the collection tile are custom theme blocks (cv-offer) in the Sleek 2.3.0 theme. The site shows money as \"RON 69.00\" (money format \"RON {{amount}}\", period as the decimal separator), not \"lei\". Lowercase \"lei\" does not appear in prices; only the country selector (\"România (RON Lei)\") and the collection price filter label show \"Lei\".",
+   "cart_tests": [
+    "Method: anonymous cart through fetch with a cookie handler. Each test ran POST /cart/clear.js, then POST /cart/add.js, then GET /cart.js. There was no checkout and no form submit, and the cart was cleared at the end (a final /cart.js check showed item_count 0).",
+    "Control, 1 skin (iPhone Negru Mat 69.00): original 69.00, discount 0.00, total 69.00. No discount with a single skin.",
+    "(a) 2 iPhone skins, Negru Mat 69.00 + OFF-Black 99.00: original_total_price 168.00, total_discount 50.40, total_price 117.60. Line allocations: 20.70 + 29.70, each titled \"Bundle: SKINuri (2+ items)\", value 30.0 percentage, allocation each. cart_level_discount_applications [].",
+    "(f) Same skin x2, Negru Mat qty 2: 138.00 → discount 41.40 → 96.60 (48.30/buc). Matches the product-page widget \"RON 138.00 → RON 96.60\".",
+    "(b) iPhone + Samsung, Negru Mat iPhone 69.00 + Samsung Burgundy 89.00: 158.00 → discount 47.40 (20.70 + 26.70) → 110.60.",
+    "(j) 2 Samsung skins, Negru Mat 69 + Glacier 89: 158.00 → 47.40 → 110.60.",
+    "(e3) Pixel + iPhone, Pixel Negru Mat 69 + iPhone Negru Mat 69: 138.00 → 41.40 → 96.60.",
+    "(c1) Skin + husă, Negru Mat 69 + Husa iPhone MARBLE 80: 149.00, discount 0.00, total 149.00. A husă does not count toward the bundle.",
+    "(c2) Skin + folie, Negru Mat 69 + THE KIT 2.0 folie de sticlă 79: 148.00, discount 0.00. Folie does not count.",
+    "(c3) Skin + Folie Hydrogel 65: 134.00, discount 0.00.",
+    "(h) 2 huse, MARBLE 80 + MARBLE GOLD LINES 80: 160.00, discount 0.00. There is no bundle for huse.",
+    "(i) 2 skins + 1 husă, Negru Mat 69 + Samsung Burgundy 89 + Husa Samsung PERSONALIZATA 85: original 243.00, discount 47.40 (skins only), total 195.60. The husă stays at full 85.00.",
+    "(d) 3 skins, Negru Mat 69 + Alb Mat 73 + Samsung Burgundy 89: 231.00 → discount 69.30 (20.70 + 21.90 + 26.70) → 161.70. All three get 30%.",
+    "(e1) GOLD + regular, Skin iPhone Dark Rafinat cu Aur 22K 120.00 + Negru Mat 69: 189.00 → 56.70 (36.00 + 20.70) → 132.30. GOLD is included.",
+    "(e2) Personalizat + regular, Skin iPhone PERSONALIZAT 99 + Negru Mat 69: 168.00 → 50.40 → 117.60. Included.",
+    "(e4) Skin ORICE TELEFON Personalizat 110 + Negru Mat 69: 179.00 → 53.70 (33.00 + 20.70) → 125.30. Included.",
+    "(g) Transparent PPF 99 + Negru Mat 69: 168.00 → 50.40 → 117.60. Included.",
+    "(k) 1 skin + add-on \"EXTRAOPTIUNI: SKIN ULTRA-PREMIUM\" 25: 94.00, discount 0. Add-ons do not count toward the 2.",
+    "(l) 2 skins + that add-on, 69 + 73 + 25: 167.00 → discount 42.60 (skins only) → 124.40.",
+    "Cart page rendered in a throwaway headless profile with 2 skins: each line shows the struck price and new price (for example ~~RON 89.00~~ RON 62.30) and a yellow pill \"Bundle: SKINuri (2+ items)\". TOTAL ESTIMAT RON 110.60. The summary says \"TVA inclus. Livrarea și reducerile se calculează la finalizarea comenzii.\" with the lines \"Plată ramburs la livrare\" and \"Livrare în 1–2 zile lucrătoare\". Screenshot: research/offer/cart-2skins.png.",
+    "Shipping rates at the same time for a 2-skin and a 4-skin cart (generic Bucharest postcode, no personal data): \"GLS (livrare la adresa) - RAMBURS\" 20.00, \"GLS (livrare la adresa) - CARD\" 5.00, \"Livrare in EasyBox - RAMBURS\" 16.00. No free-shipping threshold was reached even at 193.20 RON.",
+    "Not tested: whether the discount combines with a manual discount code (no code was available). MacBook and Xbox skins also could not be tested: those collections return 0 products in the public storefront JSON."
+   ],
+   "discount_title_in_cart": "Bundle: SKINuri (2+ items)",
+   "end_date_or_code": "No end date, countdown or code found. The discount applies automatically with no code. The only time-based message on the site is the delivery estimate (\"Livrare estimată: joi, 8 oct. – vineri, 9 oct.\", with an optional \"Comandă până la HH:MM ca să intre în procesare azi\"), and it is not tied to the offer. An older, inactive campaign is still visible: the collection \"Black Friday – Skinuri\" (558 products), described as \"Toate skinurile pentru telefon incluse în oferta Black Friday 1+1.\", and products tagged \"BlackFriday\".",
+   "exclusions": "Excluded, verified in the cart: huse (iPhone and Samsung, including personalised huse), folie de sticlă (THE KIT 2.0), Folie Hydrogel, and the add-on products (EXTRAOPTIUNI: …, ACCESORII: …). They get no discount and do not count toward the 2-skin minimum. The offer card does not appear on husă or folie product pages. Included, verified: iPhone, Samsung, Google Pixel, SKIN ORICE TELEFON, GOLD/Rafinat cu Aur 22K (Ediție specială), Personalizat (iPhone and ORICE TELEFON) and Transparent PPF skins, mixed across brands. Caveats: the FAQ says \"Rambursul nu e disponibil pentru produsele personalizate.\" and personalised products cannot be returned. The refund policy also says \"Din păcate, nu putem accepta retururi ale articolelor la reducere sau cardurilor cadou.\", which conflicts with the \"Retur în 30 de zile\" message if it is applied to discounted skins. MacBook and Xbox skins are not publicly listed, so they are untested.",
+   "stacks_with_sale_price": "Yes. The 30% is calculated on the already-reduced sale price, not on the compare-at price. Example: Skin iPhone - Negru Mat lists at 120.00 (struck), sells at 69.00 (−42%, badge \"Economisești 42%\") and becomes 48.30 in a bundle, which is 59.75% below the struck price. The product page itself advertises \"RON 48.30 / buc. când iei 2\" (= 69.00 × 0.7).",
+   "where_seen": [
+    "Every phone-skin product page (iPhone, Samsung, Pixel, GOLD, Personalizat, Transparent) has a custom-liquid offer card under the price: a % icon in a yellow circle, the title \"−30% la 2 skinuri\", the price line \"RON {0.7×price} / buc. când iei 2\" (for example RON 48.30 for Negru Mat, RON 62.30 for Samsung Burgundy, RON 84.00 for GOLD, RON 69.30 for Personalizat and Transparent), and the text \"Combină oricare 2 skinuri, pentru orice telefon. Reducerea se aplică automat în coș.\" The card is pale yellow with a yellow border on the white product page.",
+    "Product page, under \"Adaugă în coș\": the Advanced Product Options bundle selector. Heading \"OFERTA\", radio options \"1 SKIN\" (RON 69.00 / buc, RON 69.00) and \"2 SKIN-uri\" with a black pill \"REDUCERE 30%\" and a yellow badge \"BEST PRICE\" (RON 48.30 / buc, ~~RON 138.00~~ RON 96.60).",
+    "Collection grids for iPhone, Samsung, Google Pixel, GOLD and Orice telefon (not Personalizate, not Huse): an inline promo tile in the 5th grid slot. Solid #F5B100 yellow, mono eyebrow \"◆ OFERTĂ PACHET\" (source text \"Ofertă pachet\"), a huge \"−30%\", then \"LA 2 SKINURI\" (source \"la 2 skinuri\"), a ruler-tick divider, and the subtext. Screenshot: research/offer/coll-apple.png.",
+    "Cart page and cart drawer: a yellow pill \"Bundle: SKINuri (2+ items)\" on each discounted line, with the old price struck through. There is no upsell or progress message such as 'add one more skin'.",
+    "NOT present: the announcement marquee (it only carries trust points), the homepage, the empty cart drawer, the newsletter footer, any popup (none found), and husă or folie product pages."
+   ],
+   "worked_example": "Real prices from 2026-10-06, verified in /cart.js: Skin iPhone - Negru Mat RON 69.00 (compare 120.00) + Skin Samsung - Burgundy RON 89.00 (compare 120.00). Subtotal 158.00, discount −47.40 (20.70 + 26.70, 30% each), total RON 110.60, plus shipping (GLS ramburs 20.00 / GLS card 5.00 / EasyBox 16.00). Against the struck prices (240.00) the customer pays 129.40 less (−54%). Two of the same skin (Negru Mat x2): 138.00 → 96.60, which is RON 48.30/buc. Three skins (69 + 73 + 89 = 231.00) → 161.70 (−69.30). GOLD 22K 120.00 + Negru Mat 69.00 = 189.00 → 132.30 (−56.70). Formula: pay = 0.7 × sum of the sale prices of all skins, once there are 2 or more skins in the cart."
+  },
+  "voice": {
+   "headlines": [
+    "HERO eyebrow (mono, yellow dot): \"Skinuri pentru iPhone, Samsung și Pixel\"",
+    "HERO H1 (2 lines, second line outlined): \"Îmbracă-ți\" / \"telefonul.\"",
+    "HERO sub: \"Skinuri din vinil premium, tăiate laser pe forma exactă a telefonului tău. Zero volum, stil maxim.\"",
+    "HERO floating tags: \"Vinil premium · 0,2 mm\" · \"Tăiat laser pe model\"",
+    "HERO search: \"Caută un skin după telefon sau finisaj\"; chips label \"Alege rapid\" (iPhone 17 Pro Max · iPhone 17 Pro · Samsung S25 Ultra · Google Pixel · Alt telefon)",
+    "STATS strip: \"Clienți 37.000+\" · \"Skinuri realizate 60.000+\" · \"Pe piață din 2018\" · \"1.278 de recenzii 4,69 /5\"",
+    "Ticker (2nd strip): \"Vinil premium · Tăiat laser · Aplicare în 60 de secunde · Zero volum · Retur 30 de zile\"",
+    "Announcement marquee (rendered uppercase, ◆ separators): \"37.000+ clienți mulțumiți\" ◆ \"60.000+ skinuri realizate\" ◆ \"Vinil premium\" ◆ \"Tăiat laser pe modelul tău\" ◆ \"Plată ramburs la livrare\" ◆ \"Retur în 30 de zile\"",
+    "Model finder: eyebrow \"Tăiat pe modelul tău\", H2 \"Alege-ți telefonul\", sub \"Fiecare skin e tăiat laser pe forma exactă a modelului tău.\"; empty state \"Nu găsim modelul?\" / \"Modelul exact îl alegi pe pagina skinului.\"; \"Alege designul, apoi scrie modelul exact pe pagina skinului.\"",
+    "Skin Lab: eyebrow \"Skin Lab\", H2 \"Același iPhone. Altă identitate.\"",
+    "Best sellers: eyebrow \"Skinuri iPhone\", H2 \"Cele mai vândute\"",
+    "Stats: eyebrow \"covered în cifre\", H2 \"Cifrele care ne recomandă.\", intro \"Din 2018 facem un singur lucru: skinuri care arată impecabil pe telefonul tău. Iată cum arată asta în cifre.\"",
+    "Collections: eyebrow \"Colecții\", H2 \"Mai mult decât negru mat\", intro \"Ediții rafinate cu aur, skinuri cu designul tău, protecție transparentă și tot ce mai trebuie telefonului tău.\"",
+    "Comparison: eyebrow \"Comparație onestă\", H2 \"Skin vs. husă\"",
+    "Reviews: \"Ce spun clienții\"",
+    "USPs: eyebrow/H2 \"De ce covered\"",
+    "FAQ: eyebrow \"Suport\", H2 \"Întrebări frecvente\", intro \"Nu găsești răspunsul? Scrie-ne și te ajutăm să alegi skinul potrivit.\"",
+    "Closing CTA: eyebrow \"Din 2018\", H2 \"60.000+ skinuri realizate. Al tău urmează.\" (with \"60.000+\" in the yellow signal colour), sub \"Alege modelul, alege finisajul. Restul durează 60 de secunde.\"",
+    "Newsletter: H3 \"Fii primul care vede drop-urile noi.\", sub \"Finisaje noi și oferte, direct pe e-mail. Fără spam.\", placeholder \"Adresa de e-mail\", button aria \"Abonează-te\"",
+    "Footer tagline: \"Skinuri din vinil premium, tăiate laser pe modelul tău.\" / \"Din 2018 · 37.000+ clienți · 60.000+ skinuri\"",
+    "Product page: eyebrow \"Vinil premium · Tăiat laser\"; badge \"Economisești 42%\"; install block eyebrow \"Instalare\", H2 \"Cum se aplică\", sub \"Trei pași, un minut, fără bule.\"",
+    "Cart: H1 \"Coșul tău\"; recommendations eyebrow \"Cele mai vândute\", H2 \"Îți mai recomandăm\"; empty \"Coșul tău e gol.\" / \"Începe cu telefonul tău:\"",
+    "Collection header pattern: breadcrumb \"Acasă / Skinuri / iPhone\", H1 \"iPhone Skin\", meta \"199 de skinuri\" + \"Vinil premium · Tăiat laser · Plată ramburs\" (Personalizate uses \"Designul tău\" in place of \"Plată ramburs\"); filter chips \"iPhone 199 · Samsung 138 · Google Pixel 47 · Orice telefon 47 · Aur 22K 12 · Transparent 3 · Personalizate 7\"",
+    "Offer: \"−30% la 2 skinuri\" / tile eyebrow \"Ofertă pachet\" / \"Un singur finisaj e rareori de ajuns.\" (stats note, a natural bridge to the 2-skin offer)"
+   ],
+   "ctas": [
+    "Alege-ți telefonul (primary yellow, with a down arrow)",
+    "Vezi cele mai vândute (secondary outline → /collections/toate-produsele)",
+    "Vezi skinuri (model tiles)",
+    "Vezi toate skinurile iPhone / Vezi toate skinurile Samsung / Vezi toate skinurile Pixel",
+    "Vezi skinurile pentru orice telefon / Vezi skinul pentru orice telefon",
+    "Arată încă 17 modele",
+    "Alege-ți skinul",
+    "Vezi skinul OFF Burgundy (Skin Lab, changes with the finish)",
+    "Vezi toate",
+    "Vezi toate produsele",
+    "Vezi husele",
+    "Vezi toate skinurile",
+    "Contactează-ne",
+    "Adaugă în coș",
+    "Vezi garanția",
+    "Vezi instrucțiunile de aplicare",
+    "Vezi coșul",
+    "Finalizează comanda",
+    "Aplică (discount code)",
+    "Pune o întrebare / Trimite întrebarea",
+    "Abonează-te"
+   ],
+   "explanations": [
+    "MATERIAL: \"Vinil premium · 0,2 mm\" | \"Vinil premium — Doar 0,2 mm grosime. Zero volum adăugat.\" | \"Material: vinil premium, 0,2 mm\" | Product page \"Material & grosime\": \"Vinil premium, tăiat cu precizie laser pe forma exactă a modelului tău.\" • \"Grosime 0,2 mm, zero volum adăugat\" • \"Aplicare fără bule\" • \"Se îndepărtează fără urme sau reziduuri\"",
+    "LASER CUT: \"Tăiat laser pe modelul tău — Decupaje exacte pentru camere și butoane.\" | Skin Lab 02 \"Tăiat laser — Conturul și decupajele pentru camere sunt tăiate laser, pe forma exactă a modelului tău.\" (readout \"Decupaj: laser, contur complet\") | \"Fiecare tăiat laser pe forma exactă a telefonului.\"",
+    "APPLICATION 60s: \"Aplicare în 60 de secunde — Fără bule. Șervețel de curățare inclus.\" | Skin Lab 03 \"Aplicat în 60 de secunde — Vinilul premium de 0,2 mm se aplică ușor, nu lasă urme și nu adaugă volum telefonului.\" | Steps: \"01 Șervețel inclus — Curăță — Șterge spatele telefonului cu șervețelul inclus.\" \"02 Port & difuzoare — Aliniază — Aliniază skinul începând din partea de jos, din zona portului de încărcare și a difuzoarelor.\" \"03 Total 60 s — Presează — Apasă ferm de la centru spre margini. Gata în 60 de secunde.\"",
+    "REMOVAL: \"Se poate scoate fără urme? Da. Skinul se dezlipește curat, fără reziduuri de adeziv pe telefon.\" | comparison row \"Se îndepărtează fără urme — Da, fără reziduuri\"",
+    "TRANSFORMATION: Skin Lab 01 \"Din fabrică — Silver, exact cum a ieșit din cutie. Arată bine, dar arată ca alte milioane de telefoane.\" | 04 \"Transformare totală — Negru, burgundy, titanium, holografic și multe altele. Îți schimbi stilul, nu telefonul.\" | finishes OFF Burgundy (BG), OFF-Black (OB), DUO Titanium (TI), Glacier (GL), Forest (FR), Holographic (HL)",
+    "SKIN VS HUSĂ intro: \"Husa te apără la căderi. Skinul păstrează telefonul subțire, cu forma lui originală, și îi schimbă complet aspectul. Dacă vrei și protecție la căderi, poți pune o husă peste skin.\"",
+    "SKIN VS HUSĂ table (Criteriu | Skin covered | Husă clasică): Material: Vinil premium · 0,2 mm | Plastic sau silicon; Volum adăugat: Zero (0,2 mm) | Vizibil; Greutate adăugată: Neglijabilă | Se simte în mână; Forma originală a telefonului: Păstrată | Ascunsă; Aplicare: 60 de secunde | Instant; Protecție la zgârieturi: Da | Da; Protecție la căderi: Nu. Pentru asta există huse. | Da; Se îndepărtează fără urme: Da, fără reziduuri | Nu e cazul. Footnote: \"Comparație orientativă. Grosimea și greutatea unei huse diferă de la model la model.\"",
+    "GUARANTEE (product page): \"Potrivire exactă pe modelul tău — Tăiat laser pentru modelul ales. Dacă aplicarea nu iese, îți trimitem un skin nou.\" | \"Gata în 60 de secunde. Dacă aplicarea nu iese, îți trimitem gratuit un skin nou, plătești doar transportul.\" | product-page trust chips \"Plată ramburs la livrare\" · \"Retur în 30 de zile\" · \"Înlocuire gratuită la aplicare greșită\" · \"Compatibil MagSafe\" · \"Merge și cu husă\"",
+    "STATS copy: \"37.000+ clienți mulțumiți — Din 2018 până azi.\" | \"60.000+ skinuri realizate — Fiecare tăiat laser pe forma exactă a telefonului.\" | \"2018 anul în care am început — De atunci îmbrăcăm telefoane.\" | \"1,7 skinuri comandate, în medie, de fiecare client — Un singur finisaj e rareori de ajuns.\"",
+    "COLLECTION/MODEL cards: badges \"-42%\" (yellow), \"★ Cel mai vândut\", \"● Nou\"; mono index numbers \"01\", \"02\"…; ratings \"★ 4,8 (26)\"",
+    "REVIEWS phrasing: site's own copy \"1.278 de recenzii\" + \"4,69 /5\"; product page \"4,81 · 26 de recenzii\"; the Judge.me widget shows \"4.69 ★ ( 1,278 )\" in English number format, plus \"Verificat\" and \"Pe baza a {{n}} recenzie/recenzii\". For email use the Romanian format: 1.278 de recenzii, 4,69/5.",
+    "DELIVERY widget: \"Livrare în 1–2 zile lucrătoare, plus o zi pentru procesare\" → \"Livrare estimată: joi, 8 oct. – vineri, 9 oct.\""
+   ],
+   "faq": [
+    {
+     "q": "Cât durează livrarea?",
+     "a": "Pregătim comanda într-o zi lucrătoare, apoi curierul o livrează în 1–2 zile lucrătoare. Costul exact al livrării îl vezi în coș, înainte să plătești."
+    },
+    {
+     "q": "Cum aplic skinul?",
+     "a": "Curăță spatele telefonului cu șervețelul din pachet, aliniază skinul începând din partea de jos, din zona portului de încărcare și a difuzoarelor, apoi apasă-l de la centru spre margini. Durează cam 60 de secunde. Pașii detaliați îi găsești în instrucțiunile de aplicare."
+    },
+    {
+     "q": "Ce fac dacă l-am aplicat greșit?",
+     "a": "Îți trimitem un skin nou, gratuit. Plătești doar transportul. Cere înlocuirea din pagina de înlocuire."
+    },
+    {
+     "q": "Se poate scoate fără urme?",
+     "a": "Da. Skinul se dezlipește curat, fără reziduuri de adeziv pe telefon."
+    },
+    {
+     "q": "Pot folosi și husă peste skin?",
+     "a": "Da. Skinul are doar 0,2 mm și nu adaugă volum telefonului, iar peste el poți pune o husă când vrei și protecție la căderi."
+    },
+    {
+     "q": "Ce metode de plată acceptați?",
+     "a": "Plătești online cu cardul sau ramburs, la livrare. Rambursul nu e disponibil pentru produsele personalizate."
+    },
+    {
+     "q": "Pot returna produsul?",
+     "a": "Da, în 30 de zile de la primire. Produsul trebuie să fie nefolosit, în starea și ambalajul în care l-ai primit. Scrie-ne la covered.ro@gmail.com ca să pornim returul. Produsele personalizate și cele folosite nu se pot returna. Detalii în politica de retur."
+    }
+   ],
+   "product_boilerplate": [
+    "The same body_html is shared by all skins checked (iPhone Negru Mat, Samsung Burgundy, GOLD Dark 22K, iPhone Personalizat; Transparent differs only in \"de la 3M\" and a leading \"VEZI AICI intructiunile de aplicare\"). This is older, jokier copy than the redesigned theme. The raw HTML contains stray <meta charset> tags that break words (\"c ă\", \"fabric ă\"), so clean them if you copy from source:",
+    "\"Protecție premium pentru un design impecabil\" — \"Nu orice protecție e demnă de telefonul tău. Dacă vrei să te mulțumești cu jumătăți de măsură, există alternative. Dar dacă ești genul care cere totul - protecție, stil și precizie - atunci bine ai venit la nivelul superior.\"",
+    "Pull-quote: \"De ce să te mulțumești cu puțin, când poți avea totul?\"",
+    "\"Materiale legendare\" — \"Folosim doar cele mai bune materiale de la 3M și Oraguard. Dacă nu știi deja ce sunt, nu-ți face griji - noi știm, și le folosim pentru a-ți proteja telefonul așa cum trebuie.\" + \"Unii ar spune că sunt exact aceleași materiale pe care le-ar folosi un laborator secret NASA pentru a-și proteja tehnologia.\"",
+    "\"Potrivire perfectă\" — \"Tăiate cu o precizie mai bună decât un ceas elvețian, skin-urile noastre se mulează pe telefonul tău de zici că au fost create in aceași fabrică.\"",
+    "\"Urme? Nu aici!\" — \"Crima perfectă este cea fără urme. Spre deosebire de alții, noi garantăm că adezivul nostru nu lasă urme. Serios, chiar nu avem timp să ne jucăm cu astfel de probleme.\"",
+    "\"Zero compromisuri pe grosime\" — \"O grosime mai mică decât grosimea a două fire de păr. Pentru că știm că ai ales un telefon subțire cu un motiv.\"",
+    "\"Instalare rapidă\" — \"În mai puțin de 10 minute ești gata. Dacă îți ia mai mult, probabil n-ai nevoie de instrucțiuni, ci de un nou hobby.\" (NOTE: this conflicts with the new \"60 de secunde\" claim, so do not reuse it.)",
+    "\"Protecție completă\" — \"De la zgârieturi și raze UV până la amprente – telefonul tău e acoperit. La propriu și la figurat.\"",
+    "\"Alege calitatea fără compromisuri\" — \"Fiecare detaliu al skin-urilor noastre este gândit pentru a-ți oferi o experiență superioară, atât în ceea ce privește protecția, cât și estetica. Alege dintre o varietate de texturi și culori premium și oferă-i telefonului tău un strat de protecție care îmbină perfect funcționalitatea cu stilul.\"",
+    "Theme product-page accordions (new voice): \"Material & grosime\" (see explanations); \"Cum se aplică\": \"1. Curăță spatele telefonului cu șervețelul inclus. 2. Aliniază skinul începând din partea de jos, din zona portului de încărcare și a difuzoarelor. 3. Apasă ferm de la centru spre margini. Gata în 60 de secunde. Dacă aplicarea nu iese, îți trimitem gratuit un skin nou, plătești doar transportul.\"; \"Livrare & retur\": \"Livrare în 1–2 zile lucrătoare, plus o zi pentru procesarea comenzii. Poți plăti ramburs, la primirea coletului, sau online, cu cardul. Retur în 30 de zile, conform politicii de retur.\" + link \"Detalii despre garanția pe viață\"",
+    "What's included. There is no \"Ce primești\" heading; the site uses \"Ce găsești în cutie\": \"Skin tăiat laser\" · \"Șervețel de curățare\"",
+    "Product page options (Advanced Product Options): \"MODEL IPHONE *\" — \"Alege modelul de telefon pentru care doresti skin-ul\" (for example \"iPhone DUO (+RON 15.00)\"); \"EXTRAOPTIUNI\" — \"Extraoptiuni disponibile pentru skin-ul ales.\": SKIN ULTRA-PREMIUM +RON 25.00 · SKIN CU LATERALE SEPARATE +RON 5.00 · SKIN FARA LOGO APPLE · SKIN ACOPERIRE FULL, fara spatiu la camera +RON 10.00; \"ACCESORII\" — \"Verifică selecțiile, apoi apasă pe „Adaugă în coș”. Ne vedem la finalizarea comenzii.\": Mystery GIFT 40 RON (\"O investitie buna, poti sa primesti: folie de ecran, skin sau chiar o husa.\"), Folie ECRAN CLEAR - Hydrogel 40 RON, Folie ECRAN PRIVACY - Hydrogel 65 RON",
+    "Product naming pattern: \"Skin iPhone - Negru Mat\", \"Skin Samsung - Burgundy\", \"Skin iPhone Dark - Rafinat cu Aur 22K - EDITIE SPECIALA\", \"Skin iPhone - Transparent (folie ppf)\", \"Skin ORICE TELEFON - Personalizat\""
+   ],
+   "shipping_payment_returns": [
+    "USP: \"Plată ramburs — Plătești când primești coletul. Livrare în 1–2 zile lucrătoare.\"",
+    "USP: \"Retur în 30 de zile — Pentru produsele nefolosite, în ambalajul original.\"",
+    "Marquee / chips: \"Plată ramburs la livrare\" · \"Retur în 30 de zile\" · \"Înlocuire gratuită la aplicare greșită\"",
+    "Product page delivery: \"Livrare în 1–2 zile lucrătoare, plus o zi pentru procesare\" / \"Livrare estimată: joi, 8 oct. – vineri, 9 oct.\" (optional note \"Comandă până la {ora} ca să intre în procesare azi\")",
+    "Product page / cart tax line: \"TVA inclus. Livrarea se calculează la finalizarea comenzii.\" / cart: \"TVA inclus. Livrarea și reducerile se calculează la finalizarea comenzii.\" / cart trust lines \"Plată ramburs la livrare\", \"Livrare în 1–2 zile lucrătoare\"",
+    "Payment (FAQ): \"Plătești online cu cardul sau ramburs, la livrare. Rambursul nu e disponibil pentru produsele personalizate.\"",
+    "Actual shipping rates (2026-10-06, live cart): GLS (livrare la adresa) - RAMBURS 20,00 RON; GLS (livrare la adresa) - CARD 5,00 RON; Livrare in EasyBox - RAMBURS 16,00 RON (description \"plata cu cardul la locker\"). No free-shipping threshold found.",
+    "Replacement product \"INLOCUIRE SKIN\" (0 RON): \"Ai achizitionat un skin si l-ai aplicat gresit? Nicio problema…\"; free replacement within 30 days of purchase; customer pays only shipping; one replacement per order; same model and same product; \"NU se inlocuiesc skinurile gratuite.\"",
+    "Refund policy (formal Shopify template): \"Avem o politică de retur de 30 de zile, ceea ce înseamnă că ai la dispoziție 30 de zile de la primirea articolului pentru a solicita returul.\" Returns are started by email at covered.ro@gmail.com and sent to Str. Principală nr. 98, Strei, Hunedoara. Refunds go to the original payment method within at most 10 business days.",
+    "NOTE (inconsistencies to avoid in email): the shipping policy says \"Perioada de livrare este de 1-3 zile lucratoare, la care se adauga si durata de procesare a comenzii de 1 zi lucratoare.\" while the site says 1–2. The refund policy says \"Din păcate, nu putem accepta retururi ale articolelor la reducere sau cardurilor cadou.\" (every skin is technically on sale). The old /pages/garantie-pe-viata page talks about a \"garantie pe viata\" with fees of \"10 LEI\" handling and \"22 LEI\" transport, plus a \"sticluta de solutie\", which is outdated. Safest claims are those on the homepage and product pages: Plată ramburs, Livrare în 1–2 zile lucrătoare, Retur în 30 de zile pentru produsele nefolosite, Înlocuire gratuită la aplicare greșită (plătești doar transportul).",
+    "Company footer: SC COVERED SRL · CUI 47818139 · J20/341/2023 · Str. Principală nr. 98, 335309 Strei, Hunedoara, România · covered.ro@gmail.com · 0750 422 122 · Instagram, TikTok"
+   ],
+   "collections_copy": [
+    "Homepage collection tiles (title — description, count): \"Ediții Aur 22K — Skinuri rafinate cu aur, în ediție specială.\" (12 produse) · \"Skinul tău, designul tău — Încarci imaginea ta, noi o tăiem pe modelul tău.\" (7 produse) · \"Protecție transparentă — Culoarea originală rămâne la vedere.\" (3 produse) · \"Orice telefon — Skinuri pentru orice model.\" (47 de produse) · \"Protecție ecran — Folie de sticlă pentru ecran.\" (6 produse) · \"Huse iPhone — Pentru zilele cu risc de cădere.\" (105 produse)",
+    "Section intro: \"Mai mult decât negru mat\" — \"Ediții rafinate cu aur, skinuri cu designul tău, protecție transparentă și tot ce mai trebuie telefonului tău.\" CTA \"Vezi toate produsele\"",
+    "Collection pages have short headers, not descriptions: \"iPhone Skin\" / \"199 de skinuri\" · \"Samsung Skin\" / \"138 de skinuri\" · \"GOLD Skin\" (breadcrumb Aur 22K) / \"12 skinuri\" · \"SKIN ORICE TELEFON\" / \"47 de skinuri\" · \"Personalizate\" / \"7 skinuri\", each with meta chips \"Vinil premium · Tăiat laser · Plată ramburs\" (Personalizate: \"Designul tău\")",
+    "Collection grid offer tile: \"Ofertă pachet\" / \"−30%\" / \"la 2 skinuri\" / \"Combină oricare 2 skinuri, pentru orice telefon. Reducerea se aplică automat în coș.\"",
+    "Legacy Shopify collection descriptions (older voice): Huawei Skin — \"Foliile SKIN au fost concepute pentru a schimba design-ul telefonului tau si sa ii confere un grad de protectie impotriva zgarieturilor. Alege modelul dorit de skin, apoi vei putea alege si modelul telefonului.\"; \"Acceseaza produsul si vei putea alege apoi modelul de telefon si skinul dorit.\"; Black Friday – Skinuri — \"Toate skinurile pentru telefon incluse în oferta Black Friday 1+1.\"",
+    "Live counts (collections.json, 2026-10-06): apple-skin 203 (199 published in the storefront), samsung-skin 138, google 47, gold-skin 16 (12 shown), skin-uri-personalizate 7, skin-transparent 3, skin-orice-telefon 47, huse-iphone 108, huse-samsung 51, folie-sticla 7, macbook-skin 13 and xbox 11 (both return 0 products publicly)",
+    "Model tiles marked \"Nou\": iPhone Duo, iPhone 18 Pro Max, iPhone 18 Pro; Samsung list starts at Galaxy S26 Ultra / S26"
+   ],
+   "tone_traits": [
+    "Informal \"tu\" throughout: \"telefonul tău\", \"Alege-ți\", \"Plătești când primești coletul\", \"Scrie-ne și te ajutăm\". Imperatives like Alege, Combină, Curăță, Aliniază, Apasă.",
+    "Short declarative sentences that end in a period, even in headlines and CTAs: \"Îmbracă-ți telefonul.\", \"Al tău urmează.\", \"Cifrele care ne recomandă.\", \"Fără spam.\"",
+    "Parallel pairs and triads: \"Zero volum, stil maxim.\" · \"Alege modelul, alege finisajul.\" · \"Îți schimbi stilul, nu telefonul.\" · \"Trei pași, un minut, fără bule.\" · \"Același iPhone. Altă identitate.\"",
+    "Honest, slightly dry and self-aware: \"Comparație onestă\", \"Nu. Pentru asta există huse.\", \"Arată bine, dar arată ca alte milioane de telefoane.\", \"Un singur finisaj e rareori de ajuns.\" The older body copy is jokier (NASA, ceas elvețian, \"Crima perfectă este cea fără urme\"). The new theme copy is cleaner, so prefer it.",
+    "Middle dot \"·\" as the separator in eyebrows, tags and meta: \"Vinil premium · 0,2 mm\", \"Vinil premium · Tăiat laser\", \"Din 2018 · 37.000+ clienți · 60.000+ skinuri\". The marquee uses ◆ diamonds (yellow). Eyebrows carry a small yellow dot.",
+    "Dashes: en dash for ranges (\"1–2 zile lucrătoare\", \"joi, 8 oct. – vineri, 9 oct.\"). The em dash appears mainly in label—text pairs. Real minus sign U+2212 in \"−30%\", while sale badges use a plain hyphen (\"-42%\").",
+    "Uppercase comes from CSS: source strings are sentence case (\"Îmbracă-ți\", \"Alege-ți telefonul\", \"Ofertă pachet\") and are rendered in uppercase in Archivo 800 or CV Mono. Write copy in sentence case and uppercase it in styling.",
+    "Brand name in lowercase: \"covered\" (\"Skin covered\", \"covered în cifre\", \"De ce covered\").",
+    "Romanian number formatting: thousands with a period (\"37.000+\", \"60.000+\", \"1.278 de recenzii\"), decimals with a comma (\"4,69 /5\", \"0,2 mm\", \"1,7\"), and the Romanian \"de\" after numbers of 20 and up (\"1.278 de recenzii\", \"60 de secunde\", \"30 de zile\", \"199 de skinuri\", but \"12 skinuri\", \"7 produse\"). Exception: Shopify prices render as \"RON 69.00\" (currency before the number, period as the decimal separator), and the Judge.me widget shows \"4.69\" and \"1,278\".",
+    "Spelling: new copy uses \"skinuri\"/\"skinul\" with no hyphen. The nav and legacy copy use \"SKIN-URI\"/\"skin-urile\". Full Romanian diacritics (ă, â, î, ș, ț with comma-below) in the new copy; legacy pages often drop them (\"Instructiuni\", \"GESTIONEAZA COMANDA\", \"Garantie pe viata\").",
+    "Recurring proof points: 0,2 mm · tăiat laser pe modelul tău · 60 de secunde · fără bule · fără urme/reziduuri · plată ramburs · retur 30 de zile · din 2018 · 37.000+ clienți · 60.000+ skinuri · 4,69/5 din 1.278 de recenzii.",
+    "Product nouns: \"finisaj\" for the finish/colour, \"drop-urile noi\" for new releases, \"ediție specială\", \"Aur 22K\", \"modelul tău\". The site calls itself a skin and avoids calling it a \"folie\" in the new copy, though legacy copy says \"folia covered\"."
+   ]
+  }
+ },
+ "top_iphone": {
+  "method": "1) Fetched https://covered.ro/collections/apple-skin?sort_by=best-selling, all 9 pages (24 per page), saved as research/apple-best-selling-p1..p9.html. The sort was applied: the page has a hidden input sort_by=best-selling and rel=next ?page=2&sort_by=best-selling. I parsed handles in order only inside the main grid (`grid-list products-list`, up to `pagination-wrapper`). That gave 199 unique products, saved to research/apple-best-selling-order.json. Header mega-menu and mobile-drawer links (e.g. inlocuire-skin) are outside the grid and were ignored. Page 1 came back in the same order on a cache-busted re-fetch and in a DOM rendered by headless Chrome (research/apple-best-selling-p1.rendered.html). I compared it with the default-sort page and with /collections/apple-skin/products.json (199 products, all handles start with \"skin-\"). 2) Homepage section \"Skinuri iPhone / Cele mai vândute\" (section id ...__cv_bestsellers in research/home.html) uses the collection's DEFAULT (manual) order, not sales data: 1 negru-mat, 2 off-burgundy, 3 burgundy, 4 alb-mat, 5 duo-jet-black (OFF-Black), 6 transparent, 7 negru-ultra-matte (badge \"Nou\", created 2026-10-04), 8 titanium, 9 black-titanium-3d, 10 cosmic-orange. That is exactly the first 10 of /collections/apple-skin with no sort. Because it includes a product created 2 days ago, it is a merchant pick, not a sales ranking. For comparison, their real best-selling positions are OFF Burgundy #51, Burgundy #76, OFF-Black #30, Negru ULTRA Matte #194 and Cosmic Orange #27. The header mega-menu \"Cele mai vândute\" lists off-burgundy, negru-mat, titanium and skin-samsung-negru-mat. 3) I removed non-finish items (see excluded_addons) and took the first 8 real finishes in best-selling order. 4) Details come from /products/<handle>.js and .json plus the rendered product pages and collection cards (research/top/). 5) I downloaded every image at width=600 (research/img/r{rank}_{n}.*), viewed them, checked PNG alpha (tRNS), and rendered them on #0A0A0B cards (research/img/contact-dark.png). 6) curl -I with Accept: image/jpeg,image/png,*/* returns 200 image/png for all 8 chosen image_urls, and all 8 product URLs return 200 with 0 redirects. The combined data is in research/top-iphone-bestsellers.json.",
+  "products": [
+   {
+    "rank": 1,
+    "title": "Skin iPhone Dark - Rafinat cu Aur 22K - EDITIE SPECIALA",
+    "handle": "skin-iphone-dark-rafinat-cu-aur-22k-editie-speciala",
+    "url": "https://covered.ro/products/skin-iphone-dark-rafinat-cu-aur-22k-editie-speciala",
+    "price": "RON 120.00",
+    "price_number": 120,
+    "compare_at_price": "RON 150.00",
+    "discount_percent": 20,
+    "finish": "ediție specială rafinată cu aur 22K (print marmură neagră cu vene aurii); product_type 'iphone skin editie speciala'",
+    "badges": [
+     "-20% (sale badge)",
+     "rating 4,6 (36 recenzii)",
+     "Economisești 20% (product page)"
+    ],
+    "created_at": "2022-09-09T21:50:08+03:00",
+    "short_description": "Skinuri rafinate cu aur, în ediție specială. Folosim doar cele mai bune materiale de la 3M și Oraguard.",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/dark.png?v=1728115103&width=600",
+    "image_alt_images": [
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/image-gkT-_1.png?v=1772869449&width=600"
+    ],
+    "image_notes": "dark.png is the featured image and matches the house style of the set. It is a front-on mock-up of the back of an iPhone 15/16 Pro: charcoal marble with gold veins on a TRANSPARENT background (palette PNG with tRNS). Original 999x1500, served at 600x901 (2:3). 245.8 KB. On #0A0A0B the charcoal body and grey frame still show. Alt: a 1:1 opaque lifestyle shot of the phone on a grey studio stage with gold glitter (not consistent with the set).",
+    "evidence": "Position #1 in /collections/apple-skin?sort_by=best-selling, page 1 (research/apple-best-selling-p1.html). Same order on re-fetch and in the headless-rendered DOM. NOT in the homepage curated 'Cele mai vândute' list. Sentence 1 comes from the homepage Colecții tile 'Ediții Aur 22K'. Sentence 2 comes from body_html, which is boilerplate shared by all products."
+   },
+   {
+    "rank": 2,
+    "title": "Skin iPhone - Titanium 3D",
+    "handle": "skin-iphone-titanium",
+    "url": "https://covered.ro/products/skin-iphone-titanium",
+    "price": "RON 89.00",
+    "price_number": 89,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 25,
+    "finish": "texturat 3D (titan periat, argintiu)",
+    "badges": [
+     "-25% (sale badge)",
+     "Cel mai vândut",
+     "rating 4,9 (40 recenzii)"
+    ],
+    "created_at": "2021-11-25T22:17:22+02:00",
+    "short_description": "Folosim doar cele mai bune materiale de la 3M și Oraguard.",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/titan.png?v=1728021089&width=600",
+    "image_alt_images": [],
+    "image_notes": "titan.png is the only image: a silver brushed-metal iPhone 15/16 Pro back mock-up on a transparent background. 600x901 (2:3), 277.3 KB. High contrast on a dark background.",
+    "evidence": "Best-selling grid page 1, position #2. Homepage curated list #8. Card shows the 'Cel mai vândut' badge. The text is boilerplate from body_html; the site has no copy specific to this finish."
+   },
+   {
+    "rank": 3,
+    "title": "Skin iPhone - Negru Mat",
+    "handle": "skin-iphone-negru-mat",
+    "url": "https://covered.ro/products/skin-iphone-negru-mat",
+    "price": "RON 69.00",
+    "price_number": 69,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 42,
+    "finish": "mat (negru)",
+    "badges": [
+     "-42% (sale badge)",
+     "Cel mai vândut",
+     "rating 4,8 (26 recenzii)",
+     "−30% la 2 skinuri: RON 48.30 / buc. când iei 2"
+    ],
+    "created_at": "2021-11-25T22:25:22+02:00",
+    "short_description": "Vinil premium, tăiat cu precizie laser pe forma exactă a modelului tău.",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/negru_mat.png?v=1728021074&width=600",
+    "image_alt_images": [
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/products/iphone-skin-skin-iphone-negru-mat-1.jpeg?v=1718375758&width=600"
+    ],
+    "image_notes": "negru_mat.png: a matte-black iPhone 15/16 Pro back mock-up on a transparent background, 600x901 (2:3), 90.8 KB. On #0A0A0B the contrast is LOW and only the frame highlight and camera ring stand out. Put it on the #121213 card or add a soft glow behind it. Alt: an older 1:1 opaque JPEG on white showing an iPhone 13 Pro with side view and blue screen (wrong style for the set).",
+    "evidence": "Best-selling grid page 1, position #3. Homepage curated list #1, with 'Cel mai vândut' badge. The sentence comes from the product page 'Material & grosime' block, which is shared across products."
+   },
+   {
+    "rank": 4,
+    "title": "Skin iPhone - Black Titanium 3D",
+    "handle": "skin-iphone-black-titanium-3d",
+    "url": "https://covered.ro/products/skin-iphone-black-titanium-3d",
+    "price": "RON 89.00",
+    "price_number": 89,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 25,
+    "finish": "texturat 3D (titan periat, gri închis)",
+    "badges": [
+     "-25% (sale badge)",
+     "rating 4,8 (38 recenzii)",
+     "Stoc limitat (product page inventory notice)"
+    ],
+    "created_at": "2023-11-04T08:45:43+02:00",
+    "short_description": "De la zgârieturi și raze UV până la amprente – telefonul tău e acoperit.",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/black_titan.png?v=1728021014&width=600",
+    "image_alt_images": [],
+    "image_notes": "black_titan.png is the only image: a dark-grey brushed-metal iPhone 15/16 Pro back mock-up on a transparent background. 600x901 (2:3), 234.0 KB. Medium contrast on #0A0A0B.",
+    "evidence": "Best-selling grid page 1, position #4. Homepage curated list #9. The text is boilerplate from body_html."
+   },
+   {
+    "rank": 5,
+    "title": "Skin iPhone - Transparent (folie ppf)",
+    "handle": "skin-iphone-transparent-folie-protectie-flexibila",
+    "url": "https://covered.ro/products/skin-iphone-transparent-folie-protectie-flexibila",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 150.00",
+    "discount_percent": 34,
+    "finish": "transparent PPF. Option FINISAJ: LUCIOS is available; SEMI-MAT is sold out.",
+    "badges": [
+     "-34% (sale badge)",
+     "Cel mai vândut",
+     "rating 4,4 (12 recenzii)"
+    ],
+    "created_at": "2022-04-30T08:56:36+03:00",
+    "short_description": "Culoarea originală rămâne la vedere. De la zgârieturi și raze UV până la amprente – telefonul tău e acoperit.",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/ppf.png?v=1769533628&width=600",
+    "image_alt_images": [
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/sk_tr_2.png?v=1772869681&width=600"
+    ],
+    "image_notes": "ppf.png is the featured image. It shows an iPhone 17 Pro in silver (newer camera plateau) with a glossy clear film panel on the back. Transparent background (RGBA), 600x900 (2:3), 359.8 KB. Same style as the set but a newer phone generation. I chose it over sk_tr_2.png because sk_tr_2 (a 15 Pro black-titanium mock-up, same model as the others) shows no visible skin and could be mistaken for a bare phone.",
+    "evidence": "Best-selling grid page 1, position #5. Homepage curated list #6. Sentence 1 comes from the homepage tile 'Protecție transparentă'. Sentence 2 is from body_html (the transparent version of the boilerplate)."
+   },
+   {
+    "rank": 6,
+    "title": "Skin iPhone Waves - Rafinat cu Aur 22K - EDITIE SPECIALA",
+    "handle": "skin-iphone-waves-rafinat-cu-aur-22k-editie-speciala",
+    "url": "https://covered.ro/products/skin-iphone-waves-rafinat-cu-aur-22k-editie-speciala",
+    "price": "RON 120.00",
+    "price_number": 120,
+    "compare_at_price": "RON 150.00",
+    "discount_percent": 20,
+    "finish": "ediție specială rafinată cu aur 22K (print agat albastru cu val auriu)",
+    "badges": [
+     "-20% (sale badge)",
+     "rating 4,6 (28 recenzii)"
+    ],
+    "created_at": "2022-09-05T19:52:36+03:00",
+    "short_description": "Skinuri rafinate cu aur, în ediție specială.",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/waves.png?v=1728115104&width=600",
+    "image_alt_images": [
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/image-BY7-_1.png?v=1728021006&width=600",
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/image-R22-_3.png?v=1728021011&width=600",
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/products/iphone-skin-editie-speciala-skin-iphone-waves-rafinat-cu-aur-22k-editie-speciala-2.jpeg?v=1693547193&width=600"
+    ],
+    "image_notes": "waves.png: navy and blue agate waves with a gold seam on an iPhone 15/16 Pro mock-up, transparent background, 600x901 (2:3), 283.1 KB. Vivid on dark. The alts are 1:1 opaque lifestyle shots with gold glitter and grey stone props.",
+    "evidence": "Best-selling grid page 1, position #7 (#6 is PERSONALIZAT, which is excluded). Not in the homepage curated list. The text comes from the homepage tile 'Ediții Aur 22K'."
+   },
+   {
+    "rank": 7,
+    "title": "Skin iPhone - White Flame",
+    "handle": "skin-iphone-white-flame-finisaj-mat",
+    "url": "https://covered.ro/products/skin-iphone-white-flame-finisaj-mat",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 17,
+    "finish": "print mat (marmură albă cu flacără aurie); handle '-finisaj-mat', product_type 'iphone skin flame'",
+    "badges": [
+     "-17% (sale badge)",
+     "rating 4,8 (16 recenzii)"
+    ],
+    "created_at": "2022-11-18T19:56:04+02:00",
+    "short_description": "Alege dintre o varietate de texturi și culori premium și oferă-i telefonului tău un strat de protecție care îmbină perfect funcționalitatea cu stilul.",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/flame.png?v=1728114979&width=600",
+    "image_alt_images": [],
+    "image_notes": "flame.png is the only image: white marble with a gold swirl on an iPhone 15/16 Pro mock-up, transparent background, 600x901 (2:3), 265.7 KB. High contrast on dark.",
+    "evidence": "Best-selling grid page 1, position #8. Not in the homepage curated list. The text is boilerplate from body_html."
+   },
+   {
+    "rank": 8,
+    "title": "Skin iPhone - Alb Mat",
+    "handle": "skin-iphone-alb-mat",
+    "url": "https://covered.ro/products/skin-iphone-alb-mat",
+    "price": "RON 73.00",
+    "price_number": 73,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 39,
+    "finish": "mat (alb)",
+    "badges": [
+     "-39% (sale badge)",
+     "Cel mai vândut",
+     "rating 4,5 (12 recenzii)"
+    ],
+    "created_at": "2022-08-01T08:38:42+03:00",
+    "short_description": "Spre deosebire de alții, noi garantăm că adezivul nostru nu lasă urme.",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/alb_mat.png?v=1728020959&width=600",
+    "image_alt_images": [],
+    "image_notes": "alb_mat.png is the only image: a matte-white iPhone 15/16 Pro mock-up on a transparent background, 600x901 (2:3), 101.2 KB. Very high contrast on #0A0A0B.",
+    "evidence": "Best-selling grid page 1, position #9. Homepage curated list #4, with 'Cel mai vândut' badge. The text is boilerplate from body_html."
+   }
+  ],
+  "excluded_addons": [
+   "Best-selling #6: Skin iPhone PERSONALIZAT (skin-iphone-personalizat-finisaj-mat), RON 99.00. Custom product where the customer uploads their own image, not a fixed finish. Card payment only and it cannot be returned.",
+   "Best-selling #12: Skin iPhone - RANDOM Skin (handle skin-batman-apple-iphone, product_type 'Skin Random'), RON 40.00 / 120.00. The customer gets a random skin.",
+   "Other personalized products further down the ranking, all below the cut-off: Personalizat cu nume / text (#77), PERSONALIZAT cu initiala (#135, #156, #183, #191, #192, #198), PERSONALIZAT cu nume (#159).",
+   "INLOCUIRE SKIN (/products/inlocuire-skin) appears only in the header mega-menu and mobile drawer on the collection page, never in the apple-skin grid.",
+   "EXTRAOPTIUNI, Mystery GIFT, huse and folie sticla are not in the apple-skin collection at all: 0 matches in the grid and products.json, and all 199 handles start with 'skin-'.",
+   "Not excluded but worth knowing: #11 Natural Titanium 3D is sold out ('Epuizat'). First backup if any item drops: #10 Skin iPhone - Honeycomb 3D (skin-honeycomb-apple-iphone), RON 99.00 / 120.00, -17%, 4,7 (23), 'Stoc limitat', same transparent-PNG mock-up honey_ae2c6657-c587-46a5-aa46-344c38034690.png?v=1728021053. Next: #13 Aspect Piele Neagra (full grain)."
+  ],
+  "notes": "PRICE FORMAT: the site shows prices as \"RON 69.00\", not \"69,00 lei\". The theme's moneyFormat is \"<span class='money'>RON {{amount}}</span>\". I confirmed this in the raw HTML and in the DOM after headless Chrome ran its JS. \"Lei\" only appears in the country selector, e.g. \"România (RON Lei)\". Sale badges round down: 69/120 shows -42% and 99/120 shows -17%. My discount_percent values match the badges.\n\nDESCRIPTIONS: body_html is the same boilerplate on every product. There are 2 versions across these 8: the transparent one says \"3M\" without \"Oraguard\". The site has no copy written for a specific finish. The only finish-related sentences I found are on homepage Colecții tiles: \"Skinuri rafinate cu aur, în ediție specială.\" (Ediții Aur 22K) and \"Culoarea originală rămâne la vedere.\" (Protecție transparentă). The other sentences are verbatim boilerplate, and I spread them out so no line repeats. The newsletter may want short finish lines written fresh.\n\nRANKING SOURCE: Shopify's sort_by=best-selling is the only order based on sales. It appears to favour long-established products: everything in the top 9 was created between 2021 and 2023. The homepage \"Cele mai vândute\" and the 'Cel mai vândut' card badges are a merchant pick (the collection's manual order) and lean toward new OFF/Burgundy finishes. If the newsletter must match the homepage, use that order instead: negru-mat, off-burgundy, burgundy, alb-mat, duo-jet-black, transparent, negru-ultra-matte, titanium, black-titanium-3d, cosmic-orange.\n\nIMAGES: all 8 chosen images are the featured product images and form one consistent set. Each is a front-on mock-up of an iPhone back on a TRANSPARENT background (PNG with alpha), 2:3 portrait (600x901; ppf is 600x900). Seven show the iPhone 15/16 Pro body; ppf.png shows an iPhone 17 Pro. The site shows the same images on its dark cards.\n- Only Dark, Negru Mat, Waves and Transparent have alternate images, so lifestyle shots cannot make a consistent set.\n- Dark phones (Negru Mat, Dark, Black Titanium) have low contrast on #0A0A0B. Use the #121213 card with a #262625 border or a soft amber radial glow.\n- The CDN negotiates the format. A browser Accept header that includes webp gets image/webp. Accept: image/jpeg,image/png,*/* gets image/png, HTTP 200 for all 8.\n- Weight: 8 PNGs at width=600 total about 1.86 MB (90–360 KB each). width=400 roughly halves that (dark.png 246 KB to 110 KB).\n- Do NOT add format=jpg, because that would lose the transparency.\n\nDATA CHANGING TODAY: the updated_at on all 8 products is 2026-10-06 07:41–07:42 +03:00, minutes before I fetched them. Someone is editing products now, so recheck prices just before sending.",
+  "extra": "- Newest iPhone products (created_at): OFF Silver and OFF Matte Black (2026-10-03); Negru ULTRA Matte (2026-10-04), which has a \"Nou\" badge and is RON 90.00 / 120.00; DUO Pink (2026-09-20); OFF Burgundy, Burgundy, OFF Glacier and Glacier (2026-09-13).\n- Homepage model tiles marked \"Nou\": iPhone Duo, iPhone 18 Pro Max, iPhone 18 Pro, Galaxy Z Fold 8 Ultra and Galaxy Z Fold 8.\n- Homepage counts: iPhone 199 (the brief said 203; products.json and the grid both have 199), Samsung 138, Google Pixel 47, Alt telefon 47.\n- The homepage hero CTA \"Vezi cele mai vândute\" links to /collections/toate-produsele, not to a best-selling sort.\n- Product pages show the offer \"−30% la 2 skinuri ... când iei 2\" with a per-piece price (e.g. Negru Mat RON 48.30 / buc.). Trust lines on product pages: \"Compatibil MagSafe\", \"Merge și cu husă\", \"Înlocuire gratuită la aplicare greșită\". Product pages say \"Gata în 60 de secunde\", but the body_html still says \"În mai puțin de 10 minute ești gata\". Avoid quoting the 10-minute line.\n- Files are under the workspace root (C:/Users/Media/AppData/Roaming/Claude/scratch-workspaces/bb5aa2b0-7d7f-48fc-8e93-8f8ef7110fc2/94ed9092-db09-4524-84bc-9d38b2706048/scratch-2026-10-06-420a5a):\n  - research/apple-best-selling-p1..p9.html\n  - research/apple-best-selling-p1.rendered.html\n  - research/apple-best-selling-order.json (full 199-item ranking)\n  - research/home.html\n  - research/top/<handle>.js / .json / .html\n  - research/img/r{rank}_{n}.png|jpg (downloaded candidates; numbered by best-selling position, so Waves is r6_*, White Flame r7_*, Alb Mat r8_*)\n  - research/img/contact-dark.png (preview on dark)\n  - research/top-iphone-bestsellers.json (top-8 data)\n  - helper scripts: research/parse-grid.js, research/cards.js, research/pagetext.js"
+ },
+ "top_samsung": {
+  "method": "1) Fetched https://covered.ro/collections/samsung-skin?sort_by=best-selling (desktop UA) for pages 1-7 and saved them as research/samsung-best-selling-p1..p7.html. Products were parsed in order only from the section `shopify-section-template--32322797928780__product-grid`, using the `h3.product-card__title > a[href=/products/...]` of each card. Header mega-menu links and search-drawer recommendations were left out. Result: 138 unique handles, which matches the collection count and /collections/samsung-skin/products.json (138). The full ranked list is in research/samsung-best-selling-order.txt.\n2) Checked that sort_by is applied server-side by comparing against the default (manual) sort, created-descending and title-ascending. All three give different orders (e.g. default starts with Burgundy and Glacier; best-selling starts with Negru Mat). The theme has no visible sort dropdown.\n3) Rendered the live page with headless Chrome (research/samsung-best-selling-render.png). The cards show the same order with index numbers 01, 02, 03… Prices render as \"RON 69.00\" in the amber mono font.\n4) Pulled /products/<handle>.js and .json and the product HTML for the top 12 (research/samsung-products/). Price, compare_at, created_at, tags and images come from the .js. Discount badges and displayed prices come from the rendered card HTML.\n5) Downloaded every image of the top 10 with &width=600 and the header Accept: image/jpeg,image/png,*/* (research/samsung-img/). Read their PNG/JPEG headers for size and alpha. Rendered contact sheets on #0A0A0B, on #121213 and on the site's light tile (research/samsung-img-sheet.png, research/samsung-img-bgtest.png).\n6) Ran curl -I on every chosen image_url (and on the covered.ro/cdn/shop mirror of each) with Accept: image/jpeg,image/png,*/*. All return HTTP 200 with Content-Type image/png, not webp. Every product URL returns HTTP 200 with no redirect.",
+  "products": [
+   {
+    "rank": 1,
+    "title": "Skin Samsung - Negru Mat",
+    "handle": "skin-samsung-negru-mat",
+    "url": "https://covered.ro/products/skin-samsung-negru-mat",
+    "price": "RON 69.00",
+    "price_number": 69,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 42,
+    "badges": [
+     "-42%",
+     "Cel mai vândut"
+    ],
+    "finish": "mat, negru uni (vinil negru mat)",
+    "created_at": "2021-11-28T14:46:02+02:00",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/negru_mat_95624e23-a169-476e-9935-f8fb196dee76.png?v=1729360165&width=600",
+    "image_alt_images": [
+     "https://covered.ro/cdn/shop/files/negru_mat_95624e23-a169-476e-9935-f8fb196dee76.png?v=1729360165&width=600"
+    ],
+    "image_notes": "The product has only 1 image. Transparent-background PNG (RGBA), 600x900 (2:3), about 96 KB at width=600. Back view of a Galaxy S Ultra-style phone in plain matte black; no shadow or scene. On #0A0A0B the phone almost disappears (only the camera rings and edge highlights show), so it needs a light tile behind it, as on the site.",
+    "short_description": "Vinil premium, tăiat cu precizie laser pe forma exactă a modelului tău. Grosime 0,2 mm, zero volum adăugat",
+    "evidence": "Best-selling grid page 1, position 1 (card index 01). It is the only Samsung card with the 'Cel mai vândut' badge. It is also the only Samsung product in the header mega-menu 'SKIN-URI > Cele mai vândute' list (next to 3 iPhone skins). Rating on card: 4,4 (7)."
+   },
+   {
+    "rank": 2,
+    "title": "Skin Samsung - Personalizat",
+    "handle": "skin-samsung-personalizat-finisaj-mat",
+    "url": "https://covered.ro/products/skin-samsung-personalizat-finisaj-mat",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 17,
+    "badges": [
+     "-17%"
+    ],
+    "finish": "personalizat (imaginea clientului), finisaj mat",
+    "created_at": "2023-10-13T21:07:12+03:00",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/pers_e3680e7b-0828-4971-8b14-e4e12d82ede5.png?v=1729197166&width=600",
+    "image_alt_images": [
+     "https://covered.ro/cdn/shop/files/pers_e3680e7b-0828-4971-8b14-e4e12d82ede5.png?v=1729197166&width=600"
+    ],
+    "image_notes": "The product has only 1 image. Transparent PNG, 600x900 (2:3), about 533 KB. Same Galaxy Ultra back mock-up with a sample photo printed on it (wedding couple on a beach, light blue and beige tones) and the overlay text 'POZA TA AICI'. Light and colourful, so it reads fine on dark, but it is visually different from the finish swatches.",
+    "short_description": "Încarci imaginea ta, noi o tăiem pe modelul tău.",
+    "evidence": "Best-selling grid page 1, position 2 (card index 02). Rating on card: 4,5 (13). Kept because it is a real skin a customer buys (it is also in the 'Personalizate' collection). Per the site FAQ, personalised products cannot be paid ramburs and cannot be returned."
+   },
+   {
+    "rank": 3,
+    "title": "Skin Samsung - Transparent (folie ppf)",
+    "handle": "skin-samsung-transparent-folie-protectie-flexibila",
+    "url": "https://covered.ro/products/skin-samsung-transparent-folie-protectie-flexibila",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 150.00",
+    "discount_percent": 34,
+    "badges": [
+     "-34%"
+    ],
+    "finish": "folie PPF transparentă; opțiuni FINISAJ: SEMI-MAT / LUCIOS (ambele 99 RON)",
+    "created_at": "2024-04-26T17:55:49+03:00",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/sk_transparent_d777e951-0376-4cf6-9796-10374c3e18ca.png?v=1729194674&width=600",
+    "image_alt_images": [
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/transparent_de97b227-23d6-4b21-9310-66b5ea0017c4.png?v=1718373074&width=600"
+    ],
+    "image_notes": "Main: transparent PNG, 600x900, about 304 KB. Galaxy Ultra back in its original grey/titanium colour under clear film, with the Samsung logo visible. Mid-grey, so it is visible on dark. Alt: an older 600x600 transparent PNG composite (side profile, back, and front with an amber wallpaper), a different style.",
+    "short_description": "Culoarea originală rămâne la vedere. De la zgârieturi și raze UV până la amprente – telefonul tău e acoperit.",
+    "evidence": "Best-selling grid page 1, position 3 (card index 03). Rating on card: 5,0 (7). It is the only Samsung item in the 'Skin TRANSPARENT' collection. Data quirk: in its .js its product_type is 'iphone skin' and its tags are all iPhone tags, but it sits in samsung-skin and is titled Samsung."
+   },
+   {
+    "rank": 4,
+    "title": "Skin Samsung - Splash",
+    "handle": "skin-samsung-splash-finisaj-mat",
+    "url": "https://covered.ro/products/skin-samsung-splash-finisaj-mat",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 17,
+    "badges": [
+     "-17%"
+    ],
+    "finish": "print, finisaj mat (marmură gri-negru cu stropi aurii)",
+    "created_at": "2023-10-13T21:04:20+03:00",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/splash_8efdf64c-ffd7-472c-af26-39ce7cc196ca.png?v=1729194600&width=600",
+    "image_alt_images": [
+     "https://covered.ro/cdn/shop/files/splash_8efdf64c-ffd7-472c-af26-39ce7cc196ca.png?v=1729194600&width=600"
+    ],
+    "image_notes": "The product has only 1 image. Transparent PNG, 600x900, about 372 KB. Galaxy Ultra back mock-up with a dark grey/black smoky marble print and gold paint splatter. Medium-low contrast on #0A0A0B; better on a light tile.",
+    "short_description": "Alege dintre o varietate de texturi și culori premium și oferă-i telefonului tău un strat de protecție care îmbină perfect funcționalitatea cu stilul.",
+    "evidence": "Best-selling grid page 1, position 4 (card index 04). Rating on card: 4,5 (12). The next grid slot is the promo tile 'Ofertă pachet −30% la 2 skinuri', which is not a product."
+   },
+   {
+    "rank": 5,
+    "title": "Skin Samsung - Honeycomb 3D",
+    "handle": "skin-samsung-honeycomb",
+    "url": "https://covered.ro/products/skin-samsung-honeycomb",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 17,
+    "badges": [
+     "-17%"
+    ],
+    "finish": "texturat 3D, model fagure (honeycomb) negru",
+    "created_at": "2021-11-28T17:59:43+02:00",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/honey_9497cee7-e8ed-44ac-b7b7-6483887fe764.png?v=1729194187&width=600",
+    "image_alt_images": [
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/samsung-skin-skin-samsung-honeycomb-3d-2-_2.jpg?v=1689284223&width=600",
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/products/samsung-skin-skin-samsung-honeycomb-3d-3.jpg?v=1638464565&width=600",
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/samsung-skin-skin-samsung-honeycomb-3d-4-_4.jpg?v=1689284225&width=600"
+    ],
+    "image_notes": "Main: transparent PNG, 600x900, about 433 KB. Galaxy Ultra back with a black hexagon 3D texture. Low contrast on #0A0A0B; needs a light tile. Alts are older lifestyle JPGs, inconsistent with the set: 600x600 close-up of the phone on wood with red camera rings; 600x600 hand holding a Note 20 Ultra in front of a brick wall; 600x682 hand holding a Galaxy S10 in a bedroom.",
+    "short_description": "Folosim doar cele mai bune materiale de la 3M și Oraguard.",
+    "evidence": "Best-selling grid page 1, position 5 (card index 05, shown after the promo tile). Rating on card: 4,5 (11)."
+   },
+   {
+    "rank": 6,
+    "title": "Skin Samsung - DARK - Rafinat cu aur 22k",
+    "handle": "skin-samsung-dark-rafinat-cu-aur-22k",
+    "url": "https://covered.ro/products/skin-samsung-dark-rafinat-cu-aur-22k",
+    "price": "RON 120.00",
+    "price_number": 120,
+    "compare_at_price": "RON 150.00",
+    "discount_percent": 20,
+    "badges": [
+     "-20%"
+    ],
+    "finish": "rafinat cu aur 22K (marmură neagră cu vene aurii)",
+    "created_at": "2023-10-13T21:45:00+03:00",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/dark_8ded1820-f78e-48cc-bcb3-7c50354d8020.png?v=1729193574&width=600",
+    "image_alt_images": [
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/DARK_3afa341e-15eb-4e75-a400-e640ca6fd23d.png?v=1718372991&width=600"
+    ],
+    "image_notes": "Main: transparent PNG, 600x900, about 476 KB. Galaxy Ultra back mock-up in black/charcoal marble with gold veins. Gold details pop on dark, but the edges are weak; a light tile is better. Alt: an older 600x600 transparent composite (side, back, and front with an amber wallpaper).",
+    "short_description": "Skinuri rafinate cu aur, în ediție specială.",
+    "evidence": "Best-selling grid page 1, position 6 (card index 06). Rating on card: 4,0 (9). Also in the GOLD Skin collection ('Ediții Aur 22K' on the homepage)."
+   },
+   {
+    "rank": 7,
+    "title": "Skin Samsung - Black Titanium (3D)",
+    "handle": "skin-samsung-black-titanium-3d",
+    "url": "https://covered.ro/products/skin-samsung-black-titanium-3d",
+    "price": "RON 89.00",
+    "price_number": 89,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 25,
+    "badges": [
+     "-25%"
+    ],
+    "finish": "texturat 3D, titan periat negru",
+    "created_at": "2024-06-09T09:51:16+03:00",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/bl_titan.png?v=1729193235&width=600",
+    "image_alt_images": [
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/blacktitanium_65159f7b-13bf-4eb1-82c7-e88d02e7a9f6.png?v=1718372975&width=600"
+    ],
+    "image_notes": "Main: transparent PNG, 600x900, about 362 KB. Galaxy Ultra back in a dark grey brushed-metal texture. Mid-dark grey, so it is moderately visible on dark; best on a light tile. Alt: an older 600x600 transparent composite (side, back, front).",
+    "short_description": "O grosime mai mică decât grosimea a două fire de păr. Pentru că știm că ai ales un telefon subțire cu un motiv.",
+    "evidence": "Best-selling grid page 1, position 7 (card index 07). Rating on card: 5,0 (7)."
+   },
+   {
+    "rank": 8,
+    "title": "Skin Samsung - Graffiti",
+    "handle": "skin-samsung-graffiti-finisaj-mat",
+    "url": "https://covered.ro/products/skin-samsung-graffiti-finisaj-mat",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 17,
+    "badges": [
+     "-17%"
+    ],
+    "finish": "print color, finisaj mat (graffiti)",
+    "created_at": "2023-10-13T21:00:50+03:00",
+    "image_url": "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/graffiti_7d9180b7-7d12-45b1-8b9c-6cec51570deb.png?v=1729193866&width=600",
+    "image_alt_images": [
+     "https://cdn.shopify.com/s/files/1/0059/0466/2626/files/graffiti_338043f5-42c0-4859-9edb-988b5843c5db.png?v=1718373015&width=600"
+    ],
+    "image_notes": "Main: transparent PNG, 600x900, about 819 KB. This is the heaviest image; it is 396 KB at width=400. Galaxy Ultra back with a vivid multicolour graffiti print (pink hooded grinning character, spray cans, teal and blue). High contrast on dark. Alt: an older 600x600 transparent composite.",
+    "short_description": "Tăiat laser pentru modelul ales. Dacă aplicarea nu iese, îți trimitem un skin nou.",
+    "evidence": "Best-selling grid page 1, position 8 (card index 08). Rating on card: 5,0 (8)."
+   }
+  ],
+  "excluded_addons": [
+   "None of the 138 products in samsung-skin is an add-on. Every title is 'Skin Samsung - …', and products.json lists no EXTRAOPTIUNI, INLOCUIRE SKIN, Mystery GIFT, RANDOM Skin, huse or folie. So nothing in the top 8 had to be skipped for that reason.",
+   "Header mega-menu links on the collection page, ignored: /products/inlocuire-skin (the 'INLOCUIRE' menu item) and the 'Cele mai vândute' mini-list: Skin iPhone - OFF Burgundy, Skin iPhone - Negru Mat, Skin iPhone - Titanium 3D, Skin Samsung - Negru Mat.",
+   "Search-drawer recommendations, ignored: skin-iphone-off-burgundy, skin-iphone-negru-mat, skin-iphone-titanium, skin-iphone-transparent-folie-protectie-flexibila.",
+   "Promo tile in grid slot 5, not a product: 'Ofertă pachet −30% la 2 skinuri – Combină oricare 2 skinuri, pentru orice telefon. Reducerea se aplică automat în coș.'",
+   "Not excluded, but flagged: rank 2 'Skin Samsung - Personalizat' (custom photo skin; the FAQ says no ramburs and no returns) and rank 3 'Skin Samsung - Transparent (folie ppf)' (clear protection film). Both are real skins. If you want only design/colour finishes, drop them and promote ranks 9 and 11 (see extra).",
+   "Rank 10 'Skin Samsung - Natural Titanium (3D)' (skin-samsung-natural-titanium) is sold out ('Epuizat', available=false). Do not use it as a substitute."
+  ],
+  "notes": "PRICE FORMAT: the site does not show '69,00 lei'. The shop money format is `<span class='money'>RON {{amount}}</span>`, so every card and product page shows 'RON 69.00' (dot decimal, RON before the number). The rendered page uses the amber mono price with the struck compare-at price, e.g. 'RON 69.00 RON 120.00'. Only the price-filter labels say 'Lei'. Ratings use comma decimals, e.g. '★ 4,4 (7)'. Discount badges are the floored percentage ('-42%' for 69/120, '-25%' for 89/120). The product page bundle line reads 'RON 48.30 / buc. când iei 2'.\n\nDESCRIPTIONS: all Samsung skins share one generic body_html template ('Protecție premium pentru un design impecabil…'). The only exception is Transparent, which adds 'VEZI AICI intructiunile de aplicare'. Meta descriptions are the same template. No product has finish-specific copy. Each short_description is therefore a verbatim site sentence that fits the item, from these sources:\n- Product page 'Material & grosime' accordion (#1).\n- Homepage Colecții cards: 'Skinul tău, designul tău' (#2), 'Protecție transparentă' (#3), 'Ediții Aur 22K' (#6).\n- Product page body (#3 second sentence, #4, #5, #7).\n- Product page guarantee block (#8).\nAny finish-specific wording in the newsletter would have to be newly written; the `finish` field gives a factual basis from titles, handles and images.\n\nIMAGES: all 8 primary images come from one consistent set, uploaded Oct 2024 (v=17291…). Each is a transparent-background RGBA PNG, 2:3 (600x900 at width=600), showing the back of a Galaxy S Ultra-style phone with no shadow. The site places them on a light radial tile (`--cv-tile-bg: radial-gradient(120% 85% at 50% 6%, #fbfbf9 0%, #efefeb 56%, #e3e3de 100%)`) inside the dark card.\n- On a plain #0A0A0B card the black finishes (Negru Mat, Honeycomb, Black Titanium, Splash, DARK) lose their silhouette. Recommendation: give each email card an inner light tile (bgcolor #EFEFEB, radius 10px) behind the image, like the site, or at least a #EFEFEB td background.\n- Shopify CDN ignores format=jpg/pjpg for these files (it still returns PNG), so there is no flattened JPG option.\n- With Accept: image/jpeg,image/png,*/* both cdn.shopify.com and covered.ro/cdn/shop return image/png. They return webp only when the Accept header includes image/webp.\n- Total weight at width=600 is about 3.4 MB for 8 images; width=400 is about 1.6 MB, if file size matters.\n- The secondary images (600x600 composites from Jun 2024 and old lifestyle JPGs) exist only for some products, so they were not used.\n\nRATINGS on cards: #1 4,4 (7); #2 4,5 (13); #3 5,0 (7); #4 4,5 (12); #5 4,5 (11); #6 4,0 (9); #7 5,0 (7); #8 5,0 (8). Store-wide figure: 4.69 from 1278 reviews.\n\nFILES:\n- research/samsung-best-selling-p1..p7.html and research/samsung-best-selling-p1-grid.html\n- research/samsung-best-selling-order.txt (all 138, ranked)\n- research/samsung-products/*.js|.json|.html\n- research/samsung-img/ (downloaded candidates plus list.tsv)\n- research/samsung-img-sheet.png, research/samsung-img-bgtest.png, research/samsung-best-selling-render.png\n- research/home.html, research/home-bestsellers-section.html\n- research/samsung-default-p1.html, research/samsung-created-desc-p1.html, research/samsung-title-asc-p1.html",
+  "extra": "BESTSELLER BLOCKS:\n(a) Homepage section 'cv_bestsellers' is titled 'Skinuri iPhone · Cele mai vândute'. It is iPhone-only and has no Samsung tab: Negru Mat, OFF Burgundy, Burgundy, Alb Mat, OFF-Black, Transparent, Negru ULTRA Matte (badge 'Nou'), Titanium 3D, Black Titanium 3D, Cosmic Orange.\n(b) The header mega-menu 'SKIN-URI > Cele mai vândute' (on every page) lists 3 iPhone skins plus Skin Samsung - Negru Mat. That confirms Negru Mat as the flagship Samsung seller.\n(c) The Samsung collection page has no separate bestseller block. Its default (manual) sort puts Burgundy, Glacier, Negru Mat and Jet Black first, which is curated, not sales order.\n\nALTERNATES if #2 or #3 are dropped:\n- Rank 9: 'Skin Samsung - WAVES - Rafinat cu aur 22k', handle skin-samsung-marble-collection-finisaj-mat (legacy handle; the title differs). RON 120.00 / RON 150.00, -20%, rating 4,6 (5), created 2022-08-04, GOLD collection. Image: https://cdn.shopify.com/s/files/1/0059/0466/2626/files/waves_3b63e63f-1871-4b57-a52d-10e130cf459b.png?v=1729194773&width=600 (navy/blue marble with gold swirls; same 600x900 transparent style; verified 200 image/png; about 878 KB). Product URL returns 200.\n- Rank 10: Natural Titanium (3D), sold out.\n- Rank 11: 'Skin Samsung - Aspect piele neagra (full grain)', skin-samsung-aspect-piele-neagra-full-grain. RON 99.00 / RON 120.00, -17%, rating 4,8 (4), created 2024-11-07. Image https://cdn.shopify.com/s/files/1/0059/0466/2626/files/piele_eb457c09-06be-49d4-8bc4-6ec140dd1f0e.png?v=1745131534 (newer upload; its dimensions and style were not checked). Product URL returns 200.\n- Rank 12: 'Skin Samsung - Carbon Negru 3D', skin-samsung-carbon-negru, RON 99.00 / RON 120.00.\n\nNEW SAMSUNG ITEMS: Glacier and Burgundy (created 2026-09-13, RON 89.00 / 120.00, 'Nou' badge) are new and rank only 130 and 111 by sales. Jet Black was created 2026-03-08. In the homepage model picker, 'Galaxy Z Fold 8 Ultra' and 'Galaxy Z Fold 8' are marked 'Nou'. The Samsung list starts with Galaxy S26 Ultra and S26, and the hero quick-pick shows 'Samsung S25 Ultra'.\n\nThe 'Cel mai vândut' badge (class cv-badge--best) is not driven by tags; it is probably a metafield. Within samsung-skin only Negru Mat carries it."
+ },
+ "new_arrivals": {
+  "method": "1) I downloaded products.json (limit=250, paginated until a page came back short) for apple-skin (199 products, not 203), samsung-skin (138), google (47) and all (767 over 4 pages). I sorted them by created_at and published_at with node. 2) I fetched /collections/{all,apple-skin,samsung-skin,google}?sort_by=created-descending (plus best-selling) and the homepage, then parsed the card order and the theme badges: .cv-badge--new \"Nou\", .cv-badge--best \"Cel mai vândut\", .f-badge--sale \"-NN%\". The first 4 cards on every collection page belong to the \"Cele mai vândute\" block in the header mega-menu, so I skipped them when counting grid positions. 3) I parsed the homepage Skin Lab chips (data-name/data-url), the device-picker chips marked \"Nou\" with their hrefs, and the cv_bestsellers carousel. 4) I fetched /products/<handle>.json and the product HTML for each candidate to get body_html, variants and the displayed price markup, and rendered /products/skin-iphone-off-silver headless to confirm what the page shows. 5) I downloaded every candidate image at &width=600 with \"Accept: image/jpeg\" (all 200 image/png, RGBA with a transparent background), laid them on a #121213 card sheet in an HTML page and looked at the render. 6) I picked the 6 newest finishes the site badges \"Nou\" or features in Skin Lab, all created 13 Sep – 4 Oct 2026, with iPhone as primary and Samsung counterparts noted. Scratch files are in research/new/.",
+  "products": [
+   {
+    "rank": 1,
+    "title": "Skin iPhone - Negru ULTRA Matte",
+    "handle": "skin-iphone-negru-ultra-matte",
+    "url": "https://covered.ro/products/skin-iphone-negru-ultra-matte",
+    "price": "RON 90.00",
+    "price_number": 90,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 25,
+    "created_at": "2026-10-04T11:55:58+03:00",
+    "badges": [
+     "-25%",
+     "Nou"
+    ],
+    "finish": "negru ultra mat (autocolant 3M Premium), culoare plină pe tot spatele",
+    "short_description": "Skin Negru ULTRA mat, realizat din autocolant 3M Premium.",
+    "image_url": "https://covered.ro/cdn/shop/files/ultramatte.png?v=1791104171&width=600",
+    "image_alt_images": [
+     "https://covered.ro/cdn/shop/files/ultramatte.png?v=1791104171"
+    ],
+    "image_notes": "Only image. Transparent PNG (RGBA), 2:3 (1000x1500 original, 600x900 at width=600). Shows the back of an iPhone 17 Pro-style phone in uniform deep matte black with a subtle sheen. On a #121213 card it has low contrast and nearly disappears, so use a lighter card (#1E1E21+) or the amber radial glow behind it. Same URL returns image/png for Accept image/jpeg and image/webp only when the client sends webp.",
+    "evidence": "Newest skin in the store: products.json created_at 2026-10-04 11:55, published the same day. It is grid card #1 in /collections/apple-skin?sort_by=created-descending and in /collections/all?sort_by=created-descending, with a 'Nou' badge. It is the only 'Nou'-badged product on the homepage, shown in the 'Skinuri iPhone / Cele mai vândute' carousel (cv_bestsellers). Only one variant."
+   },
+   {
+    "rank": 2,
+    "title": "Skin iPhone - OFF Silver",
+    "handle": "skin-iphone-off-silver",
+    "url": "https://covered.ro/products/skin-iphone-off-silver",
+    "price": "RON 120.00",
+    "price_number": 120,
+    "compare_at_price": "",
+    "discount_percent": 0,
+    "created_at": "2026-10-03T11:48:34+03:00",
+    "badges": [
+     "Nou"
+    ],
+    "finish": "OFF (two-tone): ramă + platou camere argintiu/titan, panou spate alb",
+    "short_description": "Vinil premium, tăiat cu precizie laser pe forma exactă a modelului tău. Grosime 0,2 mm, zero volum adăugat",
+    "image_url": "https://covered.ro/cdn/shop/files/Final_iPhonduosilvere17ProMaxFullWrapSkinDesignMockupFrontBackandSide.png?v=1791017326&width=600",
+    "image_alt_images": [
+     "https://covered.ro/cdn/shop/files/Final_iPhonduosilvere17ProMaxFullWrapSkinDesignMockupFrontBackandSide.png?v=1791017326"
+    ],
+    "image_notes": "Only image. Transparent PNG, 2:3 (1000x1500). iPhone back with a silver/grey frame and camera plateau and a bright white lower panel with a grey Apple logo. High contrast on a dark card, the strongest image of the set. The filename is long but the URL is verified 200 image/png.",
+    "evidence": "products.json created_at 2026-10-03 11:48. Grid card #2 in apple-skin and all sorted by created-descending, with a 'Nou' badge. compare_at equals price (120.00), so the site shows no sale badge and no strikethrough; the rendered product page shows just 'RON 120.00' and the offer line 'RON 84.00 / buc. când iei 2'."
+   },
+   {
+    "rank": 3,
+    "title": "Skin iPhone - OFF Matte Black",
+    "handle": "skin-iphone-off-matte-black",
+    "url": "https://covered.ro/products/skin-iphone-off-matte-black",
+    "price": "RON 120.00",
+    "price_number": 120,
+    "compare_at_price": "",
+    "discount_percent": 0,
+    "created_at": "2026-10-03T11:47:57+03:00",
+    "badges": [
+     "Nou"
+    ],
+    "finish": "OFF (two-tone) mat: ramă + platou camere grafit, panou negru mat",
+    "short_description": "O grosime mai mică decât grosimea a două fire de păr. Pentru că știm că ai ales un telefon subțire cu un motiv.",
+    "image_url": "https://covered.ro/cdn/shop/files/matte.png?v=1791017293&width=600",
+    "image_alt_images": [
+     "https://covered.ro/cdn/shop/files/matte.png?v=1791017293"
+    ],
+    "image_notes": "Only image. Transparent PNG, 2:3 (1000x1500). iPhone back with a graphite frame and plateau and a deep black panel. Low contrast on #121213, so it needs a lighter card or a glow, like ULTRA Matte. If two dark cards look too similar, swap in OFF Glacier (glacier.png).",
+    "evidence": "products.json created_at 2026-10-03 11:47, a sibling of OFF Silver created the same minute. Grid card #3 in apple-skin and all sorted by created-descending, with a 'Nou' badge. compare_at 120.00 equals price, so there is no sale badge."
+   },
+   {
+    "rank": 4,
+    "title": "Skin iPhone - DUO Pink",
+    "handle": "skin-iphone-duo-pink",
+    "url": "https://covered.ro/products/skin-iphone-duo-pink",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 17,
+    "created_at": "2026-09-20T10:52:08+03:00",
+    "badges": [
+     "-17%",
+     "Nou"
+    ],
+    "finish": "DUO (two-tone) roz: platou + ramă roz deschis, panou roz prăfuit",
+    "short_description": "De la zgârieturi și raze UV până la amprente – telefonul tău e acoperit. La propriu și la figurat.",
+    "image_url": "https://covered.ro/cdn/shop/files/duopink.png?v=1789890742&width=600",
+    "image_alt_images": [
+     "https://covered.ro/cdn/shop/files/duopink.png?v=1789890742"
+    ],
+    "image_notes": "Only image. Transparent PNG, 2:3 (1000x1500). iPhone back in two tones of pink (lighter plateau and rim, dusty-pink panel). Bright and very readable on a dark card.",
+    "evidence": "products.json created_at 2026-09-20. Grid card #4 in apple-skin and all sorted by created-descending, with a 'Nou' badge. The site shows -17% (99 vs 120). There is no Samsung DUO Pink."
+   },
+   {
+    "rank": 5,
+    "title": "Skin iPhone - Glacier",
+    "handle": "skin-iphone-glacier",
+    "url": "https://covered.ro/products/skin-iphone-glacier",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 17,
+    "created_at": "2026-09-13T08:52:57+03:00",
+    "badges": [
+     "-17%",
+     "Nou"
+    ],
+    "finish": "culoare plină, albastru gheață (iPhone); also exists as OFF Glacier (two-tone) and Samsung Glacier",
+    "short_description": "Alege dintre o varietate de texturi și culori premium și oferă-i telefonului tău un strat de protecție care îmbină perfect funcționalitatea cu stilul.",
+    "image_url": "https://covered.ro/cdn/shop/files/glaciersimple.png?v=1789278794&width=600",
+    "image_alt_images": [
+     "https://covered.ro/cdn/shop/files/glacier.png?v=1789278756&width=600",
+     "https://covered.ro/cdn/shop/files/samsungglacier.png?v=1789278879&width=600"
+    ],
+    "image_notes": "Transparent PNG, 2:3 (1000x1500). iPhone back in uniform icy blue with a white Apple logo, very readable on a dark card. The first alternate is OFF Glacier (glacier.png), a two-tone blue with a framed panel. The second is the Samsung Galaxy S-Ultra in Glacier blue (samsungglacier.png). All three return 200 image/png for Accept image/jpeg.",
+    "evidence": "products.json created_at 2026-09-13. It is a homepage Skin Lab finish (chip 'Glacier', code GL, data-url /products/skin-iphone-glacier). Grid card #5 in apple-skin sorted by created-descending (#7 in all), with a 'Nou' badge. Samsung version: https://covered.ro/products/skin-samsung-glacier (RON 89.00, compare RON 120.00, -25%, 'Nou', created 2026-09-13, card #1 in samsung-skin sorted by created-descending). Sibling: https://covered.ro/products/skin-iphone-off-glacier (RON 99.00, compare 120.00, 'Nou', created 2026-09-13)."
+   },
+   {
+    "rank": 6,
+    "title": "Skin iPhone - OFF Burgundy",
+    "handle": "skin-iphone-off-burgundy",
+    "url": "https://covered.ro/products/skin-iphone-off-burgundy",
+    "price": "RON 99.00",
+    "price_number": 99,
+    "compare_at_price": "RON 120.00",
+    "discount_percent": 17,
+    "created_at": "2026-09-13T08:51:10+03:00",
+    "badges": [
+     "-17%",
+     "Cel mai vândut"
+    ],
+    "finish": "OFF (two-tone) burgundy; option 'Finisaj': MAT (sold out now) / LUCIOS (available)",
+    "short_description": "Negru, burgundy, titanium, holografic și multe altele. Îți schimbi stilul, nu telefonul.",
+    "image_url": "https://covered.ro/cdn/shop/files/burgundy18.png?v=1789278719&width=600",
+    "image_alt_images": [
+     "https://covered.ro/cdn/shop/files/burgundy.png?v=1789278579&width=600",
+     "https://covered.ro/cdn/shop/files/samsungburgundy.png?v=1789278841&width=600"
+    ],
+    "image_notes": "Transparent PNG, 2:3 (1000x1500). iPhone back with a deep burgundy panel and a lighter burgundy rim and plateau, Apple logo tone-on-tone. Medium contrast on dark: rich, but give it a little glow. The first alternate, burgundy.png (iPhone Burgundy, uniform gradient with a white logo), pops a bit more. The second is the Samsung S-Ultra in Burgundy.",
+    "evidence": "products.json created_at 2026-09-13. This is the site's most-pushed new finish: first and default chip of the homepage Skin Lab (data-name 'OFF Burgundy', CTA 'Vezi skinul OFF Burgundy'), #1 card in the header mega-menu 'Cele mai vândute', and #2 in the homepage cv_bestsellers carousel. Its badge is 'Cel mai vândut' rather than 'Nou' (the best-seller badge seems to win). Grid card #7 in apple-skin sorted by created-descending. Related new products from 2026-09-13: iPhone Burgundy https://covered.ro/products/skin-iphone-burgundy (RON 89.00 / RON 120.00, -25%, 'Cel mai vândut', MAT sold out, LUCIOS available) and Samsung Burgundy https://covered.ro/products/skin-samsung-burgundy (RON 89.00 / RON 120.00, -25%, 'Nou')."
+   }
+  ],
+  "excluded_addons": [
+   "model-iphone-iphone-duo and model-iphone-iphone-duo-1: 'Model iPhone: iPhone DUO' add-on (+15 lei, 2026-09-13, product_type Add-on, tags apo-bridge-product/hide-from-collection)",
+   "model-samsung-z-fold-8 / model-samsung-z-fold-8-ultra: model add-ons (+10 lei, 2026-08-22)",
+   "model-samsung-z-fold-5/6/7: model add-ons (May 2026)",
+   "accesorii-folie-ecran-clear-hydrogel(-1), accesorii-folie-ecran-privacy-hydrogel: screen film add-ons (2026-05-23)",
+   "accesorii-mystery-gift: ACCESORII Mystery GIFT (2026-05-23)",
+   "extraoptiuni-skin-acoperire-full-fara-spatiu-la-camera, extraoptiuni-skin-cu-laterale-separate, extraoptiuni-skin-ultra-premium, model-skin-skin-cu-laterale-separate(-1): EXTRAOPTIUNI add-ons (May 2026)",
+   "inlocuire-skin (replacement), cum-functioneaza (0 lei info product), premium 'ULTRA PREMIUM' option, printare-uv-ultra-premium, skin-blank-* (blank material SKUs)",
+   "huse-* and folie-* products (not skins)",
+   "skin-iphone-need-money-for-skin / skin-samsung-need-money-for-skin (Apr 2026, 50 lei novelty/placeholder, outside the window)",
+   "skin-iphone-minimal (Skin iPhone - MINIMAL, created 2026-07-05, 99/120 lei): new-ish but outside Aug–Oct, NOT in the apple-skin collection, no 'Nou' badge, photo-style images (IMG_3053.jpg + a GIF)",
+   "Kept only as alternates, not top-6 cards: skin-iphone-off-glacier, skin-iphone-burgundy, skin-samsung-glacier, skin-samsung-burgundy (all 2026-09-13)"
+  ],
+  "extra": "NEW PHONE MODELS marked 'Nou' on the homepage device picker (section cv_device_picker, heading 'Alege-ți telefonul'). The chips carry span.cv-picker__chip-badge 'Nou' and aria-label '<model> (Nou): Vezi skinuri':\n- iPhone Duo -> https://covered.ro/collections/apple-skin. data-search also includes 'fold pliabil', so it is a foldable iPhone. Backed by the add-on product 'MODEL IPHONE: iPhone DUO' (+15 lei, created 2026-09-13).\n- iPhone 18 Pro Max -> https://covered.ro/collections/apple-skin\n- iPhone 18 Pro -> https://covered.ro/collections/apple-skin\n- Galaxy Z Fold 8 Ultra -> https://covered.ro/collections/samsung-skin. Add-on 'Model Samsung: Z Fold 8 Ultra' (+10 lei, created 2026-08-22).\n- Galaxy Z Fold 8 -> https://covered.ro/collections/samsung-skin. Add-on 'Model Samsung: Z Fold 8' (+10 lei, created 2026-08-22).\nGalaxy S26 Ultra and S26 appear in the picker without a 'Nou' badge. No Google Pixel model is marked new, and the newest Google skin dates from 2024-11-07, so there is nothing new for Pixel. Every tile links to the brand collection, not a filtered model page. Model choice happens on the product page through the APO options app ('MODEL IPHONE' dropdown).\nOTHER: the full list of skins created since 2026-08-01 is 10 products, 8 iPhone and 2 Samsung: negru-ultra-matte (10-04), off-silver and off-matte-black (10-03), duo-pink (09-20), and iphone-glacier, iphone-off-glacier, iphone-off-burgundy, iphone-burgundy, samsung-glacier, samsung-burgundy (all 09-13). The 4 Skin Lab finishes that are not new: OFF-Black -> skin-iphone-duo-jet-black (2026-03-17), DUO Titanium -> skin-iphone-duo-skin-iphone-17-style (2025-10-13), Forest -> skin-iphone-forest (2026-01-27), Holographic -> skin-iphone-holographic-print-mat (2024-06-01, sold out).",
+  "notes": "PRICE FORMAT: the site shows prices as 'RON 90.00' (theme moneyFormat \"RON {{amount}}\", dot decimal), in cards, on product pages and in the rendered page. It does not use '90,00 lei'. I report prices exactly as displayed. If the newsletter wants localized copy, the equivalents are 90,00 lei / 99,00 lei / 120,00 lei. Discount badges round down: 99 vs 120 shows '-17%', 89 or 90 vs 120 shows '-25%'. OFF Silver and OFF Matte Black have compare_at equal to price (120.00), so the site shows no strikethrough and no sale badge. The '-30% la 2 skinuri' offer still applies; product pages show 'RON 84.00 / buc. când iei 2' for those and 'RON 63.00 / buc.' for ULTRA Matte.\nDESCRIPTIONS: body_html is the same boilerplate on every product ('Protecție premium pentru un design impecabil…'). The only finish-specific sentence in the whole set is ULTRA Matte's 'Skin Negru ULTRA mat, realizat din autocolant 3M Premium.' The other 5 short_descriptions are verbatim, but they are generic site lines: from the product page 'Material & grosime' block and body_html, and for OFF Burgundy the homepage Skin Lab step 04. A copywriter should replace them. Suggested taglines (mine, NOT from the site): ULTRA Matte 'Negru adânc, ultra mat, fără reflexii.'; OFF Silver 'Ramă argintie, spate alb: look-ul two-tone pe iPhone-ul tău.'; OFF Matte Black 'Grafit și negru mat, în două tonuri discrete.'; DUO Pink 'Două nuanțe de roz, un singur skin.'; Glacier 'Albastru gheață, pe tot spatele.'; OFF Burgundy 'Burgundy în două tonuri, mat sau lucios.'\n'OFF' and 'DUO' are two-tone designs: the frame and camera plateau are one tone and the main back panel another, mimicking the iPhone 17 Pro. Plain names like Glacier and Burgundy are one solid color.\nIMAGES: every image is a transparent RGBA PNG at 1000x1500 (2:3); &width=600 gives 600x900. The covered.ro/cdn URLs answer 200 image/png to 'Accept: image/jpeg'. Shopify serves webp only when the client's Accept header includes image/webp, and &format=png/jpg is ignored. The two black skins (ULTRA Matte, OFF Matte Black) need a lighter card or an amber glow on the #0A0A0B/#121213 theme. OFF Silver, DUO Pink and Glacier stand out best.\nORDER: the six are sorted newest first, and all carry 'Nou' or a Skin Lab feature. For a hero card, OFF Burgundy is the site's most-promoted new finish (Skin Lab default chip, first in the mega-menu best-sellers) and Glacier is the second Skin Lab finish that is new. If you want fewer black cards, swap OFF Matte Black for OFF Glacier (https://covered.ro/products/skin-iphone-off-glacier, RON 99.00 / RON 120.00, 'Nou', image https://covered.ro/cdn/shop/files/glacier.png?v=1789278756&width=600).\nAVAILABILITY: the OFF Burgundy and Burgundy MAT variants are sold out ('available': false); LUCIOS is in stock. All other picks are in stock. All product URLs return 200."
+ }
+}

@@ -1,0 +1,241 @@
+{
+ "brand": {
+  "scores": [
+   {
+    "variant": "a",
+    "score": 8.5,
+    "strengths": [
+     "Hero is close to the site hero (d-3) in a new layout. It has 1px #50504F L-bracket corners with mono callout tags straddling the frame edges ('● ORICARE 2 SKINURI' top-left; '● ORICE TELEFON' and '● AUTOMAT ÎN COȘ' bottom-right, 10px Martian Mono with a #2F2F2F border and 4px radius). The H1 is Archivo 800 at 125% stretch and -.02em. It runs −30% in solid #F5B100 at 132px, then 'LA 2' solid, then 'SKINURI.' outlined (`.ol` uses ink fill with a 2px #F3F3EF stroke and paint-order stroke fill). That matches the site's `.cv-hero--l2-outline` treatment exactly, and the inline color:#F3F3EF fallback looks fine on its own.",
+     "Its eyebrow is the most faithful of the three: a real 7px #F5B100 dot with a 3px #392B09 halo (`<div style=\"width:7px;height:7px;border:3px solid #392B09;border-radius:7px;background-color:#F5B100\">`) beside 11px mono at .1em in #A8A8A6 or #9A9A98, the same as .cv-eyebrow.",
+     "Section 06 'COVERED ÎN CIFRE / CIFRELE CARE NE RECOMANDĂ.' is close to a pixel copy of the site stats block (d-7). It has a #111113 band, mono 01–04 indices with solid #F5B100 1px meters (pixel-verified #f5b100), large Archivo numbers with yellow '+', 10.5px mono labels and the site's own notes.",
+     "Product cards are faithful and well made. Each has a light #EFEFEB tile with a radial-gradient class, a yellow '-42%' pill, an ink '★ CEL MAI VÂNDUT' pill, a yellow mono price with the struck #8C8C8B compare-at, and a mono finish tag with rating. The cards are built as row-split table cells, so images, titles, prices and offer chips line up across each pair at both breakpoints (a-d02, a-d03, a-m03). The gutter measures 11px, which keeps the site's airy grid.",
+     "The see-all bars copy the device-picker bar: a gold hairline, an amber gradient over #121213, Archivo 800 caps, a yellow mono count (199 or 138) and a 40px yellow arrow circle. The closing 2×2 device tiles ('199 DE SKINURI / IPHONE / VEZI SKINURI →') rebuild the site's model tiles.",
+     "The footer matches d-12. It has the logo, the caps tagline, 'DIN 2018 · 37.000+ CLIENȚI · 60.000+ SKINURI', Instagram and TikTok pills, and the FIRMĂ & CONTACT ID table with mono dt/dd hairline rows, the © mono line and the 5% 'covered' watermark.",
+     "Palette discipline is the tightest of the three: only #0A0A0B, #111113, #121213, #F3F3EF, #F5B100 and the flattened neutrals from the site, with no off-palette accents. The equation panel's 32px grid and amber glow reuse the Skin Lab motif."
+    ],
+    "weaknesses": [
+     "The yellow band is undersized and flat: 30px desktop and 19px mobile (`.band`), only two words, 'Tăiat laser ✦ zero volum', no tilt. Next to the site's 96px tilted marquee it reads as a ribbon, and 'Tăiat laser' is solid although the site outlines it.",
+     "On desktop the hero leaves a dead black area to the right of 'LA 2' (a-d01, x≈280–590). The 3-line headline is left-heavy inside the bracket frame.",
+     "The equation panel phones are at different scales. The Samsung Titanium is max-width 172 and the OFF Burgundy 190, and the source crops differ, so the Samsung reads smaller and flatter (a-d01).",
+     "On mobile the site card parity drops. The '★ CEL MAI VÂNDUT' pill (`class=\"pl hm\"`) and the rating (`class=\"hide\"`) are both hidden at ≤620px, so a-m02 and a-m03 cards show only '-25%'.",
+     "Pills, the '%' circles and card borders/radii live in classes (`.pl`, `.pc`, `.cb/.ctp/.cbt`). In clients that strip <style> they degrade to flat text highlights and borderless cards.",
+     "Section headers are repetitive: six numbered 01–06 index-plus-meter headers. On the site the meter index belongs only to the stats grid. The 'Nº 01' rows and the spec table are invented components. The page is long (~7.7k px).",
+     "Some copy is invented: the stat note 'Scorul mediu dat de clienți.' and the closing H2 'ALEGE MODELUL. ALEGE DOUĂ FINISAJE.' Both are close to the voice, but neither is site copy."
+    ]
+   },
+   {
+    "variant": "b",
+    "score": 7,
+    "strengths": [
+     "The offer panel is a faithful copy of the site's collection-grid promo tile. It has a full #F5B100 panel, '◆ OFERTĂ PACHET' in mono, a 158px Archivo 800 −30% at 125% stretch, 'LA 2 SKINURI.', and the ruler-tick divider built from `.rt0/.rm/.rM` cells. It reads as covered's own promo, and it is the highest-impact opener.",
+     "The dark cart receipt inside the panel is well made: mono struck prices, 'TOTAL ESTIMAT RON 110.60' and a yellow 'ECONOMISEȘTI RON 47.40' badge in the PDP badge style.",
+     "Product cards are closest to the site's collection cards, including the mono index '01'–'06' at the top right of the tile, the '● NOU' white pill with a yellow dot, and the '★ CEL MAI VÂNDUT' ink pill.",
+     "The closing CTA matches site d-11. It pairs a yellow '60.000+' with 'SKINURI REALIZATE.', outlines 'AL TĂU URMEAZĂ.', adds a dark cv-offer card with a '%' circle, and ends on the 3-up stats row (★ 4,69/5 · 37.000+ · 1,7) with the verbatim note 'Un singur finisaj e rareori de ajuns.'",
+     "The footer is fully on-brand, with the ID table, pills and watermark."
+    ],
+    "weaknesses": [
+     "The hero gives up the site's dark hero signature: no bracket frame, no outlined display line and no amber glow. The two phone cutouts are tiny at 88px (`width=\"88\"`), and the matte-black iPhone sits on yellow, so the composition looks underweighted next to the 158px numeral (b-d01, b-m01).",
+     "The cards are heavy and repetitive. All 14 cards carry both a '−30% CÂND IEI 2' chip and a full-width 44px 'VEZI SKINUL →' ghost button, and site cards have no buttons. Three near-identical grids plus two strips make the page monotone. The fixed title height (`.tt`) leaves visible blank lines under single-line titles, for example under 'Skin iPhone - Negru Mat' in b-d02.",
+     "The eyebrow dot is a '●' glyph in Martian Mono. It renders as a tiny square with no halo ring ('■ CELE MAI VÂNDUTE' in b-d01), unlike .cv-eyebrow__dot.",
+     "The offer strips are slim, with Archivo caps at about 15px. Without the outline alternation or the tilt they don't carry the marquee's character.",
+     "'VEZI TOATE NOUTĂȚILE →' changes to a ghost button, which breaks the see-all-bar pattern the other two sections set up.",
+     "On mobile, the best-seller pill collapses to a bare '★' circle (`&#9733;<span class=\"hide-m\">&nbsp;CEL&nbsp;MAI&nbsp;VÂNDUT</span>`), which is cryptic. The outlined 'AL TĂU URMEAZĂ.' nearly touches the 375px edges, and the CTA sub-line orphans 'secunde.' (b-m06)."
+    ]
+   },
+   {
+    "variant": "c",
+    "score": 7.5,
+    "strengths": [
+     "The hero is the closest to the homepage. It has the site eyebrow, a 2-line H1 whose second line is outlined ('DOUĂ SKINURI.' / '−30%.' with `.ol` ink fill and a 3px #F5B100 stroke, solid yellow inline fallback), and the site button pair. It also places the three real hero phones (Samsung Titanium, iPhone OFF-Black, Pixel piele) inside the corner-bracket frame with the verbatim callouts '● VINIL PREMIUM · 0,2 MM' and '● TĂIAT LASER PE MODEL', over an amber glow.",
+     "It has the best yellow band of the three: tilted −2° under @supports, with double #C18C02 rules and Archivo 800 at 125%. It uses the site's exact word sequence, VINIL PREMIUM ✦ TĂIAT LASER (outlined) / APLICARE ÎN 60 DE SECUNDE / ZERO VOLUM (outlined) ✦ RETUR 30 DE ZILE, with `.olk` giving yellow fill and an ink stroke (cf-d02).",
+     "Product cards are clean site cards with no extra chips or buttons: the light tile, -% and CEL MAI VÂNDUT pills, a yellow mono price with the struck compare-at, and a mono rating.",
+     "Section 'COVERED ÎN CIFRE' has a ★4,69/5 'PE BAZA A 1.278 DE RECENZII' box plus the 2×2 yellow-meter stats. The closing 'DIN 2018 / 60.000+ SKINURI REALIZATE. AL TĂU URMEAZĂ.' is verbatim site copy with the yellow '60.000+'. 'DROP-URILE NOI.' reuses the site's own newsletter phrase."
+    ],
+    "weaknesses": [
+     "The card gutter collapses to 0px at both breakpoints. The markup is `<td class=\"pc\" width=\"50%\">` + `<td class=\"gut\" width=\"12\">` + `<td width=\"50%\">`, and the pixel scan at y=2470 shows the two #1F1F20 card borders touching at x=319–320, and again on mobile at x=185–186. Every grid looks cramped, unlike the site's spaced grid.",
+     "On mobile the '★ CEL MAI VÂNDUT' pill wraps to a second line inside the tile and pushes the phone down. Paired cards then misalign: tile heights and title baselines differ in c-m02 (Dark vs. Titanium) and c-m03 (Negru Mat vs. Personalizat).",
+     "The hero phones sit flat in a 30/40/30 row. The side phones are small (max-width 150) next to the 206px center, so it reads as a product lineup, not the site's tilted fan.",
+     "The offer ticket's dashed yellow border and perforation notches are outside the site vocabulary, which uses 1px hairlines and no dashed rules. On mobile its example line wraps ('NEGRU / MAT →'), and 'RON 96.60' crowds the struck 'RON 138.00' (c-m02).",
+     "Heading punctuation is inconsistent: 'TOP VÂNZĂRI IPHONE' and 'TOP VÂNZĂRI SAMSUNG' have no period, while 'DROP-URILE NOI.', 'TĂIAT PE MODELUL TĂU.' and the others do.",
+     "The eyebrow dot is an Arial '●' at 10px with no halo ring."
+    ]
+   }
+  ],
+  "winner": "a",
+  "grafts": [
+   "From C: replace A's small flat band with C's tilted −2° marquee band. It has the site's full word sequence (VINIL PREMIUM ✦ TĂIAT LASER outlined / APLICARE ÎN 60 DE SECUNDE / ZERO VOLUM outlined ✦ RETUR 30 DE ZILE), the `.olk` yellow-fill/ink-stroke alternation, the double #C18C02 rules, and the @supports tilt with box-shadow.",
+   "From C or B: use the verbatim site closing headline 'DIN 2018 / 60.000+ SKINURI REALIZATE. AL TĂU URMEAZĂ.' with a yellow '60.000+' and the sub-line 'Alege modelul, alege finisajul. Restul durează 60 de secunde.', instead of A's invented 'ALEGE MODELUL. ALEGE DOUĂ FINISAJE.' A's device tiles can stay underneath.",
+   "From C: use the '★ 4,69/5 · PE BAZA A 1.278 DE RECENZII' wording for A's first stat cell, replacing the invented note 'Scorul mediu dat de clienți.'",
+   "From B: put the verified cross-brand cart numbers into A's SKIN 01 + SKIN 02 equation panel: Skin iPhone - Negru Mat RON 69.00 → 48.30, plus Skin Samsung - Burgundy RON 89.00 → 62.30, total RON 158.00 → RON 110.60, 'ECONOMISEȘTI RON 47.40'. This needs the panel's phones swapped to that verified pair, or the panel images kept with the numbers moved to the spec table.",
+   "From B: add the small mono card index ('01', '02' …) at the top right of each product tile, as on the site's collection cards.",
+   "From C: the 1-up lead card for Skin iPhone - Negru ULTRA Matte in Noutăți, using its only finish-specific site sentence and a mini cv-offer card (RON 63.00 / buc. când iei 2). It gives the new-arrivals section a focal point A's three equal rows lack.",
+   "From B: the ruler-tick divider under the hero headline. It could fill A's empty desktop space right of 'LA 2' or sit under the mechanics line."
+  ],
+  "must_fix": [
+   "Enlarge A's yellow band and make it on-brand. It is now 30px desktop / 19px mobile, two words, flat, and 'Tăiat laser' is solid. Use the site's word sequence with the alternate words outlined, and add the −2° tilt under @supports.",
+   "Restore the '★ CEL MAI VÂNDUT' pill and the rating on mobile cards. `class=\"pl hm\"` and `class=\"hide\"` remove them at ≤620px. Wrap the pill under the -% pill, as long as tile and image positions stay aligned across each pair.",
+   "Rebalance the desktop hero. Fill or tighten the dead black area right of 'LA 2' inside the bracket frame, for example with a mono annotation or the ruler ticks, or by narrowing the frame.",
+   "Match the visual scale of the two phones in the equation panel. The Samsung Titanium (max-width 172) reads smaller than the OFF Burgundy (190) because the source crops differ.",
+   "Inline the essentials of the pill (`.pl`), '%' circle (`.pc`) and card border/radius (`.cb/.ctp/.cbt`) styles: padding, border-radius and 1px #1F1F20 borders. Clients that strip <style> should still render pills and card outlines, not flat highlights.",
+   "Replace invented copy with site copy. The stat note 'Scorul mediu dat de clienți.' should become 'Pe baza a 1.278 de recenzii' or similar. Consider the verbatim closing H2 '60.000+ skinuri realizate. Al tău urmează.'",
+   "Reduce the repeated 01–06 index-plus-meter headers. Keep the meter index for the stats section, as on the site, and use plain dot-eyebrow + H2 + hairline headers elsewhere. This shortens the ~7.7k px length and removes visual monotony."
+  ]
+ },
+ "engineering": {
+  "scores": [
+   {
+    "variant": "c",
+    "score": 7.5,
+    "strengths": [
+     "Smallest and lightest: 83,858 B (81.9 KiB, about 20 KB below Gmail's clip) and 1.07 MB across 15 images. Product PNGs are requested at width=300 and shown at 140px, about 2x, against 1.38 MB for A and 1.66 MB for B. All 16 <img> have https, a sized variant, a width attribute, display:block, height:auto, border:0 and a styled Romanian alt. All images returned 200 image/png.",
+     "Most Outlook-proof buttons. All 5 CTAs (hero pair, ULTRA Matte 'VEZI SKINUL', closing pair) use the mso-text-raise / letter-spacing <i> hack with mso-padding-alt:0, so the whole padded area is clickable in Word. The MSO block forces '*{font-family:Arial,sans-serif!important}', which covers divs too.",
+     "The hero H1 degrades safely. The two display:block spans ('DOUĂ SKINURI.' and '−30%.') have a newline between them, so Outlook, which ignores display:block on span, still shows 'DOUĂ SKINURI. −30%.' with a space. The outline (.ol with stroke 3px #F5B100 inside @supports) falls back to inline color:#F5B100, which is solid yellow.",
+     "Its Gmail link reset is safe: 'u+#body a{color:inherit;text-decoration:none}' has no !important, so inline link colours still win. The offer chip and ticket rows are built from tables, not padded divs. The footer watermark has aria-hidden and mso-hide:all.",
+     "Links are correct. All 48 covered.ro links carry utm_source/medium/campaign plus a section utm_content and use &amp;-escaped hrefs. Every target returned HTTP 200 with 0 redirects, including the hero phone links (skin-samsung-titanium, skin-iphone-duo-jet-black, skin-google-pixel-aspect-piele-neagra-full-grain). '#alege-telefonul' is placed after the query string and exists as an id on the homepage.",
+     "Alt-text colours stay readable on the cell behind each image: #B2B2AF on the dark hero, #45433E on the #EFEFEB tiles. Each card is one <td> with bgcolor, a border and padding, so cards keep their outline even when <style> is stripped. The preheader starts with '−30% la 2 skinuri.' and has about 40 &#847;&zwnj;&nbsp; fillers."
+    ],
+    "weaknesses": [
+     "Cards in a row are not bottom-aligned. On desktop, the price of 'Skin iPhone Dark - Rafinat cu Aur 22K - EDITIE SPECIALA' sits about 18px lower than the Titanium 3D price. At 375px the '★ CEL MAI VÂNDUT' pill wraps to a second line inside the tile and pushes the phone down, so tile heights in a row differ (Titanium vs Dark, Negru Mat vs Black Titanium).",
+     "The mono stack is only 'Martian Mono','Courier New',monospace. Gmail never loads the web font, so its 9.5–10.5px labels at #9A9A98/#A8A8A6 render in thin Courier New.",
+     "The tilted band relies on '.tilt{transform:rotate(-2deg);margin:14px -24px}' plus .bandwrap overflow:hidden. At 375px the rotated rows measure 404px wide and are clipped, and 'ZILE' ends about 7px from the edge. The ticket notches (<td> with border-radius) render as black squares in Outlook.",
+     "'Vezi emailul în browser' appears only in the footer; there is no top-bar link. In the 'VEZI TOATE SKINURILE …' bars only the text (about 18px tall) and the 40px circle are tappable, both under 44px. The Instagram/TikTok pills are 14+14+14 = 42px.",
+     "8 source lines are longer than 998 characters (max 5,255). That is safe only if the ESP sends quoted-printable. There is no mso-line-height-rule:exactly on the 124px/52px display lines. All three variants overflow at 320px (scrollWidth 350)."
+    ]
+   },
+   {
+    "variant": "a",
+    "score": 6.5,
+    "strengths": [
+     "Outlook-aware touches: a VML v:roundrect on the hero 'Alege-ți telefonul' CTA, the MSO '*{font-family:Arial!important}' override, and '[data-ogsb] .tile{background-color:#EFEFEB!important}' to keep the light product wells in Outlook.com dark mode.",
+     "Best mono fallback chain: 'Martian Mono',Menlo,Consolas,'Courier New',monospace, so Gmail on iOS gets Menlo instead of thin Courier.",
+     "Card rows share <tr>s for image, info, price and offer chip across both columns, so prices and chips line up regardless of title length (verified in the 640 render). All 63 tables have role=presentation and cellpadding/cellspacing/border 0. Body, wrapper and section cells all carry bgcolor plus inline background-color.",
+     "Copy is kept in sentence case and uppercased with text-transform (89 uses), the same as the site, so screen readers get natural casing. Every covered.ro link has the full UTM set (utm_content: header/hero/top-iphone/top-samsung/noutati/cta/footer) and every target returned 200."
+    ],
+    "weaknesses": [
+     "Outlook glues its block spans together. The hero H1 is '<span style=\"display:block\">&minus;30%</span><span ...>la 2</span><span ...>skinuri.</span>' with no whitespace, so Word, which ignores display:block on span, shows '−30%LA 2SKINURI.'. The 4 closing device tiles do the same, giving '199 DE SKINURIIPHONEVEZI SKINURI →'.",
+     "Hero image alt text is unreadable with images blocked, which is Outlook's default: 'color:#45433E' on panel bgcolor #111113 is 1.91:1.",
+     "Largest file at 87,809 B. 31 lines are longer than 998 characters (max 10,128), the most line-wrap risk if the ESP does not QP-encode. Hrefs use raw '&utm_' (47 times) while img src uses &amp;.",
+     "Several elements will not survive Outlook or GANGA. The card borders and radii exist only in classes (.cb, .ctp, .cbt). The see-all circle is an '<a style=\"display:block;width:40px;...background-color:#F5B100\">', which Outlook shows as a highlighted arrow. The eyebrow dots and the hero '+' are sized <div>s. Only the hero primary button has VML; the closing and secondary CTAs depend on <a> padding, which Outlook drops.",
+     "The hero and closing CTA go to the bare 'https://covered.ro/?utm…' instead of the verified '/#alege-telefonul'. The social pills are 42px. The 9.5px mono meta labels appear 12 times."
+    ]
+   },
+   {
+    "variant": "b",
+    "score": 5.5,
+    "strengths": [
+     "The most robust container: a fluid-hybrid table (width:100%; max-width:600px) inside an MSO ghost table of 600. It shrinks even without media queries: stripped of <style> it measures 507px at 375, against a fixed 600 for A and C.",
+     "Accessibility wrapper '<div role=\"article\" aria-roledescription=\"email\" aria-label=\"−30% la 2 skinuri\" lang=\"ro\">'. Nav cells are 45px tall, and the see-all rows use 'display:block;padding:22px 0' on the link, giving a 64px tap target.",
+     "Main CTAs are padding-based bulletproof buttons with mso-padding-alt on the <td>. The source is the cleanest: hrefs are &amp;-escaped, only 6 lines exceed 998 characters (max 3,359), and utm_content is the most granular (nav, hero-exemplu, iphone, iphone-toate, strip-1, strip-2, modele-noi, noutati-toate…). All 55 covered.ro links returned 200, including /products/skin-samsung-burgundy.",
+     "Hero contrast is very strong (#0A0A0B on #F5B100 is 10.5:1, #3B2D06 on #F5B100 is 7.1:1), and its hero alt text is #0A0A0B on yellow, so it stays readable with images blocked."
+    ],
+    "weaknesses": [
+     "The Gmail and Samsung link reset will probably break CTAs. 'u+#body a,#MessageViewBody a{color:inherit!important;...font-size:inherit!important;font-family:inherit!important;line-height:inherit!important}' uses !important, so it beats every inline link style. In a simulation with the Gmail <u></u><div id=\"body\"> wrapper, the closing yellow 'ALEGE-ȚI TELEFONUL →' turns #F3F3EF on #F5B100 (about 1.8:1) and wraps. Both yellow offer strips become white-on-yellow. Nav and 'VEZI SKINUL' jump to 16px. The underlines on 'Vezi emailul în browser' and 'Dezabonare' disappear.",
+     "The MSO override lists only 'body,table,td,p,a,span,h1,h2', not div. The 14 card titles are '<div class=\"tt\" style=\"font-family:Archivo,...\">', which risks Outlook falling back to Times New Roman. The hero H1 spans have no whitespace between them, giving '−30%LA 2 SKINURI.' in Outlook.",
+     "The ruler ticks are 25 empty <td>/<div> styled only by classes (.rt0, .rm, .rM). Outlook ignores height on <div>, so they may render as solid blocks, and they vanish when <style> is stripped. The 14 per-card 'VEZI SKINUL' ghost buttons rely on <a> padding with no mso-padding-alt, so they collapse to text height in Outlook and are 42px tall elsewhere.",
+     "Heaviest image payload: 1.66 MB across 17 PNGs, with product shots requested at width=400 for a 150px display (2.7x). The 9.5px size is used 35 times (badges, '−30% CÂND IEI 2' labels, mobile '/ buc.'). Card alignment depends on a fixed 'height:38px' title div, which Outlook ignores."
+    ]
+   }
+  ],
+  "winner": "c",
+  "grafts": [
+   "From B: the fluid-hybrid shell. Use 'width=\"100%\" style=\"width:100%;max-width:600px;margin:0 auto\"' inside C's existing '<!--[if mso]><table width=\"600\">' ghost table, so the email still fits phones whose clients strip <style> or media queries.",
+   "From B: the '<div role=\"article\" aria-roledescription=\"email\" aria-label=\"−30% la 2 skinuri\" lang=\"ro\">' wrapper around the body content.",
+   "From B: the see-all bar pattern where the label link is 'display:block;padding:22px 0', giving about a 64px tap row, plus its more granular utm_content slugs (e.g. top-iphone-toate, noutati-toate, strip-1).",
+   "From A: the mono fallback chain 'Martian Mono',Menlo,Consolas,'Courier New',monospace in place of C's 'Martian Mono','Courier New',monospace.",
+   "From A: the Outlook.com dark-mode guard '[data-ogsb] .tile{background-color:#EFEFEB!important}' to protect the light product wells.",
+   "From A: the shared-row card grid (image / info / price rows in the same <tr> across both columns, price row valign=bottom) or an equivalent, so prices line up when one title wraps to 2–3 lines.",
+   "From A and B: a top-bar 'Vezi emailul în browser' link to {{view_in_browser_url}}, in addition to the footer link.",
+   "From B: on mobile, collapse '★ CEL MAI VÂNDUT' to '★' with a hide-m span, so the pill doesn't wrap and push the image down in 2-up cards."
+  ],
+  "must_fix": [
+   "Never ship a Gmail or Samsung link reset with !important (B's 'u+#body a,#MessageViewBody a{color:inherit!important;font-size:inherit!important;...}'). It overrides inline link colours and sizes, making yellow CTAs white-on-yellow (about 1.8:1). Keep C's non-important 'u+#body a{color:inherit;text-decoration:none}'.",
+   "Put whitespace or a <br> between every display:block <span> pair: the hero H1 lines and A-style device tiles such as '199 de skinuri' / 'iPhone' / 'Vezi skinuri'. Outlook ignores display:block on span and runs them together ('−30%LA 2SKINURI.'). Use separate <div>s or <br>, and add mso-line-height-rule:exactly to the 52–158px display lines.",
+   "Fix card alignment in C: at 375px '★ CEL MAI VÂNDUT' wraps inside the tile, so tile heights in a row differ, and on desktop the price rows sit at different heights when one title runs to 2 lines. Use row-shared cells or valign=bottom price rows, and a nowrap '★' badge on mobile.",
+   "Alt-text colour must contrast with the background of the cell that holds the image. A's hero uses #45433E on #111113 (1.91:1); check every image cell, because Outlook blocks images by default.",
+   "Make every interactive element at least 44px tall. The Instagram/TikTok pills are 14+14+14 = 42px in all variants; use 15px vertical padding. Make the see-all label a padded block link instead of bare text beside the 40px circle.",
+   "Keep the final HTML under 90 KB after grafting (C is at 83,858 B) and keep every source line under 998 characters. A has 31 such lines (max 10,128) and C has 8 (max 5,255). Hard-wrap between tags so MTAs that do not quoted-printable-encode cannot split attributes.",
+   "Extend the MSO font override to cover all elements ('*{font-family:Arial,sans-serif!important}', as in A and C, not B's selector list). Otherwise divs with an inline Archivo stack can fall back to Times New Roman in Outlook."
+  ]
+ },
+ "conversion": {
+  "scores": [
+   {
+    "variant": "a",
+    "score": 8,
+    "strengths": [
+     "Hero headline is the most legible offer statement of the three: '−30%' (yellow, true U+2212) / 'LA 2' / 'SKINURI.' (outlined), directly over the verbatim mechanics line 'Combină oricare 2 skinuri, pentru orice telefon. Reducerea se aplică automat în coș.', with frame tags '● ORICARE 2 SKINURI / ● ORICE TELEFON / ● AUTOMAT ÎN COȘ'. What, how and where are all visible in the first ~600px (a-d1, a-m1).",
+     "The equation panel (SKIN 01 Samsung Titanium + SKIN 02 iPhone OFF Burgundy = '−30% LA AMBELE · AUTOMAT ÎN COȘ') shows the mix-brands mechanic without a paragraph; both phones link to real products.",
+     "Section 01 spec table is accurate and complete against the cart tests: 'Oricare 2 skinuri de telefon. Același finisaj sau două diferite.', 'Poți combina iPhone, Samsung și Pixel în aceeași comandă.', 'Nu ai nevoie de cod', the worked example 2 × Negru Mat ~~RON 138.00~~ RON 96.60 (RON 48.30 / buc.), and 'Nu intră: Husele, folia de ecran și extraopțiunile.'",
+     "Every product card carries the PDP offer chip '% RON X / buc. când iei 2', and every value is a correct 0.7× calculation (84.00, 62.30, 48.30, 69.30, 63.00). Cards also carry real ratings (★ 4,9 (40), ★ 4,4 (7)…) and finish tags.",
+     "True best-seller order for iPhone (#1–4). New-arrival rows add short descriptive lines plus the verbatim ULTRA Matte copy 'Skin Negru ULTRA mat, realizat din autocolant 3M Premium.'; the 'Vezi toate noutățile' link uses sort_by=created-descending.",
+     "The closing 'ALEGE MODELUL. ALEGE DOUĂ FINISAJE.' (DOUĂ in yellow) is a neat offer-specific twist on the site line. It sits above 4 device tiles with real counts (199 / 138 / 47 / 47 'Vezi skinuri →'), which give strong end-of-email routing."
+    ],
+    "weaknesses": [
+     "Primary CTA 'ALEGE-ȚI TELEFONUL →' sits at ~1150px on desktop and ~965px on mobile. The equation panel pushes both hero buttons below the first screen.",
+     "'ALEGE-ȚI TELEFONUL' links to https://covered.ro/?…utm_content=hero without the #alege-telefonul anchor that exists on the homepage, so the click lands on the hero, not the device picker.",
+     "Preheader is only the mechanics line; the '−30%' number never appears in the inbox preview.",
+     "Only 4 iPhone bestsellers. Product cards have no explicit per-card button; only the image and title are linked.",
+     "Invented stat note 'Scorul mediu dat de clienți.' (the designer flags it). 'Reducerea se aplică automat în coș. Restul durează 60 de secunde.' reads as if checkout takes 60 s, because the site's 'Restul' refers to applying the skin.",
+     "The spec table restates the hero mechanics almost word for word, adding length (~7.7k px) without new persuasion beyond the worked example."
+    ]
+   },
+   {
+    "variant": "b",
+    "score": 8.5,
+    "strengths": [
+     "Most complete above-the-fold offer. Yellow 'Ofertă pachet' tile with '◆ OFERTĂ PACHET / FĂRĂ COD', giant '−30%' + 'LA 2 SKINURI.', the verbatim mechanics line, then 'Iei 3? Și al treilea are −30%. Husele și foliile de ecran nu intră în ofertă.' This covers what, how, where, the stacking rule and exclusions, all accurate to the Shopify discount config (allocation each, 2+ items).",
+     "The cart receipt reproduces verified cart test (b) exactly: Skin iPhone - Negru Mat ~~RON 69.00~~ RON 48.30 + Skin Samsung - Burgundy ~~RON 89.00~~ RON 62.30, TOTAL ESTIMAT ~~RON 158.00~~ RON 110.60, 'ECONOMISEȘTI RON 47.40', plus the verbatim 'TVA inclus. Livrarea se calculează la finalizarea comenzii.' It turns −30% into concrete money and shows cross-brand mixing.",
+     "Best grid conversion mechanics: every card has the PDP-style chip '−30% CÂND IEI 2 / RON X / buc.' (all values correct: 84.00, 62.30, 48.30, 69.30, 63.00) plus a 44px 'VEZI SKINUL →' button.",
+     "Largest real assortment, all with correct prices and compare-at prices: 6 iPhone bestsellers in true rank order (Personalizat excluded, Waves at #6), 4 Samsung, and 4 NOU (ULTRA Matte, OFF Silver with no strike since compare=price, DUO Pink, Glacier). Also a 'MODELE NOI: IPHONE DUO · 18 PRO MAX · 18 PRO' row, and 'VEZI TOATE NOUTĂȚILE →' going to apple-skin?sort_by=created-descending.",
+     "Copy is on-voice and correct Romanian with short new lines: 'Iei oricare 2 și fiecare skin costă cu 30% mai puțin.', 'Același vinil premium, tăiat laser pe Galaxy-ul tău.', 'Finisaje abia lansate. Intră și ele la −30% când iei 2.', 'IPHONE + SAMSUNG? MERGE.' The closing uses the verbatim '60.000+ SKINURI REALIZATE. AL TĂU URMEAZĂ.' plus 'Alege modelul, alege finisajul. Restul durează 60 de secunde.' and a dark offer card.",
+     "No invented claims: no deadline, code, free shipping or stock claims; all 3 stats appear as on site."
+    ],
+    "weaknesses": [
+     "Repetitive. The offer appears in the hero, the receipt, 14 card chips, 2 strips and the closing card. 'Iei 3?' is said twice (hero line and strip 2 'IEI 3? TOATE 3 AU −30%'), and the email runs ~7.6k px.",
+     "Product cards drop the per-product ratings (★ 4,8 (26) etc.) that A and C show, losing card-level social proof.",
+     "On mobile the best-seller pill collapses to a bare '★', because the text 'CEL MAI VÂNDUT' sits in a span with class hide-m (b-m3, Samsung Negru Mat). The badge loses its meaning.",
+     "Preheader lacks the '−30%' number. 'ALEGE-ȚI TELEFONUL' links to '/' without #alege-telefonul. The hero has a single CTA with no 'VEZI CELE MAI VÂNDUTE' secondary.",
+     "Hero cutouts are small (~70px) and the primary CTA sits at ~930px on desktop. The receipt does most of the work above the fold.",
+     "The hero exclusion line omits extraopțiuni (A and C mention them)."
+    ]
+   },
+   {
+    "variant": "c",
+    "score": 7.5,
+    "strengths": [
+     "Best inbox and first-screen efficiency. Preheader '−30% la 2 skinuri. Combină oricare 2 skinuri, pentru orice telefon. Reducerea se aplică automat în coș.' carries the number. The hero pair 'ALEGE-ȚI TELEFONUL →' + 'VEZI CELE MAI VÂNDUTE' is at ~490px on desktop and ~420px on mobile, the only variant with CTAs in the first viewport.",
+     "'ALEGE-ȚI TELEFONUL' correctly deep-links to /?…#alege-telefonul (the anchor exists on the homepage). All hero phone links point to real products (skin-samsung-titanium, skin-iphone-duo-jet-black, skin-google-pixel-aspect-piele-neagra-full-grain, all verified HTTP 200).",
+     "The offer ticket is clear and accurate: COMBINI 'ORICARE 2 SKINURI' / TELEFON 'ORICE MODEL, ORICE BRAND' / COD 'NU AI NEVOIE' / REDUCERE 'AUTOMAT, ÎN COȘ', the worked example RON 96.60 vs ~~RON 138.00~~ with 'RON 48.30 / buc. când iei 2', and 'HUSELE, FOLIILE ȘI EXTRAOPȚIUNILE NU INTRĂ ÎN OFERTĂ.'",
+     "Most faithful site voice and data: Samsung uses the true best-selling order 1–4 including Personalizat. 'DROP-URILE NOI.' borrows the site's newsletter phrase. The ULTRA Matte lead card is correctly labelled '01 · CEL MAI NOU SKIN' with the only finish-specific site copy and its own RON 63.00 offer chip. The full 'Cifrele care ne recomandă.' stats use the site's own notes.",
+     "Closing ends with a clear reminder line '◆ −30% LA 2 SKINURI · SE APLICĂ AUTOMAT ÎN COȘ' under the button pair."
+    ],
+    "weaknesses": [
+     "The hero headline 'DOUĂ SKINURI. / −30%.' is a reframe; the offer's literal name '−30% la 2 skinuri' first appears in the ticket at ~1065px. It is slightly less instant than A or B, and in Gmail the outlined '−30%.' becomes plain yellow.",
+     "Bestseller grids carry no per-card '/ buc. când iei 2' price and no per-card button, so the offer is not reinforced where purchase intent forms. The OFF Silver and DUO Pink new-arrival cards also lack it.",
+     "Noutăți ends with a generic 'VEZI TOATE SKINURILE' → /collections/toate-produsele instead of a newest-first link, which makes it a weak close for the new-arrivals section.",
+     "Samsung 'Personalizat' (image reads 'POZA TA AICI') sits in an email that claims 'Plată ramburs' and 'Retur în 30 de zile' with no caveat. The FAQ says personalised items cannot be paid ramburs or returned.",
+     "Only 4 iPhone, 4 Samsung and 3 new products, the thinnest assortment. The three dark iPhone bestsellers make the grid tonally flat."
+    ]
+   }
+  ],
+  "winner": "b",
+  "grafts": [
+   "From C: preheader '−30% la 2 skinuri. Combină oricare 2 skinuri, pentru orice telefon. Reducerea se aplică automat în coș.' so the inbox preview carries the number.",
+   "From C: point every 'ALEGE-ȚI TELEFONUL' href at https://covered.ro/?utm_source=email&utm_medium=newsletter&utm_campaign=30-la-2-skinuri&utm_content=<slug>#alege-telefonul (the anchor exists on the homepage) so the click lands on the device picker.",
+   "From C (and A's hero): add the ghost secondary 'VEZI CELE MAI VÂNDUTE' (→ /collections/toate-produsele) beside the hero's primary button.",
+   "From A and C: put the real card ratings back on B's product cards (Martian Mono '★ 4,6 (36)', '★ 4,9 (40)', '★ 4,8 (26)', '★ 4,8 (38)', '★ 5,0 (7)', '★ 4,5 (12)', '★ 4,5 (11)', '★ 4,4 (7)'), next to or under the price.",
+   "From A: replace or supplement the closing with 'ALEGE MODELUL. ALEGE DOUĂ FINISAJE.' plus the 2×2 device tiles ('199 de skinuri · IPHONE · VEZI SKINURI →', 138 Samsung, 47 Google Pixel, 47 Orice telefon). It is a stronger offer-specific routing close than a generic 'VEZI TOATE SKINURILE'.",
+   "From C: lead the Noutăți block with Negru ULTRA Matte as a larger card labelled '01 · CEL MAI NOU SKIN', with its only finish-specific site copy 'Skin Negru ULTRA mat, realizat din autocolant 3M Premium.'",
+   "From A's spec table: add the line 'Același finisaj sau două diferite.' and extraopțiuni to B's hero exclusion line, e.g. 'Husele, foliile de ecran și extraopțiunile nu intră în ofertă.'",
+   "From C: the closing reminder line '◆ −30% LA 2 SKINURI · SE APLICĂ AUTOMAT ÎN COȘ' under the final buttons, which could replace B's heavier dark offer card if length must come down."
+  ],
+  "must_fix": [
+   "Preheader in B lacks the discount number. Change it to '−30% la 2 skinuri. Combină oricare 2 skinuri, pentru orice telefon. Reducerea se aplică automat în coș.'",
+   "Mobile best-seller pill in B collapses to a bare '★' because 'CEL MAI VÂNDUT' is wrapped in <span class=\"hide-m\">. Keep the text on mobile and let the pill wrap below the '-42%' pill, as C does, rather than hiding it.",
+   "The 'ALEGE-ȚI TELEFONUL →' hrefs (hero and cta) point to the top of the homepage. Append '#alege-telefonul' after the UTM query so they land on the device picker.",
+   "Cut the duplicated 'Iei 3?' message: drop offer strip 2 ('−30% LA 2 SKINURI ✦ IEI 3? TOATE 3 AU −30%'), since the hero already says 'Iei 3? Și al treilea are −30%.' This reduces repetition and length.",
+   "Hero exclusion line is incomplete versus the verified mechanics. Make it 'Husele, foliile de ecran și extraopțiunile nu intră în ofertă.'",
+   "Restore per-card ratings from the research data. B is the only variant without card-level social proof."
+  ]
+ }
+}
